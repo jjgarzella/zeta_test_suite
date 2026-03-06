@@ -1,0 +1,25 @@
+id: <string>
+
+field:
+  p: <prime>
+  a: <integer ≥ 1>
+  modulus_coeffs_asc: <array>    # optional if a = 1
+
+curve:
+  genus: <integer>
+
+  model:
+    pretty: <string>
+
+    x_var: "x"
+    y_var: "y"
+    t_var: "t"
+
+    h_coeffs_asc: <array>
+    f_coeffs_asc: <array>
+
+expected:
+  Lpoly:
+    coeffs_asc: <array of integers>
+
+notes: <string>
