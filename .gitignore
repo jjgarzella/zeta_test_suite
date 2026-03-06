@@ -1,0 +1,30 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# SageMath
+*.pyc
+__pycache__/
+.sage/
+*.sage.py
+
+# Jupyter (used with Sage)
+.ipynb_checkpoints/
+
+# Oscar / Julia
+Manifest.toml
+*.jl.cov
+*.jl.mem
+*.ji
+/docs/build/
+
+# MAGMA
+*.o
+*.m~
