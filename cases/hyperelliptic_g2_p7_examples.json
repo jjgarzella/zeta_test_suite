@@ -1,6 +1,4 @@
 {
-  "format": "hyperelliptic_zeta_test_cases",
-  "version": "0.1",
   "cases": [
     {
       "id": "g2_p7_case_001",
@@ -11,7 +9,7 @@
       "curve": {
         "genus": 2,
         "model": {
-          "pretty": "y^2 - (x^5 + x^2 + 1)",
+          "pretty": "y^2 = x^5 + x^2 + 1",
           "x_var": "x",
           "y_var": "y",
           "t_var": "t",
@@ -50,7 +48,7 @@
       "curve": {
         "genus": 2,
         "model": {
-          "pretty": "y^2 - (x^5 + 2*x^3 + x + 3)",
+          "pretty": "y^2 = x^5 + 2*x^3 + x + 3",
           "x_var": "x",
           "y_var": "y",
           "t_var": "t",
@@ -89,7 +87,7 @@
       "curve": {
         "genus": 2,
         "model": {
-          "pretty": "y^2 - (x^5 + x^4 + x^3 + 2)",
+          "pretty": "y^2 = x^5 + x^4 + x^3 + 2",
           "x_var": "x",
           "y_var": "y",
           "t_var": "t",
