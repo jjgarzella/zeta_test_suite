@@ -16,3 +16,13 @@ jobs:
       - name: Validate all case files against schema
         run: |
           check-jsonschema --schemafile schema_v1.json cases/*.json
+
+  test-sage:
+    runs-on: ubuntu-latest
+    container:
+      image: sagemath/sagemath:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Sage unit tests
+        run: sage test/runtests.sage
