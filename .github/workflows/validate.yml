@@ -1,0 +1,18 @@
+name: Validate test cases
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install check-jsonschema
+        run: pip install check-jsonschema
+
+      - name: Validate all case files against schema
+        run: |
+          check-jsonschema --schemafile schema_v1.json cases/*.json
