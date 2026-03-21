@@ -160,7 +160,7 @@ def load_case_by_id(path, case_id):
 # ---------------------------------------------------------------------------
 # Usage example
 # ---------------------------------------------------------------------------
-# sage: load = load_cases("../cases/hyperelliptic_g2_p7_examples.json")
+# sage: load = load_cases("../cases_v1/hyperelliptic_g2_p7_examples.json")
 # sage: c = load[0]
 # sage: c.curve
 # Hyperelliptic Curve over Finite Field of size 7 defined by y^2 = x^5 + x^2 + 1

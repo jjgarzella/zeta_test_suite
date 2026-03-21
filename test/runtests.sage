@@ -14,6 +14,7 @@ import os
 
 load('test/test_random_curves.sage')
 load('test/test_random_curves_char2.sage')
+load('test/test_loader_saver_v2.sage')
 
 # ── Collect and run all tests ────────────────────────────────────────────────
 
@@ -27,6 +28,8 @@ suite.addTests(loader.loadTestsFromTestCase(TestRandomHyperellipticWrapper))
 suite.addTests(loader.loadTestsFromTestCase(TestRandomHyperellipticChar2OddDegree))
 suite.addTests(loader.loadTestsFromTestCase(TestRandomHyperellipticChar2EvenDegree))
 suite.addTests(loader.loadTestsFromTestCase(TestRandomHyperellipticWrapperChar2))
+suite.addTests(loader.loadTestsFromTestCase(TestLoaderV2))
+suite.addTests(loader.loadTestsFromTestCase(TestSaverV2))
 
 runner = unittest.TextTestRunner(verbosity=2)
 result = runner.run(suite)

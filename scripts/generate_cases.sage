@@ -11,7 +11,7 @@ Run from repo root:
 import sys
 
 load('random_generation/random_curves.sage')
-load('sage/saver.sage')
+load('sage/saver_v2.sage')
 
 
 def lpoly_coeffs(C):
@@ -66,7 +66,7 @@ generate_cases(
     primes=[2],
     degrees=DEGREES,
     n_per=N,
-    filename="cases/random_p2.json",
+    filename="cases_v2/random_p2.json",
     label="p2",
 )
 
@@ -75,7 +75,7 @@ generate_cases(
     primes=prime_range(3, 14),   # [3, 5, 7, 11, 13]
     degrees=DEGREES,
     n_per=N,
-    filename="cases/random_p3_to_13.json",
+    filename="cases_v2/random_p3_to_13.json",
     label="p3-13",
 )
 
@@ -84,7 +84,7 @@ generate_cases(
     primes=prime_range(17, 51),  # [17, 19, 23, 29, 31, 37, 41, 43, 47]
     degrees=DEGREES,
     n_per=N,
-    filename="cases/random_p17_to_50.json",
+    filename="cases_v2/random_p17_to_50.json",
     label="p17-50",
 )
 
@@ -93,6 +93,6 @@ generate_cases(
     primes=prime_range(53, 98),  # [53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
     degrees=DEGREES,
     n_per=N,
-    filename="cases/random_p53_to_97.json",
+    filename="cases_v2/random_p53_to_97.json",
     label="p53-97",
 )

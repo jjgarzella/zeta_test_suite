@@ -133,6 +133,6 @@ def save_case(curve, result, filename, id, notes=""):
 # ---------------------------------------------------------------------------
 # sage: load('sage/loader.sage')
 # sage: load('sage/saver.sage')
-# sage: cases = load_cases("cases/hyperelliptic_g2_p7_examples.json")
+# sage: cases = load_cases("cases_v1/hyperelliptic_g2_p7_examples.json")
 # sage: c = cases[0]
 # sage: save_case(c.curve, c.expected_Lpoly, "/tmp/out.json", id="g2_p7_case_001", notes="round-trip test")

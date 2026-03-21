@@ -8,25 +8,25 @@ This file provides context about the repository for new Claude Code sessions.
 
 ### Key files and directories
 
-- `specv1.txt` — Compact spec of the test case format
-- `FORMAT.md` — Detailed guide for generating valid test cases (read this to understand the format)
-- `schema_v1.json` — JSON Schema (draft 2020-12) for validating case files
-- `cases/` — JSON files containing test cases
-- `sage/loader.sage` — `load_case(case)` / `load_cases(path)`: deserialize JSON → Sage `HyperellipticCurve` objects
-- `sage/saver.sage` — `save_case(curve, result, filename, id, notes)`: serialize Sage curves → JSON test cases
+- `specv1.txt` / `schema_v1.json` / `FORMAT_v1.md` — Legacy one-field-per-case format
+- `specv2.txt` / `schema_v2.json` / `FORMAT.md` — Grouped format with one shared curve and many prime/L-polynomial results
+- `cases_v1/` — Legacy v1 JSON case files
+- `cases_v2/` — Grouped v2 JSON case files
+- `sage/loader.sage` — v1 loader helpers for legacy case files
+- `sage/saver.sage` — v1 saver helpers for legacy case files
 - `prompts/` — Prompts for getting LLMs to implement loaders/savers in other CAS systems
 - `test/` — Unit tests for random curve generation
 
 ### Test case format summary
 
-Each test case is a JSON object with:
-- `id` — unique string identifier (convention: `g{genus}_p{p}_a{a}_{index}`)
-- `field` — finite field F_q: `p` (prime), `a` (extension degree), optional `modulus_coeffs_asc`
-- `curve` — hyperelliptic curve y² + h(x)y = f(x), stored as ascending coefficient arrays
-- `expected` — L-polynomial P(T) where Z(C,T) = P(T) / ((1-T)(1-qT)), as `coeffs_asc`
-- `notes` — free-form provenance/metadata string
+V1:
+- each test case is one `(field, curve, expected)` tuple
+- fields may be prime or extension fields
 
-Extension field elements are encoded as integer arrays `[c0, c1, ..., c_{a-1}]` representing c0 + c1·t + ··· in F_p[t]/(m(t)).
+V2:
+- each test case is one shared curve plus a `results` array
+- each result stores a prime `p` and an expected L-polynomial
+- the shared curve declares a coefficient-domain tag, with `integer` implemented and `number_field` reserved
 
 ---
 

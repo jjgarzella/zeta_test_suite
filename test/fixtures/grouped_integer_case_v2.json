@@ -1,0 +1,42 @@
+{
+  "cases": [
+    {
+      "id": "g2_d5_a",
+      "curve": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "genus": 2,
+        "model": {
+          "pretty": "y^2 = x^5 - x + 1",
+          "x_var": "x",
+          "y_var": "y",
+          "t_var": "t",
+          "h_coeffs_asc": [0],
+          "f_coeffs_asc": [1, -1, 0, 0, 0, 1]
+        }
+      },
+      "results": [
+        {
+          "p": 5,
+          "Lpoly": {
+            "coeffs_asc": [1, 5, 15, 25, 25]
+          }
+        },
+        {
+          "p": 7,
+          "Lpoly": {
+            "coeffs_asc": [1, -1, 0, -7, 49]
+          }
+        },
+        {
+          "p": 11,
+          "Lpoly": {
+            "coeffs_asc": [1, 7, 31, 77, 121]
+          }
+        }
+      ],
+      "notes": "Shared integer curve with three prime reductions"
+    }
+  ]
+}

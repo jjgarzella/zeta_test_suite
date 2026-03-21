@@ -1,43 +1,42 @@
-# Hyperelliptic Zeta Test Case Format Guide
+# Hyperelliptic Zeta Test Case Format Guide (V2)
 
-This document explains how **humans and AI systems should generate valid
-hyperelliptic curve test cases** for the zeta-function test suite.
+This document explains how to generate valid **v2** hyperelliptic curve
+test cases for the zeta-function test suite.
 
-The format is **JSON** and follows the schema defined in the repository.
+The v2 format groups many prime/L-polynomial pairs under one shared curve.
 
-The goal is to produce **machine-readable test cases** that can be used
-to verify implementations of algorithms computing zeta functions of
-hyperelliptic curves.
+Legacy one-field-per-case files are still described by `FORMAT_v1.md`,
+`specv1.txt`, and `schema_v1.json`.
 
 ------------------------------------------------------------------------
 
 # File Structure
 
-Each JSON file contains a list of test cases.
+Each JSON file contains a list of grouped test cases.
 
-``` json
+```json
 {
   "cases": [
-    { ... test case ... },
-    { ... test case ... }
+    { ... grouped test case ... },
+    { ... grouped test case ... }
   ]
 }
 ```
 
-Each entry in `"cases"` is a single hyperelliptic curve test case.
+Each entry in `"cases"` is one shared curve together with one or more
+prime/L-polynomial results.
 
 ------------------------------------------------------------------------
 
 # Test Case Structure
 
-Each test case must have the following fields:
+Each grouped case has the following fields:
 
-``` json
+```json
 {
   "id": "...",
-  "field": {...},
   "curve": {...},
-  "expected": {...},
+  "results": [...],
   "notes": "..."
 }
 ```
@@ -46,287 +45,251 @@ Each test case must have the following fields:
 
 # 1. Case Identifier
 
-    "id": "string"
+```text
+"id": "string"
+```
 
-A unique identifier for the test case.
+A unique identifier for the shared curve.
 
 Recommended naming convention:
 
-    g{genus}_p{p}_a{a}_{index}
+```text
+g{genus}_d{degree}_{label}
+```
 
 Example:
 
-    g2_p7_a1_001
-
-------------------------------------------------------------------------
-
-# 2. Finite Field Definition
-
-    "field": {
-      "p": integer,
-      "a": integer,
-      "modulus_coeffs_asc": [...]
-    }
-
-This defines the field
-
-F_q where q = p\^a.
-
-### Prime Field
-
-If `a = 1`, the base field is F_p and `modulus_coeffs_asc` should be
-omitted.
-
-Example:
-
-``` json
-"field": {
-  "p": 7,
-  "a": 1
-}
+```text
+g2_d5_a
 ```
 
 ------------------------------------------------------------------------
 
-### Extension Field
-
-If `a > 1`, the field is defined as
-
-F_q = F_p\[t\] / (m(t))
-
-    modulus_coeffs_asc = [c0, c1, ..., ca]
-
-represents
-
-m(t) = c0 + c1 t + ... + ca t\^a.
-
-Example:
-
-``` json
-"field": {
-  "p": 5,
-  "a": 2,
-  "modulus_coeffs_asc": [2,0,1]
-}
-```
-
-which represents F_25 = F_5\[t\]/(t\^2 + 2).
-
-------------------------------------------------------------------------
-
-# 3. Curve Definition
+# 2. Shared Curve Definition
 
 Curves are stored in the hyperelliptic form
 
-y\^2 + h(x) y = f(x)
+```text
+y^2 + h(x) y = f(x)
+```
 
-This works in all characteristics.
+The v2 format stores one shared curve and then records its reductions
+at different primes in the `"results"` array.
 
-    "curve": {
-      "genus": integer,
-      "model": {
-        "pretty": "...",
-        "x_var": "x",
-        "y_var": "y",
-        "t_var": "t",
-        "h_coeffs_asc": [...],
-        "f_coeffs_asc": [...]
-      }
-    }
+```json
+"curve": {
+  "coeff_domain": {
+    "kind": "integer"
+  },
+  "genus": 2,
+  "model": {
+    "pretty": "y^2 = x^5 - x + 1",
+    "x_var": "x",
+    "y_var": "y",
+    "t_var": "t",
+    "h_coeffs_asc": [0],
+    "f_coeffs_asc": [1, -1, 0, 0, 0, 1]
+  }
+}
+```
 
-------------------------------------------------------------------------
+## Coefficient Domain
 
-## Human-readable equation
+The shared curve must declare how its coefficients should be interpreted
+before reduction.
+
+```json
+"coeff_domain": {
+  "kind": "integer"
+}
+```
+
+Implemented in v2:
+
+- `integer` — coefficients are integers and should be reduced modulo each
+  result prime `p`
+
+Reserved for future work:
+
+- `number_field` — schema placeholder only in this version
+
+## Human-readable Equation
 
 `pretty` is a string representation of the equation.
 
 Example:
 
-    "pretty": "y^2 = x^5 + 2*x^3 + 1"
-
-This field is **for humans only**.
-
-The machine-readable representation uses coefficient arrays.
-
-------------------------------------------------------------------------
-
-# Polynomial Representation
-
-## h(x)
-
-    h_coeffs_asc = [h0, h1, ..., hn]
-
-represents
-
-h(x) = h0 + h1 x + ... + hn x\^n
-
-------------------------------------------------------------------------
-
-## f(x)
-
-    f_coeffs_asc = [f0, f1, ..., fm]
-
-represents
-
-f(x) = f0 + f1 x + ... + fm x\^m
-
-------------------------------------------------------------------------
-
-# Field Element Encoding
-
-Two encodings are used depending on the base field.
-
-## Case 1: Prime Field (`a = 1`)
-
-Coefficients are integers interpreted modulo `p`.
-
-Example:
-
-``` json
-"f_coeffs_asc": [1,0,2,0,0,1]
+```text
+"pretty": "y^2 = x^5 - x + 1"
 ```
 
-represents
+This field is for humans only. Programs should use the coefficient arrays.
 
-1 + 2x\^2 + x\^5 over F_p.
+## Polynomial Representation
+
+```text
+h_coeffs_asc = [h0, h1, ..., hn]
+f_coeffs_asc = [f0, f1, ..., fm]
+```
+
+These represent
+
+```text
+h(x) = h0 + h1 x + ... + hn x^n
+f(x) = f0 + f1 x + ... + fm x^m
+```
+
+For `integer` coefficient domains, entries may be written either as JSON
+integers or as integer-valued strings.
+
+Preferred encoding:
+
+- use JSON integers for values whose magnitude is below `2^64`
+- use integer-valued strings for larger magnitudes when BigInt-safe
+  interchange matters
 
 ------------------------------------------------------------------------
 
-## Case 2: Extension Field (`a > 1`)
+# 3. Prime Results
 
-Coefficients are arrays representing elements of
+Each grouped case stores one or more prime/L-polynomial pairs:
 
-F_p\[t\]/(m(t)).
-
-    [c0, c1, ..., c_{a-1}]
-
-represents
-
-c0 + c1 t + ... + c\_{a-1} t\^{a-1}.
-
-Example:
-
-``` json
-[2,1]
+```json
+"results": [
+  {
+    "p": 5,
+    "Lpoly": {
+      "coeffs_asc": [1, 5, 15, 25, 25]
+    }
+  },
+  {
+    "p": 7,
+    "Lpoly": {
+      "coeffs_asc": [1, "-1", 0, "-7", 49]
+    }
+  }
+]
 ```
 
-represents
+Each result describes the reduction of the shared curve modulo the prime `p`.
 
-2 + t.
+## Prime Field
+
+```text
+"p": integer encoded as either a JSON integer or an integer-valued string
+```
+
+This is the prime over which the shared curve is reduced before computing
+the zeta function.
+
+In v2, results are intentionally limited to prime reductions.
+
+## Expected Zeta Function
+
+Each result stores the L-polynomial `P(T)` where
+
+```text
+Z(C, T) = P(T) / ((1 - T)(1 - pT)).
+```
+
+```json
+"Lpoly": {
+  "coeffs_asc": [...]
+}
+```
+
+Constraints:
+
+- length = `2g + 1`
+- `coeffs_asc[0] = 1` or `"1"`
+- coefficients are integers or integer-valued strings
+- values whose magnitude is below `2^64` should normally be encoded as
+  JSON integers
+
+------------------------------------------------------------------------
+
+# 4. Metadata
+
+```text
+"notes": "string"
+```
+
+Free-form case-level metadata describing provenance, references,
+generation method, or remarks about the shared curve.
+
+In v2 there is no per-result metadata field.
 
 ------------------------------------------------------------------------
 
 # Normalization Rules
 
-The format **does not enforce normalization**.
+The format does not enforce normalization.
 
 Allowed:
 
--   trailing zeros in polynomial coefficient arrays
--   trailing zeros in field element arrays
+- trailing zeros in polynomial coefficient arrays
+- repeated primes in `"results"` are discouraged, but schema validation
+  does not forbid them
 
 Programs reading the file may normalize internally.
 
 ------------------------------------------------------------------------
 
-# 4. Expected Zeta Function
-
-Each case stores the **L-polynomial** P(T) where
-
-Z(C,T) = P(T) / ((1-T)(1-qT)).
-
-    "expected": {
-      "Lpoly": {
-        "coeffs_asc": [...]
-      }
-    }
-
-Example:
-
-``` json
-"expected": {
-  "Lpoly": {
-    "coeffs_asc": [1,3,10,21,49]
-  }
-}
-```
-
-This represents
-
-P(T) = 1 + 3T + 10T\^2 + 21T\^3 + 49T\^4.
-
-Constraints:
-
--   length = 2g + 1
--   coeffs_asc\[0\] = 1
--   coefficients are integers
-
-------------------------------------------------------------------------
-
-# 5. Metadata
-
-    "notes": "string"
-
-Free-form field describing:
-
--   provenance
--   references
--   generation method
--   remarks
-
-Example:
-
-    "notes": "Generated using Sage; genus 2 random curve over F7"
-
-------------------------------------------------------------------------
-
 # Guidelines for Humans and AI Systems
 
-When generating new test cases:
+When generating new v2 test cases:
+
+- choose one shared curve first
+- encode that curve over its declared coefficient domain
+- choose one or more primes `p`
+- reduce the shared curve modulo each `p`
+- compute the corresponding L-polynomial
+- store each prime/L-polynomial pair in `"results"`
 
 Always verify:
 
--   `p` is prime
--   `modulus_coeffs_asc` defines an irreducible polynomial if `a > 1`
--   the equation defines a hyperelliptic curve
--   the genus field is correct
--   the L-polynomial matches the curve
-
-Recommended workflow:
-
-1.  Choose `p`, `a`, and genus.
-2.  Generate a hyperelliptic curve.
-3.  Compute the zeta function.
-4.  Extract the L-polynomial.
-5.  Store coefficients in ascending order.
+- the shared curve data is correct
+- the coefficient domain tag matches the coefficient encoding
+- each `p` is prime
+- each reduction defines a valid hyperelliptic curve
+- the stored genus matches the curve
+- each L-polynomial matches its reduction
 
 ------------------------------------------------------------------------
 
-# Example Test Case
+# Example Grouped Case
 
-``` json
+```json
 {
-  "id": "g2_p7_a1_001",
-  "field": {
-    "p": 7,
-    "a": 1
-  },
+  "id": "g2_d5_a",
   "curve": {
+    "coeff_domain": {
+      "kind": "integer"
+    },
     "genus": 2,
     "model": {
-      "pretty": "y^2 = x^5 + x^2 + 1",
+      "pretty": "y^2 = x^5 - x + 1",
       "x_var": "x",
       "y_var": "y",
       "t_var": "t",
       "h_coeffs_asc": [0],
-      "f_coeffs_asc": [1,0,1,0,0,1]
+      "f_coeffs_asc": [1, "-1", 0, 0, 0, "1"]
     }
   },
-  "expected": {
-    "Lpoly": {
-      "coeffs_asc": [1,3,10,21,49]
+  "results": [
+    {
+      "p": 5,
+      "Lpoly": {
+        "coeffs_asc": [1, 5, 15, 25, 25]
+      }
+    },
+    {
+      "p": 7,
+      "Lpoly": {
+        "coeffs_asc": [1, "-1", 0, "-7", 49]
+      }
     }
-  },
-  "notes": "Example curve over F7"
+  ],
+  "notes": "Example shared integer curve with two prime reductions"
 }
 ```

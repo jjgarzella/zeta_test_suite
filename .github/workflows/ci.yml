@@ -15,7 +15,11 @@ jobs:
 
       - name: Validate all case files against schema
         run: |
-          check-jsonschema --schemafile schema_v1.json cases/*.json
+          check-jsonschema --schemafile schema_v1.json cases_v1/*.json
+
+      - name: Validate v2 fixture files against schema
+        run: |
+          check-jsonschema --schemafile schema_v2.json test/fixtures/*.json
 
   test-sage:
     runs-on: ubuntu-latest
