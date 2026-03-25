@@ -13,13 +13,9 @@ jobs:
       - name: Install check-jsonschema
         run: pip install check-jsonschema
 
-      - name: Validate all case files against schema
+      - name: Validate v2 case files against schema
         run: |
-          check-jsonschema --schemafile schema_v1.json cases_v1/*.json
-
-      - name: Validate v2 fixture files against schema
-        run: |
-          check-jsonschema --schemafile schema_v2.json test/fixtures/*.json
+          check-jsonschema --schemafile schema_v2.json cases_v2/*.json
 
   test-sage:
     runs-on: ubuntu-latest
