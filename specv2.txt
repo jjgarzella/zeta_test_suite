@@ -1,0 +1,24 @@
+id: <string>
+
+curve:
+  coeff_domain:
+    kind: "integer" | "number_field"
+
+  genus: <integer>
+
+  model:
+    pretty: <string>
+
+    x_var: "x"
+    y_var: "y"
+    t_var: "t"
+
+    h_coeffs_asc: <array of integer values encoded as ints or strings>
+    f_coeffs_asc: <array of integer values encoded as ints or strings>
+
+results:
+  - p: <prime encoded as int or string>
+    Lpoly:
+      coeffs_asc: <array of integer values encoded as ints or strings>
+
+notes: <string>

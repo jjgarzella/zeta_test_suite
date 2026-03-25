@@ -13,6 +13,7 @@ Thumbs.db
 *.pyc
 __pycache__/
 .sage/
+# Sage-generated Python artifacts
 *.sage.py
 
 # Jupyter (used with Sage)

@@ -13,7 +13,7 @@ Run from repo root:
 
 import sys
 
-load('sage/saver.sage')
+load('sage/saver_v2.sage')
 
 
 def lpoly_coeffs(C):
@@ -60,7 +60,8 @@ EVEN_PRIMES = prime_range(3, 5001)   # even-degree curves: capped at 5000 (slow 
 
 
 def process_curve(g, d, label, pretty, f_coeffs_asc):
-    filename = "cases/specific_g{}_d{}_{}.json".format(g, d, label)
+    filename = "cases_v2/specific_g{}_d{}_{}.json".format(g, d, label)
+    case_id = "g{}_d{}_{}".format(g, d, label)
     all_primes = ODD_PRIMES if d % 2 == 1 else EVEN_PRIMES
 
     # Verify squarefreeness over Z once up front
@@ -73,12 +74,12 @@ def process_curve(g, d, label, pretty, f_coeffs_asc):
     total = len(all_primes)
     done = 0
     skipped = 0
+    results = []
 
     print("[g{} d{} {}] {} primes for {}".format(g, d, label, total, pretty))
     sys.stdout.flush()
 
     for p in all_primes:
-        case_id = "g{}_d{}_{}_p{}".format(g, d, label, p)
         try:
             F = GF(p)
             R = PolynomialRing(F, 'x')
@@ -97,12 +98,37 @@ def process_curve(g, d, label, pretty, f_coeffs_asc):
                 continue
 
             coeffs = lpoly_coeffs(C)
-            notes = "{} reduced mod {}".format(pretty, p)
-            save_case(C, coeffs, filename, case_id, notes=notes)
+            results.append({
+                'p': int(p),
+                'Lpoly': {
+                    'coeffs_asc': coeffs,
+                },
+            })
             done += 1
 
         except Exception:
             skipped += 1
+
+    grouped_case = {
+        'id': case_id,
+        'curve': {
+            'coeff_domain': {
+                'kind': 'integer',
+            },
+            'genus': g,
+            'model': {
+                'pretty': pretty,
+                'x_var': 'x',
+                'y_var': 'y',
+                't_var': 't',
+                'h_coeffs_asc': [0],
+                'f_coeffs_asc': f_coeffs_asc,
+            },
+        },
+        'results': results,
+        'notes': "{} over Z, reduced at valid primes".format(pretty),
+    }
+    save_grouped_case(grouped_case, filename)
 
     print("[g{} d{} {}] Done. {}/{} primes saved, {} skipped. -> {}".format(
         g, d, label, done, total, skipped, filename))
