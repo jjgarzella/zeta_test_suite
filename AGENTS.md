@@ -14,7 +14,7 @@ beyond).
 ### Key files and directories
 
 - `schema.json` / `spec.txt` / `FORMAT.md` — v3 schema, compact reference, and authoring guide
-- `cases/` — Grouped v3 JSON case files
+- `cases/` — Grouped v3 JSON case files, organized by variety kind in subfolders (e.g. `cases/hyperelliptic/`)
 - `sage/loader.sage` — v3 Sage loader (tagged-union dispatch over six model kinds)
 - `sage/saver.sage` — v3 Sage saver (per-kind serializers, upsert by id)
 - `prompts/` — Prompts for getting LLMs to implement loaders/savers in other CAS systems

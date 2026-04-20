@@ -27,7 +27,7 @@ P = 41
 N_PER_GENUS = 2
 MAX_GENUS = 30
 TIME_LIMIT = 60  # seconds; stop after first case that exceeds this
-FILENAME = "cases/hyperelliptic_p41_even_degree.json"
+FILENAME = "cases/hyperelliptic/hyperelliptic_p41_even_degree.json"
 
 print("Generating even-degree (2g+2) curves over GF({}) for g=1..{}".format(P, MAX_GENUS))
 print("Output: {}".format(FILENAME))

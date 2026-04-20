@@ -15,7 +15,7 @@ jobs:
 
       - name: Validate v3 case files against schema
         run: |
-          check-jsonschema --schemafile schema.json cases/*.json
+          check-jsonschema --schemafile schema.json cases/*/*.json
 
   test-sage:
     runs-on: ubuntu-latest
