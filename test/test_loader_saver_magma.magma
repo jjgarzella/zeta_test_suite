@@ -1,0 +1,121 @@
+// test_loader_saver_magma.magma — unit tests for the MAGMA loader/saver.
+//
+// Runs locally only (MAGMA is proprietary; no CI). Invoke with:
+//     magma -b test/test_loader_saver_magma.magma
+//
+// Any error terminates the script; a trailing "ALL TESTS PASSED" line marks
+// success.
+
+// Expects to be invoked from the repo root:
+//     magma -b test/test_loader_saver_magma.magma
+load "magma/loader.magma";
+load "magma/saver.magma";
+
+FIXTURES := "test/fixtures";
+TMP_DIR := "/tmp";
+
+n_pass := 0;
+n_fail := 0;
+
+procedure _check(cond, msg)
+    if cond then
+        printf "  OK   %o\n", msg;
+    else
+        printf "  FAIL %o\n", msg;
+        error "assertion failed: " cat msg;
+    end if;
+end procedure;
+
+// ---------- TestLoaderPerKind ----------
+print "TestLoaderPerKind";
+
+cases := LoadExpandedCases(FIXTURES cat "/plane_curve.json");
+_check(#cases eq 1, "plane_curve: exactly one expanded case");
+c := cases[1];
+_check(c["variety"]["kind"] eq "plane_curve", "plane_curve: variety kind");
+_check(c["variety"]["dim"] eq 1, "plane_curve: dim=1");
+_check(c["variety"]["genus"] eq 1, "plane_curve: genus=1");
+_check(Keys(c["expected_l_factors"]) eq {0, 1, 2}, "plane_curve: l_factor keys");
+
+cases := LoadExpandedCases(FIXTURES cat "/projective_hypersurface.json");
+_check(#cases eq 1, "projective_hypersurface: one case");
+c := cases[1];
+_check(c["variety"]["kind"] eq "projective_hypersurface", "projective_hypersurface: kind");
+_check(c["variety"]["dim"] eq 2, "projective_hypersurface: dim=2");
+_check(Keys(c["expected_l_factors"]) eq {0, 1, 2, 3, 4}, "projective_hypersurface: explicit l_factor keys");
+
+// ---------- TestLoaderRejections ----------
+print "TestLoaderRejections";
+
+for fix in ["/hyperelliptic.json", "/superelliptic.json", "/double_cover_P2.json", "/cyclic_cover.json"] do
+    ok := false;
+    try
+        _ := LoadExpandedCases(FIXTURES cat fix);
+    catch e
+        ok := true;
+    end try;
+    _check(ok, "rejection: " cat fix);
+end for;
+
+// Wrong schema version
+tmp := TMP_DIR cat "/bad_schema.json";
+System("printf '%s' '{\"schema_version\":\"2\",\"cases\":[]}' > " cat tmp);
+ok := false;
+try
+    _ := LoadCases(tmp);
+catch e
+    ok := true;
+end try;
+_check(ok, "rejection: wrong schema_version");
+System("rm -f " cat tmp);
+
+// ---------- TestSaverRoundTrip ----------
+print "TestSaverRoundTrip";
+
+tmp := TMP_DIR cat "/magma_roundtrip.json";
+F := GF(7);
+R<x, y, z> := PolynomialRing(F, 3);
+
+System("rm -f " cat tmp);
+model := MakePlaneCurveModel(x^3 + y^3 + z^3);
+v := MakeVariety(model, 1 : genus := 1);
+SaveCase(v, [1, -4, 7], tmp, "plane_roundtrip" : p := 7, notes := "roundtrip");
+cases := LoadCases(tmp);
+_check(#cases eq 1, "plane_curve save -> load: one case");
+_check(cases[1]["id"] eq "plane_roundtrip", "plane_curve save -> load: id");
+_check(cases[1]["notes"] eq "roundtrip", "plane_curve save -> load: notes");
+System("rm -f " cat tmp);
+
+// ---------- TestSaverUpsert ----------
+print "TestSaverUpsert";
+
+System("rm -f " cat tmp);
+SaveCase(v, [1, -4, 7], tmp, "case_a" : p := 7, notes := "first");
+SaveCase(v, [1, -3, 7], tmp, "case_a" : p := 7, notes := "updated");
+cases := LoadCases(tmp);
+_check(#cases eq 1, "upsert: same id keeps count at 1");
+_check(cases[1]["notes"] eq "updated", "upsert: notes replaced");
+
+SaveCase(v, [1, 0, 7], tmp, "case_b" : p := 7);
+cases := LoadCases(tmp);
+_check(#cases eq 2, "upsert: new id appends");
+System("rm -f " cat tmp);
+
+// ---------- TestSaverFromBuilders ----------
+print "TestSaverFromBuilders";
+
+R4<a, b, c, d> := PolynomialRing(F, 4);
+quartic := a^4 + b^4 + c^4 + d^4;
+m := MakeProjectiveHypersurfaceModel(quartic);
+_check(m["kind"] eq "projective_hypersurface", "builder: projective_hypersurface");
+_check(#m["vars"] eq 4, "builder: 4 vars");
+_check(#m["monomials"] eq 4, "builder: 4 monomials");
+
+R3<u, v, w> := PolynomialRing(F, 3);
+cubic := u^3 + v^3 + w^3;
+m := MakePlaneCurveModel(cubic);
+_check(m["kind"] eq "plane_curve", "builder: plane_curve");
+_check(#m["monomials"] eq 3, "builder: 3 monomials");
+
+print "ALL TESTS PASSED";
+quit;

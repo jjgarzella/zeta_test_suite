@@ -1,0 +1,214 @@
+// saver.magma — Save v3 zeta-function test cases to JSON using MAGMA.
+//
+// Mirrors sage/saver.sage for the two model kinds MAGMA currently
+// exercises: plane_curve, projective_hypersurface. Other kinds error.
+//
+// Public API (after `load "magma/saver.magma";`):
+//     MakePlaneCurveModel(F[, pretty])
+//     MakeProjectiveHypersurfaceModel(F[, pretty])
+//     MakeVariety(model, dim[, non_middle_factors, genus])
+//     EncodeLpoly(coeffs)
+//     EncodeLFactors(factors_assoc)
+//     EncodeResult(p, result)
+//     SaveCase(variety, result, filename, id, notes, p, non_middle_factors)
+//     SaveGroupedCase(case_assoc, filename)
+
+load "magma/json.magma";
+
+SCHEMA_VERSION := "3";
+
+function _default_nmf()
+    d := AssociativeArray();
+    d["kind"] := "projective_lefschetz";
+    d["middle_factor_content"] := "full";
+    return d;
+end function;
+
+// ----------------------------------------------------------------------
+// Poly encoding
+// ----------------------------------------------------------------------
+
+function _encode_multivariable_poly(poly, p)
+    // Returns (monomials, coeffs) — lists of lists of ints.
+    monomials_out := [* *];
+    coeffs_out := [* *];
+    mons := Monomials(poly);
+    coefs := Coefficients(poly);
+    for i in [1..#mons] do
+        c := coefs[i];
+        if c eq 0 then continue; end if;
+        exps := [Integers() ! e : e in Exponents(mons[i])];
+        exps_list := [* *];
+        for e in exps do Append(~exps_list, e); end for;
+        Append(~monomials_out, exps_list);
+        // Reduce to non-negative representative
+        coef_int := Integers() ! c;
+        if p gt 0 then coef_int := coef_int mod p; end if;
+        Append(~coeffs_out, coef_int);
+    end for;
+    return monomials_out, coeffs_out;
+end function;
+
+function _vars_of_ring(R)
+    out := [* *];
+    for i in [1..Rank(R)] do Append(~out, Sprint(R.i)); end for;
+    return out;
+end function;
+
+function _ring_characteristic(R)
+    p := Characteristic(BaseRing(R));
+    return p eq 0 select 0 else p;
+end function;
+
+// ----------------------------------------------------------------------
+// Per-kind model dict builders
+// ----------------------------------------------------------------------
+
+MakePlaneCurveModel := function(F : pretty := "")
+    R := Parent(F);
+    vars_ := _vars_of_ring(R);
+    if #vars_ ne 3 then
+        error "plane_curve requires exactly 3 variables, got " cat IntegerToString(#vars_);
+    end if;
+    p := _ring_characteristic(R);
+    monos, coefs := _encode_multivariable_poly(F, p);
+    model := AssociativeArray();
+    model["kind"] := "plane_curve";
+    model["pretty"] := pretty eq "" select Sprint(F) cat " = 0" else pretty;
+    model["vars"] := vars_;
+    model["monomials"] := monos;
+    model["coeffs"] := coefs;
+    return model;
+end function;
+
+MakeProjectiveHypersurfaceModel := function(F : pretty := "")
+    R := Parent(F);
+    vars_ := _vars_of_ring(R);
+    if #vars_ lt 2 then
+        error "projective_hypersurface requires >= 2 variables, got " cat IntegerToString(#vars_);
+    end if;
+    p := _ring_characteristic(R);
+    monos, coefs := _encode_multivariable_poly(F, p);
+    model := AssociativeArray();
+    model["kind"] := "projective_hypersurface";
+    model["pretty"] := pretty eq "" select Sprint(F) cat " = 0" else pretty;
+    model["vars"] := vars_;
+    model["monomials"] := monos;
+    model["coeffs"] := coefs;
+    return model;
+end function;
+
+// ----------------------------------------------------------------------
+// Variety / result wrappers
+// ----------------------------------------------------------------------
+
+MakeVariety := function(model, dim : non_middle_factors := 0, genus := -1, coeff_domain := 0)
+    v := AssociativeArray();
+    cd := coeff_domain;
+    if Type(cd) eq RngIntElt then
+        cd := AssociativeArray();
+        cd["kind"] := "integer";
+    end if;
+    v["coeff_domain"] := cd;
+    v["dim"] := dim;
+    nmf := non_middle_factors;
+    if Type(nmf) eq RngIntElt then nmf := _default_nmf(); end if;
+    v["non_middle_factors"] := nmf;
+    v["model"] := model;
+    if genus ge 0 then v["genus"] := genus; end if;
+    return v;
+end function;
+
+EncodeLpoly := function(coeffs)
+    out := AssociativeArray();
+    coefs_list := [* *];
+    for c in coeffs do Append(~coefs_list, c); end for;
+    out["coeffs_asc"] := coefs_list;
+    return out;
+end function;
+
+EncodeLFactors := function(factors)
+    out := AssociativeArray();
+    for k in Keys(factors) do
+        coefs_list := [* *];
+        for c in factors[k] do Append(~coefs_list, c); end for;
+        sub := AssociativeArray();
+        sub["coeffs_asc"] := coefs_list;
+        out[IntegerToString(k)] := sub;
+    end for;
+    return out;
+end function;
+
+EncodeResult := function(p, result)
+    out := AssociativeArray();
+    out["p"] := p;
+    if Type(result) eq Assoc then
+        out["l_factors"] := EncodeLFactors(result);
+    else
+        out["Lpoly"] := EncodeLpoly(result);
+    end if;
+    return out;
+end function;
+
+// ----------------------------------------------------------------------
+// Save entry points
+// ----------------------------------------------------------------------
+
+procedure SaveGroupedCase(case_, filename)
+    if #filename lt 5 or filename[#filename-4..#filename] ne ".json" then
+        error "filename must end with '.json'";
+    end if;
+
+    data := AssociativeArray();
+    data["schema_version"] := SCHEMA_VERSION;
+    case_list := [* *];
+
+    // If file exists, read and upsert by id.
+    try
+        existing_text := Read(filename);
+        has_existing := true;
+    catch e
+        has_existing := false;
+    end try;
+
+    if has_existing then
+        existing := ParseJSON(existing_text);
+        if existing["schema_version"] ne SCHEMA_VERSION then
+            error filename cat ": existing schema_version '" cat
+                  Sprint(existing["schema_version"]) cat "' != '" cat SCHEMA_VERSION cat "'";
+        end if;
+        found := false;
+        for c in existing["cases"] do
+            if c["id"] eq case_["id"] then
+                Append(~case_list, case_);
+                found := true;
+            else
+                Append(~case_list, c);
+            end if;
+        end for;
+        if not found then Append(~case_list, case_); end if;
+    else
+        Append(~case_list, case_);
+    end if;
+
+    data["cases"] := case_list;
+    WriteJSONFile(filename, data);
+end procedure;
+
+procedure SaveCase(variety_dict, result, filename, id : notes := "", p := 0, non_middle_factors := 0)
+    if Type(variety_dict) ne Assoc then
+        error "SaveCase expects variety_dict to be a v3 variety AssociativeArray";
+    end if;
+    if p eq 0 then error "SaveCase: keyword `p` is required"; end if;
+
+    results_list := [* *];
+    Append(~results_list, EncodeResult(p, result));
+
+    case_ := AssociativeArray();
+    case_["id"] := id;
+    case_["variety"] := variety_dict;
+    case_["results"] := results_list;
+    case_["notes"] := notes;
+
+    SaveGroupedCase(case_, filename);
+end procedure;

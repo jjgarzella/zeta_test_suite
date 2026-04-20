@@ -1,0 +1,254 @@
+// loader.magma — Load v3 zeta-function test cases from JSON using MAGMA.
+//
+// Mirrors sage/loader.sage for the two model kinds MAGMA currently exercises:
+// plane_curve, projective_hypersurface. Other kinds cause an error; so do
+// coeff_domain 'number_field' and non_middle_factors 'toric_lefschetz'.
+//
+// Public API (after `load "magma/loader.magma";`):
+//     LoadCase(case_assoc)        -> assoc { id, variety, results, notes }
+//     ExpandCase(case_assoc)      -> list of assoc { id, p, notes, variety, expected_l_factors }
+//     LoadCases(path)             -> list of LoadCase results
+//     LoadExpandedCases(path)     -> flattened list of ExpandedCase
+
+load "magma/json.magma";
+
+SCHEMA_VERSION := "3";
+
+// ----------------------------------------------------------------------
+// Scalar / poly helpers
+// ----------------------------------------------------------------------
+
+function _to_int(v)
+    if Type(v) eq RngIntElt then return v; end if;
+    if Type(v) eq MonStgElt then return StringToInteger(v); end if;
+    error "cannot coerce to integer: " cat Sprint(v);
+end function;
+
+function _coeffs_to_int_list(coeffs)
+    out := [];
+    for c in coeffs do Append(~out, _to_int(c)); end for;
+    return out;
+end function;
+
+// ----------------------------------------------------------------------
+// Domain / convention dispatch
+// ----------------------------------------------------------------------
+
+procedure _require_supported_coeff_domain(variety)
+    kind := variety["coeff_domain"]["kind"];
+    if kind eq "integer" then return; end if;
+    if kind eq "number_field" then
+        error "magma loader does not yet support coeff_domain.kind == 'number_field'";
+    end if;
+    error "Unknown coeff_domain.kind: " cat kind;
+end procedure;
+
+procedure _require_supported_non_middle_factors(variety)
+    kind := variety["non_middle_factors"]["kind"];
+    if kind eq "toric_lefschetz" then
+        error "magma loader does not yet support non_middle_factors.kind == 'toric_lefschetz'";
+    end if;
+    if kind ne "projective_lefschetz" and kind ne "explicit" then
+        error "Unknown non_middle_factors.kind: " cat kind;
+    end if;
+end procedure;
+
+// ----------------------------------------------------------------------
+// Polynomial construction
+// ----------------------------------------------------------------------
+
+function _multivariable_poly(monomials_list, coeffs_list, R)
+    nv := Rank(R);
+    out := R ! 0;
+    for i in [1..#monomials_list] do
+        mono := monomials_list[i];
+        c := coeffs_list[i];
+        if #mono ne nv then
+            error "monomial length " cat IntegerToString(#mono) cat
+                  " does not match number of vars " cat IntegerToString(nv);
+        end if;
+        term := R ! _to_int(c);
+        for j in [1..nv] do
+            term *:= R.j ^ _to_int(mono[j]);
+        end for;
+        out +:= term;
+    end for;
+    return out;
+end function;
+
+// ----------------------------------------------------------------------
+// Per-kind variety construction over GF(p)
+// ----------------------------------------------------------------------
+
+function _build_variety_over_prime(variety, p)
+    _require_supported_coeff_domain(variety);
+    _require_supported_non_middle_factors(variety);
+
+    F := GF(p);
+    model := variety["model"];
+    kind := model["kind"];
+    polys := AssociativeArray();
+    magma_object := 0;
+
+    if kind eq "plane_curve" then
+        nv := #model["vars"];
+        R<[x]> := PolynomialRing(F, nv);
+        polys["F"] := _multivariable_poly(model["monomials"], model["coeffs"], R);
+    elif kind eq "projective_hypersurface" then
+        nv := #model["vars"];
+        R<[x]> := PolynomialRing(F, nv);
+        polys["F"] := _multivariable_poly(model["monomials"], model["coeffs"], R);
+    elif kind eq "hyperelliptic" or kind eq "superelliptic" or
+         kind eq "double_cover_P2" or kind eq "cyclic_cover" then
+        error "magma loader does not implement model.kind == '" cat kind cat
+              "'; supported kinds are plane_curve, projective_hypersurface";
+    else
+        error "Unknown model.kind: " cat kind;
+    end if;
+
+    result := AssociativeArray();
+    result["kind"] := kind;
+    result["dim"] := _to_int(variety["dim"]);
+    result["genus"] := IsDefined(variety, "genus") select _to_int(variety["genus"]) else -1;
+    result["coeff_domain"] := variety["coeff_domain"];
+    result["non_middle_factors"] := variety["non_middle_factors"];
+    result["model_data"] := model;
+    result["polys"] := polys;
+    result["magma_object"] := magma_object;
+    return result;
+end function;
+
+// ----------------------------------------------------------------------
+// Shorthand → l_factors expansion
+// ----------------------------------------------------------------------
+
+function _lefschetz_factor_at_degree(i, p)
+    if i lt 0 then error "degree out of range: " cat IntegerToString(i); end if;
+    if IsOdd(i) then return [1]; end if;
+    return [1, -p^(i div 2)];
+end function;
+
+function _poly_mul_int_lists(a, b)
+    out := [0 : _ in [1..#a + #b - 1]];
+    for i in [1..#a] do
+        for j in [1..#b] do
+            out[i + j - 1] +:= a[i] * b[j];
+        end for;
+    end for;
+    return out;
+end function;
+
+function _result_to_l_factors(variety, result, p)
+    dim := _to_int(variety["dim"]);
+    nmf := variety["non_middle_factors"];
+    nmf_kind := nmf["kind"];
+
+    has_lfac := IsDefined(result, "l_factors");
+    has_lpoly := IsDefined(result, "Lpoly");
+    if has_lfac and has_lpoly then
+        error "Result has both 'l_factors' and 'Lpoly'; pick one";
+    end if;
+
+    out := AssociativeArray();
+    if has_lfac then
+        for k in Keys(result["l_factors"]) do
+            out[StringToInteger(k)] := _coeffs_to_int_list(result["l_factors"][k]["coeffs_asc"]);
+        end for;
+        if nmf_kind eq "explicit" then
+            expected := {0..(2 * dim)};
+            actual := {k : k in Keys(out)};
+            if expected ne actual then
+                error "Explicit l_factors must have keys 0.." cat IntegerToString(2 * dim) cat
+                      "; missing=" cat Sprint(expected diff actual) cat
+                      ", extra=" cat Sprint(actual diff expected);
+            end if;
+        end if;
+        return out;
+    end if;
+
+    if not has_lpoly then
+        error "Result must have either 'l_factors' or 'Lpoly'";
+    end if;
+    if nmf_kind eq "explicit" then
+        error "Lpoly shorthand is forbidden when non_middle_factors.kind == 'explicit'";
+    end if;
+    if nmf_kind ne "projective_lefschetz" then
+        error "Shorthand expansion not implemented for non_middle_factors.kind == '" cat nmf_kind cat "'";
+    end if;
+
+    middle_factor_content := nmf["middle_factor_content"];
+    middle_coeffs := _coeffs_to_int_list(result["Lpoly"]["coeffs_asc"]);
+
+    for i in [0..(2 * dim)] do
+        if i eq dim then
+            if middle_factor_content eq "full" then
+                out[i] := middle_coeffs;
+            elif middle_factor_content eq "primitive" then
+                lefschetz := _lefschetz_factor_at_degree(dim, p);
+                out[i] := _poly_mul_int_lists(lefschetz, middle_coeffs);
+            else
+                error "Unknown middle_factor_content: " cat middle_factor_content;
+            end if;
+        else
+            out[i] := _lefschetz_factor_at_degree(i, p);
+        end if;
+    end for;
+    return out;
+end function;
+
+// ----------------------------------------------------------------------
+// Public API
+// ----------------------------------------------------------------------
+
+LoadCase := function(c)
+    out := AssociativeArray();
+    out["id"] := c["id"];
+    out["variety"] := c["variety"];
+    out["results"] := c["results"];
+    out["notes"] := c["notes"];
+    return out;
+end function;
+
+ExpandCase := function(c)
+    grouped := LoadCase(c);
+    out := [* *];
+    for result in grouped["results"] do
+        p := _to_int(result["p"]);
+        variety := _build_variety_over_prime(grouped["variety"], p);
+        l_factors := _result_to_l_factors(grouped["variety"], result, p);
+        exp := AssociativeArray();
+        exp["id"] := grouped["id"];
+        exp["p"] := p;
+        exp["notes"] := grouped["notes"];
+        exp["variety"] := variety;
+        exp["expected_l_factors"] := l_factors;
+        Append(~out, exp);
+    end for;
+    return out;
+end function;
+
+_ReadV3JSON := function(path)
+    data := ReadJSONFile(path);
+    version := IsDefined(data, "schema_version") select data["schema_version"] else "";
+    if version ne SCHEMA_VERSION then
+        error "Expected schema_version '" cat SCHEMA_VERSION cat "', got '" cat
+              Sprint(version) cat "'";
+    end if;
+    return data;
+end function;
+
+LoadCases := function(path)
+    data := _ReadV3JSON(path);
+    out := [* *];
+    for c in data["cases"] do Append(~out, LoadCase(c)); end for;
+    return out;
+end function;
+
+LoadExpandedCases := function(path)
+    data := _ReadV3JSON(path);
+    out := [* *];
+    for c in data["cases"] do
+        for exp in ExpandCase(c) do Append(~out, exp); end for;
+    end for;
+    return out;
+end function;
