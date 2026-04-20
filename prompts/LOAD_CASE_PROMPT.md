@@ -10,6 +10,21 @@ a smooth projective **variety** of any dimension, with results stored either as
 the middle-cohomology factor (shorthand) or as a full per-degree `l_factors`
 dictionary.
 
+## Reference implementations
+
+Three working ports live in the repo. Read whichever is closest to your target
+CAS as a starting point:
+
+- `sage/loader.sage` — reference Sage implementation, covers all six model kinds
+- `oscar/loader.jl` — Julia/Oscar port, covers `plane_curve`,
+  `projective_hypersurface`, `double_cover_P2`
+- `magma/loader.magma` — MAGMA port, covers `plane_curve` and
+  `projective_hypersurface` (plus a minimal JSON parser in `magma/json.magma`
+  since MAGMA lacks one)
+
+Each one is self-contained (one file, no special build). Stop reading this
+prompt and start adapting the closest reference — it will be faster.
+
 ## Goal
 
 Given one parsed JSON object `case`, implement:

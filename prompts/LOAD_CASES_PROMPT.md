@@ -5,6 +5,12 @@ Implement a function called `load_cases` in your chosen CAS/language.
 This function loads **multiple grouped variety test cases from a v3 JSON file**
 and returns the grouped objects produced by the v3 `load_case` function.
 
+## Reference implementations
+
+Three working ports live in the repo — `sage/loader.sage` (Sage, all six model
+kinds), `oscar/loader.jl` (Julia/Oscar), and `magma/loader.magma` (MAGMA).
+Adapt the closest one rather than starting from scratch.
+
 ## Input
 
 The JSON file has the structure:
@@ -63,4 +69,5 @@ where `path` is the JSON file path.
 
 If your language has both a "load grouped" and a "load expanded" workflow,
 mirror that with two separate entry points (e.g. `load_cases` and
-`load_expanded_cases`). The reference Sage implementation provides both.
+`load_expanded_cases`). The reference implementations in `sage/loader.sage`,
+`oscar/loader.jl`, and `magma/loader.magma` all provide both.
