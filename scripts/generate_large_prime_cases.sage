@@ -12,7 +12,7 @@ Run from repo root:
 import sys
 
 load('random_generation/random_curves.sage')
-load('sage/saver_v2.sage')
+load('sage/saver.sage')
 
 
 def lpoly_coeffs(C):
@@ -22,7 +22,7 @@ def lpoly_coeffs(C):
     return [int(c) for c in reversed(poly.list())]
 
 
-FILENAME = "cases_v2/random_p100_to_10000.json"
+FILENAME = "cases/random_p100_to_10000.json"
 N = 100
 DEGREES = list(range(3, 11))  # d = 3..10, genus 1..4
 
