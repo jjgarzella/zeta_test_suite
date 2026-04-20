@@ -60,6 +60,20 @@ def migrate_case(v2_case):
     }
 
 
+def _to_json_native(obj):
+    """Coerce Sage scalars (from the preparser) into Python ints/strings."""
+    if isinstance(obj, dict):
+        return {k: _to_json_native(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_to_json_native(x) for x in obj]
+    if isinstance(obj, (str, bool)):
+        return obj
+    try:
+        return int(obj)
+    except (TypeError, ValueError):
+        return obj
+
+
 def migrate_file(src_path, dst_path):
     with open(src_path, 'r') as fh:
         v2 = json.load(fh)
@@ -68,7 +82,7 @@ def migrate_file(src_path, dst_path):
         'cases': [migrate_case(c) for c in v2['cases']],
     }
     with open(dst_path, 'w') as fh:
-        json.dump(v3, fh, indent=2)
+        json.dump(_to_json_native(v3), fh, indent=2)
         fh.write('\n')
 
 
