@@ -1,0 +1,315 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/zeta-test-suite-v3.schema.json",
+  "title": "Zeta Test Suite V3",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "cases"],
+  "properties": {
+    "schema_version": {
+      "const": "3"
+    },
+    "cases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/testCase"
+      }
+    }
+  },
+  "$defs": {
+    "integerString": {
+      "type": "string",
+      "pattern": "^-?[0-9]+$"
+    },
+    "integerLike": {
+      "oneOf": [
+        {"type": "integer"},
+        {"$ref": "#/$defs/integerString"}
+      ]
+    },
+    "intArray": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/integerLike"}
+    },
+    "exponentVector": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+
+    "coeffDomainInteger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {"const": "integer"}
+      }
+    },
+    "coeffDomainNumberField": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {"const": "number_field"}
+      }
+    },
+    "coeffDomain": {
+      "oneOf": [
+        {"$ref": "#/$defs/coeffDomainInteger"},
+        {"$ref": "#/$defs/coeffDomainNumberField"}
+      ]
+    },
+
+    "nonMiddleFactorsLefschetz": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "middle_factor_content"],
+      "properties": {
+        "kind": {
+          "enum": ["projective_lefschetz", "toric_lefschetz"]
+        },
+        "middle_factor_content": {
+          "enum": ["full", "primitive"]
+        }
+      }
+    },
+    "nonMiddleFactorsExplicit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind"],
+      "properties": {
+        "kind": {"const": "explicit"}
+      }
+    },
+    "nonMiddleFactors": {
+      "oneOf": [
+        {"$ref": "#/$defs/nonMiddleFactorsLefschetz"},
+        {"$ref": "#/$defs/nonMiddleFactorsExplicit"}
+      ]
+    },
+
+    "modelHyperelliptic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "pretty", "h_coeffs_asc", "f_coeffs_asc"],
+      "properties": {
+        "kind": {"const": "hyperelliptic"},
+        "pretty": {"type": "string"},
+        "h_coeffs_asc": {"$ref": "#/$defs/intArray"},
+        "f_coeffs_asc": {"$ref": "#/$defs/intArray"}
+      }
+    },
+    "modelSuperelliptic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "pretty", "m", "f_coeffs_asc"],
+      "properties": {
+        "kind": {"const": "superelliptic"},
+        "pretty": {"type": "string"},
+        "m": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "f_coeffs_asc": {"$ref": "#/$defs/intArray"}
+      }
+    },
+    "modelPlaneCurve": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "pretty", "vars", "monomials", "coeffs"],
+      "properties": {
+        "kind": {"const": "plane_curve"},
+        "pretty": {"type": "string"},
+        "vars": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "monomials": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/exponentVector"}
+        },
+        "coeffs": {"$ref": "#/$defs/intArray"}
+      }
+    },
+    "modelProjectiveHypersurface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "pretty", "vars", "monomials", "coeffs"],
+      "properties": {
+        "kind": {"const": "projective_hypersurface"},
+        "pretty": {"type": "string"},
+        "vars": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 2
+        },
+        "monomials": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/exponentVector"}
+        },
+        "coeffs": {"$ref": "#/$defs/intArray"}
+      }
+    },
+    "modelDoubleCoverP2": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "pretty", "branch_vars", "branch_monomials", "branch_coeffs"],
+      "properties": {
+        "kind": {"const": "double_cover_P2"},
+        "pretty": {"type": "string"},
+        "branch_vars": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 3,
+          "maxItems": 3
+        },
+        "branch_monomials": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/exponentVector"}
+        },
+        "branch_coeffs": {"$ref": "#/$defs/intArray"}
+      }
+    },
+    "modelCyclicCover": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "pretty", "m", "base_vars", "branch_monomials", "branch_coeffs"],
+      "properties": {
+        "kind": {"const": "cyclic_cover"},
+        "pretty": {"type": "string"},
+        "m": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "base_vars": {
+          "type": "array",
+          "items": {"type": "string"},
+          "minItems": 2
+        },
+        "branch_monomials": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/exponentVector"}
+        },
+        "branch_coeffs": {"$ref": "#/$defs/intArray"}
+      }
+    },
+    "model": {
+      "oneOf": [
+        {"$ref": "#/$defs/modelHyperelliptic"},
+        {"$ref": "#/$defs/modelSuperelliptic"},
+        {"$ref": "#/$defs/modelPlaneCurve"},
+        {"$ref": "#/$defs/modelProjectiveHypersurface"},
+        {"$ref": "#/$defs/modelDoubleCoverP2"},
+        {"$ref": "#/$defs/modelCyclicCover"}
+      ]
+    },
+
+    "variety": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coeff_domain", "dim", "non_middle_factors", "model"],
+      "properties": {
+        "coeff_domain": {"$ref": "#/$defs/coeffDomain"},
+        "dim": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "genus": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "non_middle_factors": {"$ref": "#/$defs/nonMiddleFactors"},
+        "model": {"$ref": "#/$defs/model"}
+      }
+    },
+
+    "lpoly": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["coeffs_asc"],
+      "properties": {
+        "coeffs_asc": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/integerLike"},
+          "minItems": 1
+        }
+      }
+    },
+    "lFactors": {
+      "type": "object",
+      "minProperties": 1,
+      "patternProperties": {
+        "^[0-9]+$": {"$ref": "#/$defs/lpoly"}
+      },
+      "additionalProperties": false
+    },
+    "resultShorthand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["p", "Lpoly"],
+      "properties": {
+        "p": {"$ref": "#/$defs/integerLike"},
+        "Lpoly": {"$ref": "#/$defs/lpoly"}
+      }
+    },
+    "resultExplicit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["p", "l_factors"],
+      "properties": {
+        "p": {"$ref": "#/$defs/integerLike"},
+        "l_factors": {"$ref": "#/$defs/lFactors"}
+      }
+    },
+    "result": {
+      "oneOf": [
+        {"$ref": "#/$defs/resultShorthand"},
+        {"$ref": "#/$defs/resultExplicit"}
+      ]
+    },
+
+    "testCase": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "variety", "results", "notes"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "variety": {"$ref": "#/$defs/variety"},
+        "results": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/result"},
+          "minItems": 1
+        },
+        "notes": {"type": "string"}
+      },
+      "if": {
+        "properties": {
+          "variety": {
+            "properties": {
+              "non_middle_factors": {
+                "properties": {"kind": {"const": "explicit"}},
+                "required": ["kind"]
+              }
+            },
+            "required": ["non_middle_factors"]
+          }
+        },
+        "required": ["variety"]
+      },
+      "then": {
+        "properties": {
+          "results": {
+            "items": {"$ref": "#/$defs/resultExplicit"}
+          }
+        }
+      }
+    }
+  }
+}
