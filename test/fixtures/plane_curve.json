@@ -1,0 +1,35 @@
+{
+  "schema_version": "3",
+  "cases": [
+    {
+      "id": "fermat_cubic",
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "dim": 1,
+        "genus": 1,
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^3 + y^3 + z^3 = 0",
+          "vars": ["x", "y", "z"],
+          "monomials": [[3, 0, 0], [0, 3, 0], [0, 0, 3]],
+          "coeffs": [1, 1, 1]
+        }
+      },
+      "results": [
+        {
+          "p": 7,
+          "Lpoly": {
+            "coeffs_asc": [1, -4, 7]
+          }
+        }
+      ],
+      "notes": "Fermat cubic in P^2 (genus-1 plane curve, placeholder L-polynomial)"
+    }
+  ]
+}

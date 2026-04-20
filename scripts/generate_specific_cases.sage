@@ -13,7 +13,7 @@ Run from repo root:
 
 import sys
 
-load('sage/saver_v2.sage')
+load('sage/saver.sage')
 
 
 def lpoly_coeffs(C):
@@ -60,7 +60,7 @@ EVEN_PRIMES = prime_range(3, 5001)   # even-degree curves: capped at 5000 (slow 
 
 
 def process_curve(g, d, label, pretty, f_coeffs_asc):
-    filename = "cases_v2/specific_g{}_d{}_{}.json".format(g, d, label)
+    filename = "cases/specific_g{}_d{}_{}.json".format(g, d, label)
     case_id = "g{}_d{}_{}".format(g, d, label)
     all_primes = ODD_PRIMES if d % 2 == 1 else EVEN_PRIMES
 
@@ -111,16 +111,19 @@ def process_curve(g, d, label, pretty, f_coeffs_asc):
 
     grouped_case = {
         'id': case_id,
-        'curve': {
+        'variety': {
             'coeff_domain': {
                 'kind': 'integer',
             },
+            'dim': 1,
             'genus': g,
+            'non_middle_factors': {
+                'kind': 'projective_lefschetz',
+                'middle_factor_content': 'full',
+            },
             'model': {
+                'kind': 'hyperelliptic',
                 'pretty': pretty,
-                'x_var': 'x',
-                'y_var': 'y',
-                't_var': 't',
                 'h_coeffs_asc': [0],
                 'f_coeffs_asc': f_coeffs_asc,
             },

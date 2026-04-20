@@ -1,0 +1,137 @@
+{
+  "schema_version": "3",
+  "cases": [
+    {
+      "id": "g2_p7_case_001",
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "dim": 1,
+        "genus": 2,
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "model": {
+          "kind": "hyperelliptic",
+          "pretty": "y^2 = x^5 + x^2 + 1",
+          "h_coeffs_asc": [
+            0
+          ],
+          "f_coeffs_asc": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        }
+      },
+      "results": [
+        {
+          "p": 7,
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              3,
+              10,
+              21,
+              49
+            ]
+          }
+        }
+      ],
+      "notes": "Computed by point counting over F_7 and F_{7^2}; N1=11, N2=61."
+    },
+    {
+      "id": "g2_p7_case_002",
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "dim": 1,
+        "genus": 2,
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "model": {
+          "kind": "hyperelliptic",
+          "pretty": "y^2 = x^5 + 2*x^3 + x + 3",
+          "h_coeffs_asc": [
+            0
+          ],
+          "f_coeffs_asc": [
+            3,
+            1,
+            0,
+            2,
+            0,
+            1
+          ]
+        }
+      },
+      "results": [
+        {
+          "p": 7,
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              2,
+              12,
+              14,
+              49
+            ]
+          }
+        }
+      ],
+      "notes": "Computed by point counting over F_7 and F_{7^2}; N1=10, N2=70."
+    },
+    {
+      "id": "g2_p7_case_003",
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "dim": 1,
+        "genus": 2,
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "model": {
+          "kind": "hyperelliptic",
+          "pretty": "y^2 = x^5 + x^4 + x^3 + 2",
+          "h_coeffs_asc": [
+            0
+          ],
+          "f_coeffs_asc": [
+            2,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "results": [
+        {
+          "p": 7,
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              5,
+              7,
+              49
+            ]
+          }
+        }
+      ],
+      "notes": "Computed by point counting over F_7 and F_{7^2}; N1=9, N2=59."
+    }
+  ]
+}

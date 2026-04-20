@@ -13,7 +13,7 @@ import sys
 import time
 
 load('random_generation/random_curves.sage')
-load('sage/saver_v2.sage')
+load('sage/saver.sage')
 
 
 def lpoly_coeffs(C):
@@ -27,7 +27,7 @@ P = 41
 N_PER_GENUS = 2
 MAX_GENUS = 30
 TIME_LIMIT = 60  # seconds; stop after first case that exceeds this
-FILENAME = "cases_v2/hyperelliptic_p41_even_degree.json"
+FILENAME = "cases/hyperelliptic_p41_even_degree.json"
 
 print("Generating even-degree (2g+2) curves over GF({}) for g=1..{}".format(P, MAX_GENUS))
 print("Output: {}".format(FILENAME))

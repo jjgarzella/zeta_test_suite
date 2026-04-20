@@ -1,0 +1,34 @@
+{
+  "schema_version": "3",
+  "cases": [
+    {
+      "id": "trielliptic_d4_a",
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "dim": 1,
+        "genus": 3,
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "model": {
+          "kind": "superelliptic",
+          "pretty": "y^3 = x^4 + 1",
+          "m": 3,
+          "f_coeffs_asc": [1, 0, 0, 0, 1]
+        }
+      },
+      "results": [
+        {
+          "p": 7,
+          "Lpoly": {
+            "coeffs_asc": [1, 0, 0, 0, 0, 0, 343]
+          }
+        }
+      ],
+      "notes": "Trielliptic curve y^3 = x^4 + 1 (placeholder L-polynomial for loader testing)"
+    }
+  ]
+}

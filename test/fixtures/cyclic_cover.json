@@ -1,0 +1,35 @@
+{
+  "schema_version": "3",
+  "cases": [
+    {
+      "id": "cyclic_3_branch_cubic_p2",
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "dim": 2,
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "cyclic_cover",
+          "pretty": "w^3 = x^3 + y^3 + z^3",
+          "m": 3,
+          "base_vars": ["x", "y", "z"],
+          "branch_monomials": [[3, 0, 0], [0, 3, 0], [0, 0, 3]],
+          "branch_coeffs": [1, 1, 1]
+        }
+      },
+      "results": [
+        {
+          "p": 7,
+          "Lpoly": {
+            "coeffs_asc": [1, 0, 0, 0, 49]
+          }
+        }
+      ],
+      "notes": "Triple cover of P^2 branched along a Fermat cubic (cubic surface in P^3); primitive-middle convention with placeholder L-polynomial for loader testing."
+    }
+  ]
+}

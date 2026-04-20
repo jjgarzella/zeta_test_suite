@@ -1,0 +1,140 @@
+schema_version: "3"
+
+cases:
+  - id: <string>
+
+    variety:
+      coeff_domain:
+        kind: "integer" | "number_field"
+
+      dim: <integer ≥ 0>            # required
+      genus: <integer ≥ 0>          # optional (meaningful for curves)
+
+      non_middle_factors:
+        kind: "projective_lefschetz" | "toric_lefschetz" | "explicit"
+
+        # required when kind ∈ {projective_lefschetz, toric_lefschetz}
+        # forbidden when kind == "explicit"
+        middle_factor_content: "full" | "primitive"
+
+      model:
+        kind: "hyperelliptic"
+            | "superelliptic"
+            | "plane_curve"
+            | "projective_hypersurface"
+            | "double_cover_P2"
+            | "cyclic_cover"
+        ... # per-kind fields, see below
+
+    results:
+      # Each result is EITHER shorthand OR explicit.
+      # Shorthand is forbidden when variety.non_middle_factors.kind == "explicit".
+
+      # Shorthand form (Lpoly = middle-cohomology factor only):
+      - p: <prime, integer or integer-string>
+        Lpoly:
+          coeffs_asc: <array of integerLike, length ≥ 1, leading coeff 1>
+
+      # Explicit form (one polynomial per cohomological degree):
+      - p: <prime>
+        l_factors:
+          "0":      {coeffs_asc: [...]}
+          "1":      {coeffs_asc: [...]}
+          ...
+          "<2*dim>": {coeffs_asc: [...]}
+          # All keys "0".."2*dim" must be present in explicit mode
+          # (runtime check; not enforced by JSON Schema since dim is dynamic).
+
+    notes: <string>
+
+
+# ----------------------------------------------------------------------
+# Per-kind model fields
+# ----------------------------------------------------------------------
+
+# hyperelliptic — y^2 + h(x) y = f(x)
+model:
+  kind: "hyperelliptic"
+  pretty: <string>
+  h_coeffs_asc: <intArray>          # h(x) coefficients, ascending degree
+  f_coeffs_asc: <intArray>          # f(x) coefficients, ascending degree
+
+
+# superelliptic — y^m = f(x)
+model:
+  kind: "superelliptic"
+  pretty: <string>
+  m: <integer ≥ 2>                  # exponent of y
+  f_coeffs_asc: <intArray>
+
+
+# plane_curve — F(x, y, z) = 0 in P^2 (homogeneous F)
+model:
+  kind: "plane_curve"
+  pretty: <string>
+  vars: [<string>, <string>, <string>]   # exactly 3 variable names
+  monomials: <array of exponent vectors of length 3>
+  coeffs:    <intArray, parallel to monomials>
+
+
+# projective_hypersurface — F(x_0, ..., x_n) = 0 in P^n (homogeneous F)
+model:
+  kind: "projective_hypersurface"
+  pretty: <string>
+  vars: <array of ≥ 2 variable names>
+  monomials: <array of exponent vectors, each of length len(vars)>
+  coeffs:    <intArray, parallel to monomials>
+
+
+# double_cover_P2 — y^2 = b(x_0, x_1, x_2), b a homogeneous form of even degree
+model:
+  kind: "double_cover_P2"
+  pretty: <string>
+  branch_vars: [<string>, <string>, <string>]
+  branch_monomials: <array of exponent vectors of length 3>
+  branch_coeffs:    <intArray, parallel to branch_monomials>
+
+
+# cyclic_cover — w^m = b(base_vars), cover of P^{len(base_vars) - 1}
+model:
+  kind: "cyclic_cover"
+  pretty: <string>
+  m: <integer ≥ 2>
+  base_vars: <array of ≥ 2 variable names>
+  branch_monomials: <array of exponent vectors of length len(base_vars)>
+  branch_coeffs:    <intArray, parallel to branch_monomials>
+
+
+# ----------------------------------------------------------------------
+# Shared types
+# ----------------------------------------------------------------------
+
+integerLike    = <JSON integer> | <integer-valued string>
+intArray       = array of integerLike
+exponentVector = array of nonneg integers
+
+
+# ----------------------------------------------------------------------
+# Encoding rules
+# ----------------------------------------------------------------------
+
+# integer coefficients
+#   - JSON integers preferred when |value| < 2^64
+#   - integer-valued strings used for larger magnitudes
+#
+# polynomial arrays
+#   - univariate: positional ascending-degree array
+#   - multivariable: parallel arrays — monomials[i] (exponent vector) and
+#     coeffs[i] (integerLike) describe one monomial each; entries with a
+#     zero coefficient should be omitted
+#
+# results
+#   - Lpoly.coeffs_asc[0] must equal 1 (or "1")
+#   - in shorthand, Lpoly is the middle-cohomology factor P_d
+#   - the loader expands shorthand to a full l_factors dict using the
+#     declared non_middle_factors convention
+#
+# normalization
+#   - the format does not enforce normalization
+#   - trailing zeros in coefficient arrays are allowed
+#   - duplicate primes within results are discouraged but not forbidden
