@@ -1,5 +1,5 @@
 """
-runtests.sage — Central test runner for the hyperell_suite test suite.
+runtests.sage — Central test runner for the zeta_test_suite test suite.
 
 Run from the repo root:
     sage test/runtests.sage

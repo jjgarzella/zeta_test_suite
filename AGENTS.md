@@ -5,12 +5,11 @@ This file provides context about the repository for new Claude Code sessions.
 
 ## Repository Overview
 
-**hyperell_suite** is a test suite for zeta functions / L-polynomials of
+**zeta_test_suite** is a test suite for zeta functions / L-polynomials of
 smooth projective varieties over finite fields. It provides a standardized,
 machine-readable JSON format for test cases that verify implementations of
 algorithms computing zeta functions of varieties (curves, surfaces, and
-beyond). Despite the historical name, the v3 format is not restricted to
-hyperelliptic curves.
+beyond).
 
 ### Key files and directories
 

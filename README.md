@@ -1,4 +1,4 @@
-# hyperell_suite
+# zeta_test_suite
 
 A test suite designed for writing and debugging algorithms which compute the
 zeta function (sometimes called L-polynomial) of a smooth projective variety
@@ -12,10 +12,9 @@ The format is described in `schema.json` / `spec.txt` / `FORMAT.md`. Each case
 stores one shared variety together with multiple prime/L-polynomial results.
 Test cases live under `cases/`.
 
-The format generalizes beyond hyperelliptic curves: a case now describes a
-variety of any dimension, with the model encoded as a tagged union over six
-day-one kinds (hyperelliptic, superelliptic, plane curve, projective
-hypersurface, double cover of P^2, cyclic cover). Each file declares its
-schema version with a top-level `"schema_version": "3"` field.
+A case describes a variety of any dimension, with the model encoded as a
+tagged union over six kinds (hyperelliptic, superelliptic, plane curve,
+projective hypersurface, double cover of P^2, cyclic cover). Each file
+declares its schema version with a top-level `"schema_version": "3"` field.
 
 This repository was entirely coded by AI, with human guidance.
