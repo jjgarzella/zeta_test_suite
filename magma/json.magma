@@ -226,5 +226,16 @@ EncodeJSONPretty := function(v)
 end function;
 
 procedure WriteJSONFile(path, v)
-    Write(path, _encode_indent(v, 2, 0) : Overwrite := true);
+    // SetColumns(0) disables MAGMA's line-wrapping, which otherwise inserts
+    // a '\<newline>' continuation into long strings and breaks round-tripping
+    // through _parse_string.
+    prev_cols := GetColumns();
+    SetColumns(0);
+    try
+        Write(path, _encode_indent(v, 2, 0) : Overwrite := true);
+    catch e
+        SetColumns(prev_cols);
+        error e;
+    end try;
+    SetColumns(prev_cols);
 end procedure;

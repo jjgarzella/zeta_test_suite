@@ -6,6 +6,7 @@
 // Public API (after `load "magma/saver.magma";`):
 //     MakePlaneCurveModel(F[, pretty])
 //     MakeProjectiveHypersurfaceModel(F[, pretty])
+//     MakeDoubleCoverP2Model(branch[, pretty])
 //     MakeVariety(model, dim[, non_middle_factors, genus])
 //     EncodeLpoly(coeffs)
 //     EncodeLFactors(factors_assoc)
@@ -95,6 +96,23 @@ MakeProjectiveHypersurfaceModel := function(F : pretty := "")
     model["vars"] := vars_;
     model["monomials"] := monos;
     model["coeffs"] := coefs;
+    return model;
+end function;
+
+MakeDoubleCoverP2Model := function(branch : pretty := "")
+    R := Parent(branch);
+    vars_ := _vars_of_ring(R);
+    if #vars_ ne 3 then
+        error "double_cover_P2 requires exactly 3 branch variables, got " cat IntegerToString(#vars_);
+    end if;
+    p := _ring_characteristic(R);
+    monos, coefs := _encode_multivariable_poly(branch, p);
+    model := AssociativeArray();
+    model["kind"] := "double_cover_P2";
+    model["pretty"] := pretty eq "" select "y^2 = " cat Sprint(branch) else pretty;
+    model["branch_vars"] := vars_;
+    model["branch_monomials"] := monos;
+    model["branch_coeffs"] := coefs;
     return model;
 end function;
 
