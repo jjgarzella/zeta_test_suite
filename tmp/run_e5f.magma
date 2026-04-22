@@ -1,0 +1,21 @@
+// run_e5f.magma -- Drive generation of all double_cover_P2_sextic files.
+load "tmp/gen_e5f.magma";
+
+// Sextic: d=6 = 2*3. Need char(F) coprime to 6 and != 2 (double cover).
+// So small primes are 5..97 (23 primes); MAGMA's WeilPolynomialOfDegree2K3Surface
+// also requires p != 2.
+SMALL_PRIMES := [5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59,
+                 61, 67, 71, 73, 79, 83, 89, 97];
+
+// Medium primes deferred: WeilPolynomialOfDegree2K3Surface is too slow at
+// p > 100 with the current implementation (single p=953 case ~ hour+).
+// Re-enable when a faster MAGMA path is available.
+
+GenDCSexticFile("cases/double_cover_P2_sextic/small_dense.json",
+                SMALL_PRIMES, "dense", 1, 5001);
+
+GenDCSexticFile("cases/double_cover_P2_sextic/small_sparse.json",
+                SMALL_PRIMES, "sparse", 2, 5002);
+
+print "run_e5f.magma DONE";
+quit;

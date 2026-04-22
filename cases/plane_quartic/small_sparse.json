@@ -1,0 +1,5525 @@
+{
+  "schema_version": "3",
+  "cases": [
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 2*x^3*y + 3*x*z^3 + y^4 + 3*y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            2,
+            1,
+            3,
+            3,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p5_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -1,
+              -2,
+              12,
+              -10,
+              -25,
+              125
+            ]
+          },
+          "p": 5
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "4*x^4 + x^2*z^2 + 3*x*y^3 + 3*x*y*z^2 + 4*y^2*z^2 + 2*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            4,
+            3,
+            1,
+            3,
+            4,
+            2
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p5_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              6,
+              0,
+              30,
+              0,
+              125
+            ]
+          },
+          "p": 5
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 4*x^2*y*z + 2*x^2*z^2 + y^4 + y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            4,
+            2,
+            1,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p5_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              7,
+              27,
+              70,
+              135,
+              175,
+              125
+            ]
+          },
+          "p": 5
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 6*x*y^3 + y^4 + 5*y^3*z + 4*y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            6,
+            1,
+            5,
+            4,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p7_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              3,
+              -10,
+              21,
+              -147,
+              343
+            ]
+          },
+          "p": 7
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "4*x^4 + 2*x^3*z + 3*x^2*z^2 + 2*x*y^3 + 6*y^4 + 4*y*z^3 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "coeffs": [
+            4,
+            2,
+            6,
+            2,
+            3,
+            4
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p7_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -4,
+              12,
+              -28,
+              84,
+              -196,
+              343
+            ]
+          },
+          "p": 7
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + x^3*z + 5*x^2*y^2 + 3*x*y*z^2 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            5,
+            1,
+            1,
+            3,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p7_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              2,
+              11,
+              14,
+              -147,
+              343
+            ]
+          },
+          "p": 7
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 8*x^2*y^2 + 2*x^2*y*z + 4*x*z^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            8,
+            1,
+            2,
+            4,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p11_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              4,
+              9,
+              28,
+              99,
+              484,
+              1331
+            ]
+          },
+          "p": 11
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "10*x^3*z + 6*x*y^3 + 6*x*y*z^2 + 7*x*z^3 + 9*y^4 + 8*y^2*z^2 = 0",
+          "monomials": [
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            6,
+            9,
+            10,
+            6,
+            8,
+            7
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p11_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              0,
+              30,
+              0,
+              121,
+              1331
+            ]
+          },
+          "p": 11
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 4*x^2*y*z + 5*x*y^2*z + 2*x*z^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            4,
+            5,
+            2,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p11_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              0,
+              44,
+              0,
+              -363,
+              1331
+            ]
+          },
+          "p": 11
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + x^2*z^2 + x*y*z^2 + 6*x*z^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            1,
+            1,
+            6,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p13_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -6,
+              33,
+              -120,
+              429,
+              -1014,
+              2197
+            ]
+          },
+          "p": 13
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "11*x^4 + 12*x^2*z^2 + 6*x*y^3 + 3*x*z^3 + y^3*z + 8*y*z^3 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "coeffs": [
+            11,
+            6,
+            1,
+            12,
+            3,
+            8
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p13_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              19,
+              -14,
+              247,
+              -338,
+              2197
+            ]
+          },
+          "p": 13
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 3*x^3*z + 5*x*y*z^2 + y^4 + 12*y^3*z + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            3,
+            12,
+            5,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p13_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -4,
+              19,
+              -64,
+              247,
+              -676,
+              2197
+            ]
+          },
+          "p": 13
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 5*x^3*y + 4*x^3*z + 9*x*y^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            5,
+            9,
+            1,
+            4,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p17_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              11,
+              74,
+              351,
+              1258,
+              3179,
+              4913
+            ]
+          },
+          "p": 17
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "6*x^4 + 4*x^3*y + 10*x^3*z + 14*x*y^2*z + 13*x*z^3 + 12*y^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            6,
+            4,
+            12,
+            10,
+            14,
+            13
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p17_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              0,
+              -32,
+              0,
+              289,
+              4913
+            ]
+          },
+          "p": 17
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 14*x^2*y*z + 12*x^2*z^2 + y^4 + 14*y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            14,
+            12,
+            14,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p17_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              7,
+              0,
+              119,
+              0,
+              4913
+            ]
+          },
+          "p": 17
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 12*x*y^3 + x*y^2*z + 6*x*z^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            12,
+            1,
+            1,
+            6,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p19_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              11,
+              -71,
+              209,
+              -722,
+              6859
+            ]
+          },
+          "p": 19
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "5*x^4 + 10*x^2*y^2 + 2*x^2*y*z + 12*x*y^3 + 2*x*y^2*z + 11*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            5,
+            10,
+            12,
+            2,
+            2,
+            11
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p19_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -1,
+              2,
+              14,
+              38,
+              -361,
+              6859
+            ]
+          },
+          "p": 19
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 4*x^2*z^2 + 13*x*z^3 + y^4 + 6*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            4,
+            13,
+            6,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p19_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              -3,
+              137,
+              -57,
+              -1083,
+              6859
+            ]
+          },
+          "p": 19
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 11*x^2*y^2 + 3*x^2*z^2 + x*y*z^2 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            11,
+            1,
+            3,
+            1,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p23_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -6,
+              -11,
+              236,
+              -253,
+              -3174,
+              12167
+            ]
+          },
+          "p": 23
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "5*x^3*y + 18*x^2*y*z + 11*x*y^3 + 5*x*y*z^2 + 19*x*z^3 + 20*y^4 = 0",
+          "monomials": [
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            5,
+            11,
+            20,
+            18,
+            5,
+            19
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p23_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              5,
+              12,
+              14,
+              276,
+              2645,
+              12167
+            ]
+          },
+          "p": 23
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 17*x^3*z + 14*x^2*y*z + 18*x*y^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            18,
+            1,
+            17,
+            14,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p23_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              5,
+              -122,
+              115,
+              -1058,
+              12167
+            ]
+          },
+          "p": 23
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 16*x^2*z^2 + 17*x*z^3 + y^4 + 9*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            16,
+            17,
+            9,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p29_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              2,
+              17,
+              -52,
+              493,
+              1682,
+              24389
+            ]
+          },
+          "p": 29
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "11*x^4 + 4*x^3*z + 17*x^2*y^2 + 8*x*y^2*z + 6*y^3*z + 16*y*z^3 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "coeffs": [
+            11,
+            17,
+            4,
+            8,
+            6,
+            16
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p29_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              4,
+              76,
+              116,
+              841,
+              24389
+            ]
+          },
+          "p": 29
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 9*x*y^3 + 2*x*z^3 + y^4 + 24*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            9,
+            1,
+            2,
+            24,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p29_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -7,
+              25,
+              -31,
+              725,
+              -5887,
+              24389
+            ]
+          },
+          "p": 29
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 15*x^3*z + 4*x*z^3 + y^4 + 29*y^3*z + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            15,
+            29,
+            4,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p31_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              13,
+              40,
+              403,
+              -1922,
+              29791
+            ]
+          },
+          "p": 31
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "18*x^4 + 28*x*y^3 + 28*x*y^2*z + 17*x*y*z^2 + 4*y*z^3 + 11*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            18,
+            28,
+            28,
+            17,
+            4,
+            11
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p31_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -7,
+              67,
+              -318,
+              2077,
+              -6727,
+              29791
+            ]
+          },
+          "p": 31
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 5*x*y^3 + 16*x*y*z^2 + 16*x*z^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            5,
+            1,
+            16,
+            16,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p31_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              3,
+              8,
+              37,
+              248,
+              2883,
+              29791
+            ]
+          },
+          "p": 31
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 16*x*y^3 + y^4 + 18*y^3*z + 29*y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            16,
+            1,
+            18,
+            29,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p37_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -8,
+              61,
+              -298,
+              2257,
+              -10952,
+              50653
+            ]
+          },
+          "p": 37
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "34*x^3*y + 3*x^3*z + 29*x^2*y^2 + 7*x*y^3 + x*y^2*z + 13*z^4 = 0",
+          "monomials": [
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            34,
+            29,
+            7,
+            3,
+            1,
+            13
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p37_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -1,
+              62,
+              -149,
+              2294,
+              -1369,
+              50653
+            ]
+          },
+          "p": 37
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 28*x^2*y^2 + 14*x*y*z^2 + y^4 + 23*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            28,
+            1,
+            14,
+            23,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p37_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              14,
+              128,
+              878,
+              4736,
+              19166,
+              50653
+            ]
+          },
+          "p": 37
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 28*x^2*y^2 + 4*x*y^2*z + y^4 + 39*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            28,
+            1,
+            4,
+            39,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p41_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              37,
+              -153,
+              1517,
+              -3362,
+              68921
+            ]
+          },
+          "p": 41
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "5*x^4 + 35*x^2*y*z + 38*x*y^2*z + 19*x*z^3 + 20*y^4 + 15*y^3*z = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            5,
+            20,
+            35,
+            38,
+            15,
+            19
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p41_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              17,
+              168,
+              1189,
+              6888,
+              28577,
+              68921
+            ]
+          },
+          "p": 41
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 32*x^3*z + 25*x*y^3 + y^4 + 2*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            25,
+            1,
+            32,
+            2,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p41_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -4,
+              41,
+              -142,
+              1681,
+              -6724,
+              68921
+            ]
+          },
+          "p": 41
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 23*x*z^3 + y^4 + 14*y^3*z + y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            14,
+            1,
+            23,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p43_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              27,
+              -136,
+              1161,
+              0,
+              79507
+            ]
+          },
+          "p": 43
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "28*x^4 + 13*x^2*y*z + 41*x^2*z^2 + 37*x*y^3 + 9*y^3*z + 26*y*z^3 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "coeffs": [
+            28,
+            37,
+            13,
+            9,
+            41,
+            26
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p43_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              5,
+              15,
+              -37,
+              645,
+              9245,
+              79507
+            ]
+          },
+          "p": 43
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 14*x*y^2*z + y^4 + 11*y^3*z + 7*y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            14,
+            11,
+            7,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p43_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -5,
+              70,
+              -247,
+              3010,
+              -9245,
+              79507
+            ]
+          },
+          "p": 43
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 43*x^3*z + 30*x^2*y*z + 10*x*y^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            10,
+            1,
+            43,
+            30,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p47_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              4,
+              18,
+              224,
+              846,
+              8836,
+              103823
+            ]
+          },
+          "p": 47
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "2*x^4 + 40*x^2*z^2 + 16*x*y^3 + 15*x*z^3 + 8*y^3*z + 5*y^2*z^2 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            2,
+            16,
+            8,
+            40,
+            5,
+            15
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p47_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              14,
+              97,
+              520,
+              4559,
+              30926,
+              103823
+            ]
+          },
+          "p": 47
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 23*x*y*z^2 + y^4 + 40*y^2*z^2 + 15*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            23,
+            40,
+            15,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p47_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -8,
+              55,
+              -191,
+              2585,
+              -17672,
+              103823
+            ]
+          },
+          "p": 47
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 10*x^3*z + 44*x^2*y^2 + 21*x*y^2*z + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            44,
+            1,
+            10,
+            21,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p53_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              6,
+              113,
+              360,
+              5989,
+              16854,
+              148877
+            ]
+          },
+          "p": 53
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 45*x*z^3 + 28*y^3*z + 4*y^2*z^2 + 41*y*z^3 + 23*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            28,
+            4,
+            45,
+            41,
+            23
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p53_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              13,
+              192,
+              1344,
+              10176,
+              36517,
+              148877
+            ]
+          },
+          "p": 53
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 20*x^2*y*z + 34*x*y^2*z + y^4 + 26*y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            20,
+            34,
+            26,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p53_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              12,
+              139,
+              1224,
+              7367,
+              33708,
+              148877
+            ]
+          },
+          "p": 53
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 52*x^3*z + 42*x*y*z^2 + y^4 + 9*y^3*z + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            52,
+            9,
+            42,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p59_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              2,
+              16,
+              376,
+              944,
+              6962,
+              205379
+            ]
+          },
+          "p": 59
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "9*x^3*z + 35*x^2*y^2 + 38*x*y^2*z + 57*x*z^3 + 28*y^3*z + 15*y*z^3 = 0",
+          "monomials": [
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "coeffs": [
+            35,
+            9,
+            38,
+            28,
+            57,
+            15
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p59_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -13,
+              108,
+              -894,
+              6372,
+              -45253,
+              205379
+            ]
+          },
+          "p": 59
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 12*x^3*z + 32*x^2*z^2 + 19*x*y*z^2 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            12,
+            32,
+            19,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p59_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              6,
+              38,
+              604,
+              2242,
+              20886,
+              205379
+            ]
+          },
+          "p": 59
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 46*x*y^3 + 41*x*y*z^2 + y^4 + 36*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            46,
+            1,
+            41,
+            36,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p61_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              16,
+              164,
+              1501,
+              10004,
+              59536,
+              226981
+            ]
+          },
+          "p": 61
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "9*x^3*z + 60*x^2*y^2 + 9*x^2*z^2 + 46*x*y^3 + 10*x*y*z^2 + 29*z^4 = 0",
+          "monomials": [
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            60,
+            46,
+            9,
+            9,
+            10,
+            29
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p61_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -4,
+              10,
+              -100,
+              610,
+              -14884,
+              226981
+            ]
+          },
+          "p": 61
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 52*x^3*y + y^4 + 19*y^3*z + 48*y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            52,
+            1,
+            19,
+            48,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p61_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -1,
+              42,
+              210,
+              2562,
+              -3721,
+              226981
+            ]
+          },
+          "p": 61
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 56*x^3*y + 2*x^3*z + 34*x*y*z^2 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            56,
+            1,
+            2,
+            34,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p67_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -10,
+              70,
+              -627,
+              4690,
+              -44890,
+              300763
+            ]
+          },
+          "p": 67
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "8*x^3*y + 30*x*y^3 + 25*x*y^2*z + 29*y^4 + 63*y*z^3 + 25*z^4 = 0",
+          "monomials": [
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            8,
+            30,
+            29,
+            25,
+            63,
+            25
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p67_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              8,
+              3,
+              -528,
+              201,
+              35912,
+              300763
+            ]
+          },
+          "p": 67
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 17*x^2*y^2 + 15*x*z^3 + y^4 + 45*y^3*z + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            17,
+            1,
+            45,
+            15,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p67_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -6,
+              121,
+              -584,
+              8107,
+              -26934,
+              300763
+            ]
+          },
+          "p": 67
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 44*x^3*y + 67*x^3*z + 17*x*z^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            44,
+            1,
+            67,
+            17,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p71_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -1,
+              -44,
+              -216,
+              -3124,
+              -5041,
+              357911
+            ]
+          },
+          "p": 71
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "44*x^4 + 55*x^2*y^2 + 63*x^2*y*z + 66*y^3*z + 43*y^2*z^2 + 38*y*z^3 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "coeffs": [
+            44,
+            55,
+            63,
+            66,
+            43,
+            38
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p71_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -8,
+              53,
+              144,
+              3763,
+              -40328,
+              357911
+            ]
+          },
+          "p": 71
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 67*x^2*y*z + 31*x*y*z^2 + y^4 + 24*y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            67,
+            31,
+            24,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p71_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -7,
+              89,
+              -262,
+              6319,
+              -35287,
+              357911
+            ]
+          },
+          "p": 71
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 41*x^2*z^2 + 58*x*y*z^2 + 35*x*z^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            41,
+            58,
+            35,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p73_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              30,
+              474,
+              4865,
+              34602,
+              159870,
+              389017
+            ]
+          },
+          "p": 73
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "32*x^3*y + 12*x*y^2*z + 2*x*z^3 + 44*y^4 + 30*y^2*z^2 + 22*z^4 = 0",
+          "monomials": [
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            32,
+            44,
+            12,
+            30,
+            2,
+            22
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p73_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              4,
+              38,
+              80,
+              2774,
+              21316,
+              389017
+            ]
+          },
+          "p": 73
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 62*x*y^3 + 47*x*y*z^2 + y^4 + 23*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            62,
+            1,
+            47,
+            23,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p73_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              17,
+              135,
+              965,
+              9855,
+              90593,
+              389017
+            ]
+          },
+          "p": 73
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 55*x^3*y + 21*x^2*y^2 + 42*x*z^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            55,
+            21,
+            1,
+            42,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p79_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              6,
+              84,
+              -74,
+              6636,
+              37446,
+              493039
+            ]
+          },
+          "p": 79
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "63*x^4 + 12*x^3*z + 32*x*y^2*z + 16*x*y*z^2 + 26*x*z^3 + 14*y^3*z = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            63,
+            12,
+            32,
+            14,
+            16,
+            26
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p79_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -8,
+              69,
+              -544,
+              5451,
+              -49928,
+              493039
+            ]
+          },
+          "p": 79
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 57*x^3*y + 15*x*y*z^2 + y^4 + 61*y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            57,
+            1,
+            15,
+            61,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p79_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -9,
+              83,
+              -6,
+              6557,
+              -56169,
+              493039
+            ]
+          },
+          "p": 79
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 54*x*y^3 + 39*x*y*z^2 + 41*x*z^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            54,
+            1,
+            39,
+            41,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p83_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              92,
+              -374,
+              7636,
+              -20667,
+              571787
+            ]
+          },
+          "p": 83
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "48*x^3*z + 56*x^2*y^2 + 80*x*y^2*z + 5*y^4 + 65*y^2*z^2 + 32*y*z^3 = 0",
+          "monomials": [
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "coeffs": [
+            56,
+            5,
+            48,
+            80,
+            65,
+            32
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p83_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              18,
+              260,
+              2609,
+              21580,
+              124002,
+              571787
+            ]
+          },
+          "p": 83
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 15*x^2*y^2 + 14*x^2*z^2 + 52*x*y^3 + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            15,
+            52,
+            1,
+            14,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p83_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              6,
+              133,
+              300,
+              11039,
+              41334,
+              571787
+            ]
+          },
+          "p": 83
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 49*x^2*y*z + 10*x^2*z^2 + 29*x*y^2*z + y^4 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            49,
+            29,
+            10,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p89_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              15,
+              305,
+              2670,
+              27145,
+              118815,
+              704969
+            ]
+          },
+          "p": 89
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "9*x^3*y + 37*x^3*z + 67*x^2*y^2 + 41*x^2*y*z + 81*x*y^3 + 3*y*z^3 = 0",
+          "monomials": [
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "coeffs": [
+            9,
+            67,
+            81,
+            37,
+            41,
+            3
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p89_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              7,
+              85,
+              1081,
+              7565,
+              55447,
+              704969
+            ]
+          },
+          "p": 89
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 65*x^3*y + 79*x^3*z + y^4 + 23*y^2*z^2 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            65,
+            1,
+            79,
+            23,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p89_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              8,
+              147,
+              1043,
+              13083,
+              63368,
+              704969
+            ]
+          },
+          "p": 89
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 63*x*y^3 + 50*x*z^3 + y^4 + 12*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            63,
+            1,
+            50,
+            12,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p97_plane_q4_sparse_fk_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              18,
+              213,
+              2127,
+              20661,
+              169362,
+              912673
+            ]
+          },
+          "p": 97
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "27*x^4 + 38*x^3*z + 65*x*y^3 + 22*x*y^2*z + y^4 + 23*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            27,
+            65,
+            1,
+            38,
+            22,
+            23
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p97_plane_q4_sparse_as_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              6,
+              59,
+              573,
+              5723,
+              56454,
+              912673
+            ]
+          },
+          "p": 97
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 30*x^3*z + x*z^3 + y^4 + 17*y^3*z + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            30,
+            17,
+            1,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p97_plane_q4_sparse_fk_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              10,
+              55,
+              -456,
+              5335,
+              94090,
+              912673
+            ]
+          },
+          "p": 97
+        }
+      ]
+    }
+  ]
+}

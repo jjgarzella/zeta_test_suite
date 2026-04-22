@@ -1,0 +1,187 @@
+// gen_e5f.magma -- Generate double_cover_P2_sextic cases via
+// WeilPolynomialOfDegree2K3Surface. Mirrors the conventions of tmp/gen.jl.
+
+load "magma/saver.magma";
+
+ZTS_ROOT := "/Users/jjgarzella/Developer/ai/zeta_test_suite";
+
+// ---------------------------------------------------------------------------
+// Deterministic PRNG wrapper: we rely on MAGMA's SetSeed then Random(n).
+// Each generator entry point calls SetSeed(seed); the caller is responsible
+// for choosing disjoint seeds per file.
+// ---------------------------------------------------------------------------
+
+// Degree-d monomial exponent vectors in n variables, lex order.
+function DegMonos(n, d)
+    evs := [];
+    procedure rec(~evs, n, d, prefix)
+        if n eq 1 then
+            Append(~evs, prefix cat [d]);
+        else
+            for k in [0..d] do
+                rec(~evs, n-1, d-k, prefix cat [k]);
+            end for;
+        end if;
+    end procedure;
+    rec(~evs, n, d, []);
+    return evs;
+end function;
+
+function BuildPoly(R, evs, coefs)
+    f := R ! 0;
+    gs := [R.i : i in [1..Rank(R)]];
+    for i in [1..#evs] do
+        c := coefs[i];
+        if c eq 0 then continue; end if;
+        term := R ! c;
+        ev := evs[i];
+        for j in [1..#ev] do
+            term *:= gs[j]^ev[j];
+        end for;
+        f +:= term;
+    end for;
+    return f;
+end function;
+
+function RandDenseSextic(R)
+    p := Characteristic(BaseRing(R));
+    evs := DegMonos(3, 6);
+    coefs := [Random(1, p-1) : _ in evs];
+    return BuildPoly(R, evs, coefs);
+end function;
+
+function RandSparseFkSextic(R : num_extra := 4)
+    p := Characteristic(BaseRing(R));
+    gs := [R.i : i in [1..3]];
+    // Fermat skeleton x^6 + y^6 + z^6
+    f := gs[1]^6 + gs[2]^6 + gs[3]^6;
+    // add a few random non-Fermat monomials
+    all_evs := DegMonos(3, 6);
+    fermat_set := [[6,0,0], [0,6,0], [0,0,6]];
+    non_fermat := [ev : ev in all_evs | not (ev in fermat_set)];
+    chosen := [];
+    for _ in [1..num_extra] do
+        idx := Random(1, #non_fermat);
+        if not (idx in chosen) then Append(~chosen, idx); end if;
+    end for;
+    for idx in chosen do
+        ev := non_fermat[idx];
+        c := Random(1, p-1);
+        term := R ! c;
+        for j in [1..3] do term *:= gs[j]^ev[j]; end for;
+        f +:= term;
+    end for;
+    return f;
+end function;
+
+function RandSparseAsSextic(R : num_terms := 8)
+    p := Characteristic(BaseRing(R));
+    gs := [R.i : i in [1..3]];
+    all_evs := DegMonos(3, 6);
+    chosen := [];
+    while #chosen lt num_terms do
+        idx := Random(1, #all_evs);
+        if not (idx in chosen) then Append(~chosen, idx); end if;
+    end while;
+    f := R ! 0;
+    for idx in chosen do
+        ev := all_evs[idx];
+        c := Random(1, p-1);
+        term := R ! c;
+        for j in [1..3] do term *:= gs[j]^ev[j]; end for;
+        f +:= term;
+    end for;
+    return f;
+end function;
+
+// Smoothness: plane sextic C: f=0 is smooth iff the partial derivatives
+// have no common zero with f in P^2.
+function IsSmoothPlaneSextic(f)
+    R := Parent(f);
+    P2 := ProjectiveSpace(BaseRing(R), 2);
+    C := Curve(P2, f);
+    return IsNonsingular(C);
+end function;
+
+// ---------------------------------------------------------------------------
+// L-polynomial extraction
+// ---------------------------------------------------------------------------
+// WeilPolynomialOfDegree2K3Surface returns the char-poly of Frobenius on H^2
+// (degree 22, constant ±p^22). We convert to the L-polynomial of H^2 (degree
+// 22, constant 1) and then divide out the (1 - p*T) factor coming from the
+// polarization class to get the primitive middle factor (degree 21).
+
+function PrimitiveLpolyAsc(weil_poly, p)
+    // weil_poly : poly over Z in one variable, degree 22.
+    // Convert: L_2(T) = T^22 * weil_poly(1/T).
+    coeffs := Coefficients(weil_poly);  // ascending, length 23
+    // reverse to get L_2 ascending
+    lfull := Reverse(coeffs);
+    RT<T> := PolynomialRing(Integers());
+    L2 := RT ! lfull;
+    // divide by (1 - p*T)
+    quo, rem := Quotrem(L2, 1 - p*T);
+    if rem ne 0 then
+        error "PrimitiveLpolyAsc: (1 - p*T) does not divide L_2 exactly; "
+              cat "rem = " cat Sprint(rem) cat ", p = " cat IntegerToString(p);
+    end if;
+    return Coefficients(quo);  // ascending, length 22
+end function;
+
+// ---------------------------------------------------------------------------
+// Save one grouped case (1 variety + 1 result)
+// ---------------------------------------------------------------------------
+
+procedure SaveOneDC(filename, id, branch_poly, p, lpoly_asc, notes)
+    model := MakeDoubleCoverP2Model(branch_poly);
+    nmf := AssociativeArray();
+    nmf["kind"] := "projective_lefschetz";
+    nmf["middle_factor_content"] := "primitive";
+    variety := MakeVariety(model, 2 : non_middle_factors := nmf);
+    SaveCase(variety, lpoly_asc, filename, id : notes := notes, p := p);
+end procedure;
+
+// ---------------------------------------------------------------------------
+// Driver
+// ---------------------------------------------------------------------------
+
+procedure GenDCSexticFile(filename, primes, flavor, num_per_prime, seed
+                          : max_attempts := 200, kind_tag := "dc_sextic",
+                            notes_prefix := "generated via MAGMA WeilPolynomialOfDegree2K3Surface")
+    SetSeed(seed);
+    for p in primes do
+        F := GF(p);
+        R<x,y,z> := PolynomialRing(F, 3);
+        for i in [1..num_per_prime] do
+            sub := flavor eq "dense" select "dense"
+                else (IsOdd(i) select "sparse_fk" else "sparse_as");
+            id := "p" cat IntegerToString(p) cat "_" cat kind_tag cat "_"
+                  cat sub cat "_" cat (i lt 10 select "00" else (i lt 100 select "0" else "")) cat IntegerToString(i);
+            wpoly := 0;
+            f := 0;
+            success := false;
+            for att in [1..max_attempts] do
+                if flavor eq "dense" then
+                    f := RandDenseSextic(R);
+                elif IsOdd(i) then
+                    f := RandSparseFkSextic(R);
+                else
+                    f := RandSparseAsSextic(R);
+                end if;
+                if not IsSmoothPlaneSextic(f) then continue; end if;
+                wpoly := WeilPolynomialOfDegree2K3Surface(f);
+                success := true;
+                break;
+            end for;
+            if not success then
+                print "GenDCSexticFile: gave up on smooth sextic at p =", p, "id =", id;
+                continue;
+            end if;
+            lpoly_asc := PrimitiveLpolyAsc(wpoly, p);
+            SaveOneDC(filename, id, f, p, lpoly_asc, notes_prefix);
+            print "saved", id;
+        end for;
+    end for;
+end procedure;
+
+print "gen_e5f.magma loaded";
