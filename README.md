@@ -5,12 +5,13 @@ zeta function (sometimes called L-polynomial) of a smooth projective variety
 over a finite field.
 
 It includes a JSON format and a library of already-generated test cases,
-together with Sage helpers for reading and writing them. We hope to support
-MAGMA and Oscar in the future.
+together with reader/writer helpers for Sage (`sage/`), Julia/Oscar
+(`oscar/`), and MAGMA (`magma/`).
 
 The format is described in `schema.json` / `spec.txt` / `FORMAT.md`. Each case
 stores one shared variety together with multiple prime/L-polynomial results.
-Test cases live under `cases/`.
+Test cases live under `cases/`, grouped by variety kind in subfolders
+(e.g. `cases/hyperelliptic/`).
 
 A case describes a variety of any dimension, with the model encoded as a
 tagged union over six kinds (hyperelliptic, superelliptic, plane curve,

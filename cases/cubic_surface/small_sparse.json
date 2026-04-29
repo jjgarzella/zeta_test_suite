@@ -1,0 +1,2221 @@
+{
+  "schema_version": "3",
+  "cases": [
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + 4*x^2*z + 3*x*y^2 + y^3 + 4*y*z*w + z^3 + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            3,
+            1,
+            4,
+            1,
+            4,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p5_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_5. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -5,
+              25,
+              0,
+              -625,
+              3125,
+              -15625
+            ]
+          },
+          "p": 5
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^2*z + 6*x*y^2 + 4*x*z^2 + 2*y*z^2 + 4*y*z*w + 4*z^2*w + 6*z*w^2 + 5*w^3 = 0",
+          "monomials": [
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            6,
+            1,
+            4,
+            2,
+            4,
+            4,
+            6,
+            5
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p7_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_7. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              -49,
+              0,
+              2401,
+              0,
+              -117649
+            ]
+          },
+          "p": 7
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + 10*x^2*z + y^3 + z^3 + 2*z^2*w + 10*z*w^2 + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            10,
+            1,
+            2,
+            10,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p11_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_11. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              -121,
+              0,
+              14641,
+              0,
+              -1771561
+            ]
+          },
+          "p": 11
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + 5*x^2*z + 3*x*y^2 + 7*x*y*z + 8*x*y*w + 3*y*z^2 + 12*y*w^2 + 9*z*w^2 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ],
+          "coeffs": [
+            1,
+            3,
+            5,
+            7,
+            3,
+            8,
+            12,
+            9
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p13_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_13. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              13,
+              0,
+              -2197,
+              0,
+              371293,
+              4826809
+            ]
+          },
+          "p": 13
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + 9*x^2*y + y^3 + 13*y^2*w + z^3 + 11*z^2*w + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            9,
+            1,
+            1,
+            13,
+            11,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p17_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_17. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              24137569
+            ]
+          },
+          "p": 17
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "6*x^2*z + 4*x*y^2 + 15*x*z^2 + 7*x*z*w + 17*y^3 + 6*y^2*z + 11*y*w^2 + 18*w^3 = 0",
+          "monomials": [
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            4,
+            17,
+            6,
+            6,
+            15,
+            7,
+            11,
+            18
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p19_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_19. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              -361,
+              0,
+              -130321,
+              0,
+              47045881
+            ]
+          },
+          "p": 19
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + y^3 + y^2*z + 8*y*z^2 + z^3 + 8*z^2*w + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            1,
+            8,
+            1,
+            8,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p23_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_23. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              -1587,
+              0,
+              839523,
+              0,
+              -148035889
+            ]
+          },
+          "p": 23
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "27*x^3 + 25*x^2*y + 15*x*y^2 + 14*x*y*z + 14*y^2*z + 19*z^3 + 11*z*w^2 + 27*w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            27,
+            25,
+            15,
+            14,
+            14,
+            19,
+            11,
+            27
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p29_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_29. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -29,
+              1682,
+              -24389,
+              1414562,
+              -20511149,
+              594823321
+            ]
+          },
+          "p": 29
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + 24*x^2*y + 16*x*w^2 + y^3 + 3*y*w^2 + z^3 + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            24,
+            1,
+            1,
+            16,
+            3,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p31_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_31. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -31,
+              1922,
+              -29791,
+              1847042,
+              -28629151,
+              887503681
+            ]
+          },
+          "p": 31
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "6*x^2*y + 30*x^2*z + 7*x*y*z + 10*x*z^2 + 12*x*w^2 + 20*y^2*z + 26*y^2*w + 30*z^3 = 0",
+          "monomials": [
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              2
+            ]
+          ],
+          "coeffs": [
+            6,
+            30,
+            7,
+            20,
+            10,
+            30,
+            26,
+            12
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p37_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_37. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              37,
+              0,
+              0,
+              0,
+              -69343957,
+              -2565726409
+            ]
+          },
+          "p": 37
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + 37*x^2*y + 3*x*y*w + y^3 + 18*y*z*w + z^3 + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            37,
+            1,
+            1,
+            3,
+            18,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p41_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_41. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -41,
+              1681,
+              0,
+              -2825761,
+              115856201,
+              -4750104241
+            ]
+          },
+          "p": 41
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "3*x^2*y + 24*x*y^2 + 28*x*z^2 + 17*x*w^2 + 31*y^3 + 31*y*z*w + 27*y*w^2 + 26*z*w^2 = 0",
+          "monomials": [
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              1,
+              2
+            ]
+          ],
+          "coeffs": [
+            3,
+            24,
+            31,
+            28,
+            31,
+            17,
+            27,
+            26
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p43_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_43. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -43,
+              -1849,
+              0,
+              3418801,
+              147008443,
+              -6321363049
+            ]
+          },
+          "p": 43
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + x^2*y + 18*x^2*z + y^3 + 22*y^2*w + z^3 + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            1,
+            18,
+            1,
+            22,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p47_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_47. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -47,
+              0,
+              0,
+              0,
+              -229345007,
+              10779215329
+            ]
+          },
+          "p": 47
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "9*x^3 + 21*x*z*w + 26*x*w^2 + 11*y^3 + 6*y^2*w + 3*y*z*w + 17*z^3 + 23*w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            9,
+            11,
+            17,
+            6,
+            21,
+            3,
+            26,
+            23
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p53_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_53. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -53,
+              0,
+              0,
+              0,
+              -418195493,
+              22164361129
+            ]
+          },
+          "p": 53
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + 37*x^2*y + 43*x^2*w + 18*x*y*z + y^3 + z^3 + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            37,
+            1,
+            18,
+            1,
+            43,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p59_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_59. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -59,
+              3481,
+              0,
+              -12117361,
+              714924299,
+              -42180533641
+            ]
+          },
+          "p": 59
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "50*x^3 + 52*x*y*z + 34*x*z^2 + 8*x*w^2 + 11*y^3 + 60*y*z^2 + 10*y*w^2 + 50*z^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ]
+          ],
+          "coeffs": [
+            50,
+            11,
+            52,
+            34,
+            60,
+            50,
+            8,
+            10
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p61_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_61. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -61,
+              -3721,
+              453962,
+              -13845841,
+              -844596301,
+              51520374361
+            ]
+          },
+          "p": 61
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + 24*x^2*y + y^3 + 58*y^2*w + 32*y*w^2 + z^3 + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            24,
+            1,
+            1,
+            58,
+            32,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p67_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_67. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              134,
+              8978,
+              601526,
+              40302242,
+              2700250214,
+              90458382169
+            ]
+          },
+          "p": 67
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "64*x^3 + 19*x*y*z + 4*x*z^2 + 26*x*z*w + 26*y^2*z + 13*y^2*w + 40*y*w^2 + 68*z^2*w = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ]
+          ],
+          "coeffs": [
+            64,
+            19,
+            26,
+            4,
+            13,
+            26,
+            68,
+            40
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p71_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_71. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              128100283921
+            ]
+          },
+          "p": 71
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + x*z*w + y^3 + 52*y*z^2 + 20*y*w^2 + z^3 + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            52,
+            1,
+            1,
+            20,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p73_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_73. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -73,
+              -5329,
+              0,
+              28398241,
+              2073071593,
+              -151334226289
+            ]
+          },
+          "p": 73
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "42*x^3 + 4*x^2*y + 43*x*y*z + 15*y^2*z + 23*y*z*w + 10*y*w^2 + 14*z^3 + 62*w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            42,
+            4,
+            43,
+            15,
+            14,
+            23,
+            10,
+            62
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p79_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_79. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              158,
+              12482,
+              0,
+              -77900162,
+              -6154112798,
+              -243087455521
+            ]
+          },
+          "p": 79
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + 21*x^2*w + 41*x*y*z + y^3 + 54*y*z*w + z^3 + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            41,
+            1,
+            21,
+            54,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p83_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_83. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              83,
+              -6889,
+              -1143574,
+              -47458321,
+              3939040643,
+              326940373369
+            ]
+          },
+          "p": 83
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "8*x^3 + x^2*w + 61*x*y^2 + 80*x*z^2 + 15*y^3 + 73*y*z*w + 79*z^2*w + 31*w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            8,
+            61,
+            15,
+            80,
+            1,
+            73,
+            79,
+            31
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p89_cubic_surf_sparse_as_001",
+      "notes": "Random sparse_as smooth cubic surface in P^3 over F_89. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -89,
+              7921,
+              0,
+              -62742241,
+              5584059449,
+              -496981290961
+            ]
+          },
+          "p": 89
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "primitive"
+        },
+        "model": {
+          "kind": "projective_hypersurface",
+          "pretty": "x^3 + 7*x*y*z + 19*x*z*w + y^3 + 85*y^2*w + z^3 + w^3 = 0",
+          "monomials": [
+            [
+              3,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            7,
+            1,
+            85,
+            19,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z",
+            "w"
+          ]
+        },
+        "dim": 2
+      },
+      "id": "p97_cubic_surf_sparse_fk_001",
+      "notes": "Random sparse_fk smooth cubic surface in P^3 over F_97. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              0,
+              -1825346,
+              0,
+              0,
+              832972004929
+            ]
+          },
+          "p": 97
+        }
+      ]
+    }
+  ]
+}

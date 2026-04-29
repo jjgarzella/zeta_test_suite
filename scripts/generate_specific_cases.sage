@@ -60,7 +60,7 @@ EVEN_PRIMES = prime_range(3, 5001)   # even-degree curves: capped at 5000 (slow 
 
 
 def process_curve(g, d, label, pretty, f_coeffs_asc):
-    filename = "cases/specific_g{}_d{}_{}.json".format(g, d, label)
+    filename = "cases/hyperelliptic/specific_g{}_d{}_{}.json".format(g, d, label)
     case_id = "g{}_d{}_{}".format(g, d, label)
     all_primes = ODD_PRIMES if d % 2 == 1 else EVEN_PRIMES
 

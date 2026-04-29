@@ -15,7 +15,7 @@ jobs:
 
       - name: Validate v3 case files against schema
         run: |
-          check-jsonschema --schemafile schema.json cases/*.json
+          check-jsonschema --schemafile schema.json cases/*/*.json
 
   test-sage:
     runs-on: ubuntu-latest
@@ -27,3 +27,20 @@ jobs:
 
       - name: Run Sage unit tests
         run: sage test/runtests.sage
+
+  test-julia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: julia-actions/setup-julia@v2
+        with:
+          version: '1.11'
+
+      - uses: julia-actions/cache@v2
+
+      - name: Install Oscar and JSON
+        run: julia -e 'using Pkg; Pkg.add(["Oscar", "JSON"])'
+
+      - name: Run Oscar loader/saver tests
+        run: julia test/test_loader_saver_oscar.jl

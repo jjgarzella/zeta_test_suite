@@ -14,11 +14,13 @@ beyond).
 ### Key files and directories
 
 - `schema.json` / `spec.txt` / `FORMAT.md` — v3 schema, compact reference, and authoring guide
-- `cases/` — Grouped v3 JSON case files
+- `cases/` — Grouped v3 JSON case files, organized by variety kind in subfolders (e.g. `cases/hyperelliptic/`)
 - `sage/loader.sage` — v3 Sage loader (tagged-union dispatch over six model kinds)
 - `sage/saver.sage` — v3 Sage saver (per-kind serializers, upsert by id)
-- `prompts/` — Prompts for getting LLMs to implement loaders/savers in other CAS systems
-- `test/` — Unit tests for random curve generation and the Sage loader/saver
+- `oscar/loader.jl` / `oscar/saver.jl` — Julia/Oscar port (plane_curve, projective_hypersurface, double_cover_P2)
+- `magma/loader.magma` / `magma/saver.magma` — MAGMA port (plane_curve, projective_hypersurface); `magma/json.magma` is an embedded JSON parser
+- `prompts/` — CAS-agnostic prompts for getting LLMs to implement loaders/savers in yet another CAS
+- `test/` — Unit tests for random curve generation and the loader/saver implementations
 - `scripts/` — Generators for producing test cases at scale
 
 ### Test case format summary

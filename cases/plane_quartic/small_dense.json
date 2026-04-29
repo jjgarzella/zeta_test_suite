@@ -1,0 +1,9251 @@
+{
+  "schema_version": "3",
+  "cases": [
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^4 + 3*x^3*y + x^3*z + x^2*y^2 + 2*x^2*y*z + x^2*z^2 + 4*x*y^3 + 3*x*y^2*z + 4*x*y*z^2 + 4*x*z^3 + 3*y^4 + 2*y^3*z + 3*y^2*z^2 + 4*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            3,
+            3,
+            1,
+            4,
+            3,
+            1,
+            2,
+            3,
+            2,
+            1,
+            4,
+            3,
+            4,
+            4,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p5_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              2,
+              8,
+              10,
+              25,
+              125
+            ]
+          },
+          "p": 5
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + x^3*y + x^3*z + 2*x^2*y^2 + x^2*y*z + x^2*z^2 + 3*x*y^3 + 3*x*y^2*z + 4*x*y*z^2 + x*z^3 + 3*y^4 + 3*y^3*z + 3*y^2*z^2 + y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            2,
+            3,
+            3,
+            1,
+            1,
+            3,
+            3,
+            1,
+            4,
+            3,
+            1,
+            1,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p5_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -1,
+              6,
+              -1,
+              30,
+              -25,
+              125
+            ]
+          },
+          "p": 5
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^4 + 4*x^3*y + x^3*z + 3*x^2*y^2 + 4*x^2*y*z + 4*x^2*z^2 + x*y^3 + 2*x*y^2*z + x*y*z^2 + 4*x*z^3 + 2*y^4 + y^3*z + 2*y^2*z^2 + y*z^3 + 2*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            3,
+            4,
+            3,
+            1,
+            2,
+            1,
+            4,
+            2,
+            1,
+            4,
+            1,
+            2,
+            4,
+            1,
+            2
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p5_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              -1,
+              16,
+              -5,
+              0,
+              125
+            ]
+          },
+          "p": 5
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^4 + 2*x^3*y + 2*x^3*z + 4*x^2*y^2 + 5*x^2*y*z + 6*x^2*z^2 + 6*x*y^3 + x*y^2*z + 6*x*y*z^2 + 5*x*z^3 + 4*y^4 + 2*y^3*z + 6*y^2*z^2 + 5*y*z^3 + 5*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            3,
+            2,
+            4,
+            6,
+            4,
+            2,
+            5,
+            1,
+            2,
+            6,
+            6,
+            6,
+            5,
+            5,
+            5
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p7_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              -3,
+              13,
+              -21,
+              -98,
+              343
+            ]
+          },
+          "p": 7
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "5*x^4 + 3*x^3*y + 3*x^3*z + 2*x^2*y^2 + 2*x^2*y*z + 6*x^2*z^2 + 5*x*y^3 + 3*x*y^2*z + 3*x*y*z^2 + 2*x*z^3 + y^4 + y^3*z + 6*y^2*z^2 + 3*y*z^3 + 4*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            5,
+            3,
+            2,
+            5,
+            1,
+            3,
+            2,
+            3,
+            1,
+            6,
+            3,
+            6,
+            2,
+            3,
+            4
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p7_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              2,
+              -4,
+              14,
+              0,
+              343
+            ]
+          },
+          "p": 7
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^4 + 4*x^3*y + x^3*z + 6*x^2*y^2 + 3*x^2*y*z + 6*x^2*z^2 + 5*x*y^3 + 5*x*y^2*z + x*y*z^2 + 3*x*z^3 + 3*y^4 + 6*y^3*z + 2*y^2*z^2 + 5*y*z^3 + 4*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            3,
+            4,
+            6,
+            5,
+            3,
+            1,
+            3,
+            5,
+            6,
+            6,
+            1,
+            2,
+            3,
+            5,
+            4
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p7_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              0,
+              14,
+              0,
+              -147,
+              343
+            ]
+          },
+          "p": 7
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "5*x^4 + 10*x^3*y + 9*x^3*z + 3*x^2*y^2 + 2*x^2*y*z + 4*x^2*z^2 + 6*x*y^3 + 10*x*y^2*z + 7*x*y*z^2 + 9*x*z^3 + 4*y^4 + y^3*z + 4*y^2*z^2 + 5*y*z^3 + 8*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            5,
+            10,
+            3,
+            6,
+            4,
+            9,
+            2,
+            10,
+            1,
+            4,
+            7,
+            4,
+            9,
+            5,
+            8
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p11_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -1,
+              9,
+              -22,
+              99,
+              -121,
+              1331
+            ]
+          },
+          "p": 11
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "2*x^4 + 10*x^3*y + 7*x^3*z + 6*x^2*y^2 + 2*x^2*y*z + 9*x^2*z^2 + 9*x*y^3 + 5*x*y^2*z + 7*x*y*z^2 + 9*x*z^3 + 3*y^4 + 9*y^3*z + 3*y^2*z^2 + 2*y*z^3 + 10*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            2,
+            10,
+            6,
+            9,
+            3,
+            7,
+            2,
+            5,
+            9,
+            9,
+            7,
+            3,
+            9,
+            2,
+            10
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p11_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              22,
+              4,
+              242,
+              0,
+              1331
+            ]
+          },
+          "p": 11
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "4*x^4 + 6*x^3*y + 6*x^3*z + 8*x^2*y^2 + 6*x^2*y*z + 2*x^2*z^2 + 6*x*y^3 + 8*x*y^2*z + 2*x*y*z^2 + 9*x*z^3 + y^4 + y^3*z + y^2*z^2 + 3*y*z^3 + 3*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            4,
+            6,
+            8,
+            6,
+            1,
+            6,
+            6,
+            8,
+            1,
+            2,
+            2,
+            1,
+            9,
+            3,
+            3
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p11_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              3,
+              7,
+              33,
+              77,
+              363,
+              1331
+            ]
+          },
+          "p": 11
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "7*x^4 + 7*x^3*y + 6*x^3*z + x^2*y^2 + 3*x^2*y*z + 6*x^2*z^2 + 9*x*y^3 + 7*x*y^2*z + 3*x*y*z^2 + 7*x*z^3 + 4*y^4 + 10*y^3*z + 8*y^2*z^2 + 11*y*z^3 + 8*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            7,
+            7,
+            1,
+            9,
+            4,
+            6,
+            3,
+            7,
+            10,
+            6,
+            3,
+            8,
+            7,
+            11,
+            8
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p13_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              8,
+              -2,
+              104,
+              0,
+              2197
+            ]
+          },
+          "p": 13
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "8*x^4 + 6*x^3*y + 3*x^3*z + 2*x^2*y^2 + 12*x^2*y*z + 3*x^2*z^2 + 6*x*y^3 + 10*x*y^2*z + 2*x*y*z^2 + 4*x*z^3 + 5*y^4 + 10*y^3*z + 4*y^2*z^2 + 3*y*z^3 + 7*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            8,
+            6,
+            2,
+            6,
+            5,
+            3,
+            12,
+            10,
+            10,
+            3,
+            2,
+            4,
+            4,
+            3,
+            7
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p13_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -6,
+              4,
+              43,
+              52,
+              -1014,
+              2197
+            ]
+          },
+          "p": 13
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "5*x^4 + 2*x^3*y + x^3*z + 7*x^2*y^2 + 9*x^2*y*z + 7*x^2*z^2 + 12*x*y^3 + 10*x*y^2*z + 7*x*y*z^2 + 10*x*z^3 + 4*y^4 + 11*y^3*z + 4*y^2*z^2 + 10*y*z^3 + 5*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            5,
+            2,
+            7,
+            12,
+            4,
+            1,
+            9,
+            10,
+            11,
+            7,
+            7,
+            4,
+            10,
+            10,
+            5
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p13_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              6,
+              32,
+              152,
+              416,
+              1014,
+              2197
+            ]
+          },
+          "p": 13
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^4 + 6*x^3*y + 11*x^3*z + 7*x^2*y^2 + 7*x^2*y*z + 9*x^2*z^2 + 12*x*y^3 + 2*x*y^2*z + 2*x*y*z^2 + 12*x*z^3 + y^4 + 6*y^3*z + 14*y^2*z^2 + 16*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            3,
+            6,
+            7,
+            12,
+            1,
+            11,
+            7,
+            2,
+            6,
+            9,
+            2,
+            14,
+            12,
+            16,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p17_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              5,
+              92,
+              85,
+              0,
+              4913
+            ]
+          },
+          "p": 17
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^4 + 3*x^3*y + 9*x^3*z + 15*x^2*y^2 + 15*x^2*y*z + 15*x^2*z^2 + 2*x*y^3 + 6*x*y^2*z + 15*x*y*z^2 + 14*x*z^3 + 2*y^4 + 7*y^3*z + 14*y^2*z^2 + 16*y*z^3 + 15*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            3,
+            3,
+            15,
+            2,
+            2,
+            9,
+            15,
+            6,
+            7,
+            15,
+            15,
+            14,
+            14,
+            16,
+            15
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p17_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              2,
+              -3,
+              -75,
+              -51,
+              578,
+              4913
+            ]
+          },
+          "p": 17
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "15*x^4 + 16*x^3*y + 16*x^3*z + 12*x^2*y^2 + 15*x^2*y*z + 9*x^2*z^2 + 4*x*y^3 + 6*x*y^2*z + 3*x*y*z^2 + 5*x*z^3 + 4*y^4 + 9*y^3*z + y^2*z^2 + 6*y*z^3 + 9*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            15,
+            16,
+            12,
+            4,
+            4,
+            16,
+            15,
+            6,
+            9,
+            9,
+            3,
+            1,
+            5,
+            6,
+            9
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p17_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -4,
+              26,
+              -65,
+              442,
+              -1156,
+              4913
+            ]
+          },
+          "p": 17
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "8*x^4 + 3*x^3*y + 17*x^3*z + 8*x^2*y^2 + 10*x^2*y*z + 13*x^2*z^2 + 18*x*y^3 + 4*x*y^2*z + 16*x*y*z^2 + 8*x*z^3 + y^4 + 16*y^3*z + 18*y^2*z^2 + 2*y*z^3 + 16*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            8,
+            3,
+            8,
+            18,
+            1,
+            17,
+            10,
+            4,
+            16,
+            13,
+            16,
+            18,
+            8,
+            2,
+            16
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p19_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              27,
+              -114,
+              513,
+              -1083,
+              6859
+            ]
+          },
+          "p": 19
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^4 + 4*x^3*y + 18*x^3*z + 10*x^2*y^2 + 8*x^2*y*z + 7*x^2*z^2 + 7*x*y^3 + x*y^2*z + 4*x*y*z^2 + 2*x*z^3 + 10*y^4 + 16*y^3*z + 11*y^2*z^2 + 12*y*z^3 + 11*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            1,
+            4,
+            10,
+            7,
+            10,
+            18,
+            8,
+            1,
+            16,
+            7,
+            4,
+            11,
+            2,
+            12,
+            11
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p19_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              2,
+              37,
+              56,
+              703,
+              722,
+              6859
+            ]
+          },
+          "p": 19
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "17*x^4 + 15*x^3*y + 15*x^3*z + 16*x^2*y^2 + 17*x^2*y*z + 9*x^2*z^2 + 13*x*y^3 + 15*x*y^2*z + 2*x*y*z^2 + 11*x*z^3 + 18*y^4 + 5*y^3*z + 16*y^2*z^2 + 12*y*z^3 + 13*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            17,
+            15,
+            16,
+            13,
+            18,
+            15,
+            17,
+            15,
+            5,
+            9,
+            2,
+            16,
+            11,
+            12,
+            13
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p19_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              18,
+              -61,
+              342,
+              -722,
+              6859
+            ]
+          },
+          "p": 19
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "12*x^4 + 22*x^3*y + 6*x^3*z + 22*x^2*y^2 + 17*x^2*y*z + 13*x^2*z^2 + 16*x*y^3 + 17*x*y^2*z + 5*x*y*z^2 + 8*x*z^3 + 11*y^4 + 20*y^3*z + 20*y^2*z^2 + 15*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            12,
+            22,
+            22,
+            16,
+            11,
+            6,
+            17,
+            17,
+            20,
+            13,
+            5,
+            20,
+            8,
+            15,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p23_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              5,
+              29,
+              108,
+              667,
+              2645,
+              12167
+            ]
+          },
+          "p": 23
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "7*x^4 + 16*x^3*y + 4*x^3*z + 21*x^2*y^2 + 17*x^2*y*z + 13*x^2*z^2 + 18*x*y^3 + 5*x*y^2*z + 14*x*y*z^2 + 4*x*z^3 + 8*y^4 + y^3*z + 22*y^2*z^2 + 4*y*z^3 + 15*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            7,
+            16,
+            21,
+            18,
+            8,
+            4,
+            17,
+            5,
+            1,
+            13,
+            14,
+            22,
+            4,
+            4,
+            15
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p23_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              3,
+              7,
+              104,
+              161,
+              1587,
+              12167
+            ]
+          },
+          "p": 23
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "15*x^4 + 22*x^3*y + 12*x^3*z + 14*x^2*y^2 + 15*x^2*y*z + 6*x^2*z^2 + 4*x*y^3 + 10*x*y^2*z + 2*x*y*z^2 + 5*x*z^3 + 9*y^4 + 7*y^3*z + 5*y^2*z^2 + 17*y*z^3 + 10*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            15,
+            22,
+            14,
+            4,
+            9,
+            12,
+            15,
+            10,
+            7,
+            6,
+            2,
+            5,
+            5,
+            17,
+            10
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p23_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              42,
+              -52,
+              966,
+              -1058,
+              12167
+            ]
+          },
+          "p": 23
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "8*x^4 + 2*x^3*y + 22*x^3*z + 28*x^2*y^2 + 21*x^2*y*z + 19*x^2*z^2 + 23*x*y^3 + 3*x*y^2*z + 18*x*y*z^2 + 9*x*z^3 + 5*y^4 + 5*y^3*z + 15*y^2*z^2 + 18*y*z^3 + 18*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            8,
+            2,
+            28,
+            23,
+            5,
+            22,
+            21,
+            3,
+            5,
+            19,
+            18,
+            15,
+            9,
+            18,
+            18
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p29_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              4,
+              107,
+              116,
+              -2523,
+              24389
+            ]
+          },
+          "p": 29
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "19*x^4 + 18*x^3*y + 13*x^3*z + 22*x^2*y^2 + 25*x^2*y*z + 20*x^2*z^2 + 20*x*y^3 + 5*x*y^2*z + 18*x*y*z^2 + 21*x*z^3 + 23*y^4 + 15*y^3*z + 6*y^2*z^2 + 18*y*z^3 + 26*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            19,
+            18,
+            22,
+            20,
+            23,
+            13,
+            25,
+            5,
+            15,
+            20,
+            18,
+            6,
+            21,
+            18,
+            26
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p29_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              3,
+              25,
+              101,
+              725,
+              2523,
+              24389
+            ]
+          },
+          "p": 29
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "13*x^4 + 2*x^3*y + 12*x^3*z + 17*x^2*y^2 + 22*x^2*y*z + 13*x^2*z^2 + 15*x*y^3 + 25*x*y^2*z + 22*x*y*z^2 + 10*x*z^3 + 3*y^4 + 25*y^3*z + 15*y^2*z^2 + 4*y*z^3 + 26*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            13,
+            2,
+            17,
+            15,
+            3,
+            12,
+            22,
+            25,
+            25,
+            13,
+            22,
+            15,
+            10,
+            4,
+            26
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p29_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              -20,
+              105,
+              -580,
+              -2523,
+              24389
+            ]
+          },
+          "p": 29
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "16*x^4 + 27*x^3*y + 26*x^3*z + 15*x^2*y^2 + 6*x^2*y*z + 30*x^2*z^2 + 4*x*y^3 + 28*x*y^2*z + 14*x*y*z^2 + 7*x*z^3 + y^4 + 27*y^3*z + 4*y^2*z^2 + 7*y*z^3 + 26*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            16,
+            27,
+            15,
+            4,
+            1,
+            26,
+            6,
+            28,
+            27,
+            30,
+            14,
+            4,
+            7,
+            7,
+            26
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p31_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -4,
+              62,
+              -191,
+              1922,
+              -3844,
+              29791
+            ]
+          },
+          "p": 31
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "2*x^4 + x^3*y + 14*x^3*z + 23*x^2*y^2 + 16*x^2*y*z + 28*x^2*z^2 + 8*x*y^3 + x*y^2*z + 3*x*y*z^2 + x*z^3 + 16*y^4 + 27*y^3*z + 8*y^2*z^2 + 21*y*z^3 + 13*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            2,
+            1,
+            23,
+            8,
+            16,
+            14,
+            16,
+            1,
+            27,
+            28,
+            3,
+            8,
+            1,
+            21,
+            13
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p31_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              28,
+              -96,
+              868,
+              -1922,
+              29791
+            ]
+          },
+          "p": 31
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "17*x^4 + 12*x^3*y + 12*x^3*z + 30*x^2*y^2 + 27*x^2*y*z + 26*x^2*z^2 + 30*x*y^3 + 9*x*y^2*z + x*y*z^2 + 13*x*z^3 + 4*y^4 + 28*y^3*z + 10*y^2*z^2 + 25*y*z^3 + 26*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            17,
+            12,
+            30,
+            30,
+            4,
+            12,
+            27,
+            9,
+            28,
+            26,
+            1,
+            10,
+            13,
+            25,
+            26
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p31_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -5,
+              54,
+              -186,
+              1674,
+              -4805,
+              29791
+            ]
+          },
+          "p": 31
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "35*x^4 + 34*x^3*y + 10*x^3*z + x^2*y^2 + 16*x^2*y*z + 10*x^2*z^2 + 15*x*y^3 + 26*x*y^2*z + 12*x*y*z^2 + 36*x*z^3 + 35*y^4 + 8*y^3*z + 3*y^2*z^2 + 22*y*z^3 + 3*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            35,
+            34,
+            1,
+            15,
+            35,
+            10,
+            16,
+            26,
+            8,
+            10,
+            12,
+            3,
+            36,
+            22,
+            3
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p37_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              65,
+              -198,
+              2405,
+              -4107,
+              50653
+            ]
+          },
+          "p": 37
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "21*x^4 + 30*x^3*y + 4*x^3*z + 18*x^2*y^2 + 12*x^2*y*z + 9*x^2*z^2 + 10*x*y^3 + 12*x*y^2*z + 30*x*y*z^2 + 12*x*z^3 + 26*y^4 + 15*y^3*z + 13*y^2*z^2 + 12*y*z^3 + 11*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            21,
+            30,
+            18,
+            10,
+            26,
+            4,
+            12,
+            12,
+            15,
+            9,
+            30,
+            13,
+            12,
+            12,
+            11
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p37_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              77,
+              46,
+              2849,
+              1369,
+              50653
+            ]
+          },
+          "p": 37
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "26*x^4 + 33*x^3*y + 31*x^3*z + 19*x^2*y^2 + 14*x^2*y*z + 16*x^2*z^2 + 9*x*y^3 + 5*x*y^2*z + 35*x*y*z^2 + 14*x*z^3 + 14*y^4 + 28*y^3*z + 11*y^2*z^2 + 24*y*z^3 + 9*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            26,
+            33,
+            19,
+            9,
+            14,
+            31,
+            14,
+            5,
+            28,
+            16,
+            35,
+            11,
+            14,
+            24,
+            9
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p37_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              6,
+              62,
+              494,
+              2294,
+              8214,
+              50653
+            ]
+          },
+          "p": 37
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "12*x^4 + 39*x^3*y + 30*x^3*z + 25*x^2*y^2 + 20*x^2*y*z + 37*x^2*z^2 + 37*x*y^3 + 28*x*y^2*z + 36*x*y*z^2 + 22*x*z^3 + y^4 + 8*y^3*z + 4*y^2*z^2 + 25*y*z^3 + 20*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            12,
+            39,
+            25,
+            37,
+            1,
+            30,
+            20,
+            28,
+            8,
+            37,
+            36,
+            4,
+            22,
+            25,
+            20
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p41_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -6,
+              2,
+              283,
+              82,
+              -10086,
+              68921
+            ]
+          },
+          "p": 41
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "35*x^4 + 27*x^3*y + 9*x^3*z + 39*x^2*y^2 + 32*x^2*y*z + 29*x^2*z^2 + 24*x*y^3 + 34*x*y^2*z + 36*x*y*z^2 + 7*x*z^3 + 10*y^4 + 17*y^3*z + 35*y^2*z^2 + 7*y*z^3 + 25*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            35,
+            27,
+            39,
+            24,
+            10,
+            9,
+            32,
+            34,
+            17,
+            29,
+            36,
+            35,
+            7,
+            7,
+            25
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p41_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -5,
+              46,
+              -32,
+              1886,
+              -8405,
+              68921
+            ]
+          },
+          "p": 41
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "9*x^4 + 30*x^3*y + 15*x^3*z + 4*x^2*y^2 + 38*x^2*y*z + 25*x^2*z^2 + 2*x*y^3 + 15*x*y^2*z + 28*x*y*z^2 + 39*x*z^3 + 8*y^4 + 29*y^3*z + 35*y^2*z^2 + 32*y*z^3 + 16*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            9,
+            30,
+            4,
+            2,
+            8,
+            15,
+            38,
+            15,
+            29,
+            25,
+            28,
+            35,
+            39,
+            32,
+            16
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p41_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              13,
+              110,
+              663,
+              4510,
+              21853,
+              68921
+            ]
+          },
+          "p": 41
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "28*x^4 + 9*x^3*y + 16*x^3*z + 18*x^2*y^2 + 8*x^2*y*z + 38*x^2*z^2 + 35*x*y^3 + 15*x*y^2*z + 17*x*y*z^2 + 12*x*z^3 + 38*y^4 + 7*y^3*z + 28*y^2*z^2 + 19*y*z^3 + 14*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            28,
+            9,
+            18,
+            35,
+            38,
+            16,
+            8,
+            15,
+            7,
+            38,
+            17,
+            28,
+            12,
+            19,
+            14
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p43_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              2,
+              35,
+              165,
+              1505,
+              3698,
+              79507
+            ]
+          },
+          "p": 43
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "5*x^4 + 10*x^3*y + 6*x^3*z + 34*x^2*y^2 + 25*x^2*y*z + 14*x^2*z^2 + 25*x*y^3 + 39*x*y^2*z + 28*x*y*z^2 + 21*x*z^3 + 37*y^4 + 36*y^3*z + 42*y^2*z^2 + 6*y*z^3 + 13*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            5,
+            10,
+            34,
+            25,
+            37,
+            6,
+            25,
+            39,
+            36,
+            14,
+            28,
+            42,
+            21,
+            6,
+            13
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p43_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              5,
+              -22,
+              -238,
+              -946,
+              9245,
+              79507
+            ]
+          },
+          "p": 43
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "35*x^4 + 34*x^3*y + 21*x^3*z + 35*x^2*y^2 + 29*x^2*y*z + 12*x^2*z^2 + 7*x*y^3 + 29*x*y^2*z + 16*x*y*z^2 + 40*x*z^3 + 6*y^4 + 39*y^3*z + 30*y^2*z^2 + 3*y*z^3 + 8*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            35,
+            34,
+            35,
+            7,
+            6,
+            21,
+            29,
+            29,
+            39,
+            12,
+            16,
+            30,
+            40,
+            3,
+            8
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p43_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              4,
+              -28,
+              -300,
+              -1204,
+              7396,
+              79507
+            ]
+          },
+          "p": 43
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "40*x^4 + 45*x^3*y + 37*x^3*z + 26*x^2*y^2 + 34*x^2*y*z + 10*x^2*z^2 + 8*x*y^3 + 14*x*y^2*z + 29*x*y*z^2 + 37*x*z^3 + 18*y^4 + 33*y^3*z + 42*y^2*z^2 + 7*y*z^3 + 20*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            40,
+            45,
+            26,
+            8,
+            18,
+            37,
+            34,
+            14,
+            33,
+            10,
+            29,
+            42,
+            37,
+            7,
+            20
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p47_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -4,
+              49,
+              -488,
+              2303,
+              -8836,
+              103823
+            ]
+          },
+          "p": 47
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "9*x^4 + 36*x^3*y + 45*x^3*z + 5*x^2*y^2 + 42*x^2*y*z + 37*x^2*z^2 + 9*x*y^3 + 2*x*y^2*z + 42*x*y*z^2 + 38*x*z^3 + 42*y^4 + 35*y^3*z + 21*y^2*z^2 + 7*y*z^3 + 29*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            9,
+            36,
+            5,
+            9,
+            42,
+            45,
+            42,
+            2,
+            35,
+            37,
+            42,
+            21,
+            38,
+            7,
+            29
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p47_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              9,
+              92,
+              810,
+              4324,
+              19881,
+              103823
+            ]
+          },
+          "p": 47
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^4 + 42*x^3*y + 20*x^3*z + 44*x^2*y^2 + 43*x^2*y*z + x^2*z^2 + 29*x*y^3 + 27*x*y^2*z + 7*x*y*z^2 + 4*x*z^3 + 2*y^4 + 2*y^3*z + 34*y^2*z^2 + 14*y*z^3 + 11*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            3,
+            42,
+            44,
+            29,
+            2,
+            20,
+            43,
+            27,
+            2,
+            1,
+            7,
+            34,
+            4,
+            14,
+            11
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p47_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              13,
+              47,
+              5,
+              2209,
+              28717,
+              103823
+            ]
+          },
+          "p": 47
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "9*x^4 + 3*x^3*y + 15*x^3*z + 35*x^2*y^2 + 40*x^2*y*z + 8*x^2*z^2 + 13*x*y^3 + 13*x*y^2*z + 3*x*y*z^2 + 27*x*z^3 + 17*y^4 + 13*y^3*z + 41*y^2*z^2 + 5*y*z^3 + z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            9,
+            3,
+            35,
+            13,
+            17,
+            15,
+            40,
+            13,
+            13,
+            8,
+            3,
+            41,
+            27,
+            5,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p53_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -8,
+              49,
+              22,
+              2597,
+              -22472,
+              148877
+            ]
+          },
+          "p": 53
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "19*x^4 + 17*x^3*y + 2*x^3*z + 15*x^2*y^2 + 44*x^2*y*z + 42*x^2*z^2 + 43*x*y^3 + 41*x*y^2*z + 2*x*y*z^2 + 20*x*z^3 + 7*y^4 + 23*y^3*z + 6*y^2*z^2 + 47*y*z^3 + 25*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            19,
+            17,
+            15,
+            43,
+            7,
+            2,
+            44,
+            41,
+            23,
+            42,
+            2,
+            6,
+            20,
+            47,
+            25
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p53_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              4,
+              88,
+              103,
+              4664,
+              11236,
+              148877
+            ]
+          },
+          "p": 53
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "10*x^4 + 6*x^3*y + 34*x^3*z + x^2*y^2 + 17*x^2*y*z + 51*x^2*z^2 + 25*x*y^3 + 18*x*y^2*z + 36*x*y*z^2 + 2*x*z^3 + 17*y^4 + 9*y^3*z + 41*y^2*z^2 + 6*y*z^3 + 7*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            10,
+            6,
+            1,
+            25,
+            17,
+            34,
+            17,
+            18,
+            9,
+            51,
+            36,
+            41,
+            2,
+            6,
+            7
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p53_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              9,
+              49,
+              235,
+              2597,
+              25281,
+              148877
+            ]
+          },
+          "p": 53
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "58*x^4 + 24*x^3*y + 53*x^3*z + 33*x^2*y^2 + 45*x^2*y*z + 21*x^2*z^2 + 33*x*y^3 + 32*x*y^2*z + 33*x*y*z^2 + 17*x*z^3 + 13*y^4 + 41*y^3*z + 37*y^2*z^2 + 14*y*z^3 + 7*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            58,
+            24,
+            33,
+            33,
+            13,
+            53,
+            45,
+            32,
+            41,
+            21,
+            33,
+            37,
+            17,
+            14,
+            7
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p59_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              10,
+              80,
+              443,
+              4720,
+              34810,
+              205379
+            ]
+          },
+          "p": 59
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "30*x^4 + 27*x^3*y + 44*x^3*z + 35*x^2*y^2 + 7*x^2*y*z + 18*x^2*z^2 + 43*x*y^3 + 58*x*y^2*z + 21*x*y*z^2 + 10*x*z^3 + 18*y^4 + 7*y^3*z + 53*y^2*z^2 + 9*y*z^3 + 46*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            30,
+            27,
+            35,
+            43,
+            18,
+            44,
+            7,
+            58,
+            7,
+            18,
+            21,
+            53,
+            10,
+            9,
+            46
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p59_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -5,
+              4,
+              19,
+              236,
+              -17405,
+              205379
+            ]
+          },
+          "p": 59
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "50*x^4 + 6*x^3*y + 49*x^3*z + 55*x^2*y^2 + 56*x^2*y*z + 26*x^2*z^2 + 20*x*y^3 + 21*x*y^2*z + 49*x*y*z^2 + 24*x*z^3 + 41*y^4 + 9*y^3*z + 53*y^2*z^2 + 18*y*z^3 + 29*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            50,
+            6,
+            55,
+            20,
+            41,
+            49,
+            56,
+            21,
+            9,
+            26,
+            49,
+            53,
+            24,
+            18,
+            29
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p59_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              -26,
+              232,
+              -1534,
+              -6962,
+              205379
+            ]
+          },
+          "p": 59
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "59*x^4 + 51*x^3*y + 36*x^3*z + 24*x^2*y^2 + 52*x^2*y*z + 52*x^2*z^2 + 23*x*y^3 + 27*x*y^2*z + 54*x*y*z^2 + 30*x*z^3 + 34*y^4 + 54*y^3*z + 55*y^2*z^2 + 40*y*z^3 + 27*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            59,
+            51,
+            24,
+            23,
+            34,
+            36,
+            52,
+            27,
+            54,
+            52,
+            54,
+            55,
+            30,
+            40,
+            27
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p61_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -1,
+              95,
+              -65,
+              5795,
+              -3721,
+              226981
+            ]
+          },
+          "p": 61
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "40*x^4 + 55*x^3*y + 47*x^3*z + 29*x^2*y^2 + 3*x^2*y*z + 51*x^2*z^2 + 11*x*y^3 + 24*x*y^2*z + 4*x*y*z^2 + 48*x*z^3 + 34*y^4 + 47*y^3*z + 7*y^2*z^2 + 47*y*z^3 + 15*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            40,
+            55,
+            29,
+            11,
+            34,
+            47,
+            3,
+            24,
+            47,
+            51,
+            4,
+            7,
+            48,
+            47,
+            15
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p61_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              11,
+              183,
+              1159,
+              11163,
+              40931,
+              226981
+            ]
+          },
+          "p": 61
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "54*x^4 + 2*x^3*y + 17*x^3*z + 33*x^2*y^2 + 22*x^2*y*z + x^2*z^2 + 21*x*y^3 + 51*x*y^2*z + 9*x*y*z^2 + 5*x*z^3 + 9*y^4 + 34*y^3*z + 20*y^2*z^2 + 57*y*z^3 + 40*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            54,
+            2,
+            33,
+            21,
+            9,
+            17,
+            22,
+            51,
+            34,
+            1,
+            9,
+            20,
+            5,
+            57,
+            40
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p61_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              74,
+              -163,
+              4514,
+              -11163,
+              226981
+            ]
+          },
+          "p": 61
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "10*x^4 + 28*x^3*y + 30*x^3*z + 26*x^2*y^2 + 42*x^2*y*z + 42*x^2*z^2 + 34*x*y^3 + 29*x*y^2*z + 45*x*y*z^2 + 4*x*z^3 + 48*y^4 + 18*y^3*z + 46*y^2*z^2 + 34*y*z^3 + 18*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            10,
+            28,
+            26,
+            34,
+            48,
+            30,
+            42,
+            29,
+            18,
+            42,
+            45,
+            46,
+            4,
+            34,
+            18
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p67_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              10,
+              169,
+              1164,
+              11323,
+              44890,
+              300763
+            ]
+          },
+          "p": 67
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "11*x^4 + 64*x^3*y + 25*x^3*z + 62*x^2*y^2 + 44*x^2*y*z + 25*x^2*z^2 + 34*x*y^3 + 4*x*y^2*z + 60*x*y*z^2 + 65*x*z^3 + 15*y^4 + 13*y^3*z + y^2*z^2 + 13*y*z^3 + 54*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            11,
+            64,
+            62,
+            34,
+            15,
+            25,
+            44,
+            4,
+            13,
+            25,
+            60,
+            1,
+            65,
+            13,
+            54
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p67_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              5,
+              1,
+              -646,
+              67,
+              22445,
+              300763
+            ]
+          },
+          "p": 67
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "32*x^4 + 42*x^3*y + 64*x^3*z + 49*x^2*y^2 + 46*x^2*y*z + 33*x^2*z^2 + 28*x*y^3 + 27*x*y^2*z + 61*x*y*z^2 + 33*x*z^3 + 65*y^4 + 36*y^3*z + 64*y^2*z^2 + 24*y*z^3 + 61*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            32,
+            42,
+            49,
+            28,
+            65,
+            64,
+            46,
+            27,
+            36,
+            33,
+            61,
+            64,
+            33,
+            24,
+            61
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p67_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              9,
+              90,
+              961,
+              6030,
+              40401,
+              300763
+            ]
+          },
+          "p": 67
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "45*x^4 + x^3*y + 20*x^3*z + 22*x^2*y^2 + 44*x^2*y*z + 15*x^2*z^2 + 59*x*y^3 + 52*x*y^2*z + 10*x*y*z^2 + 39*x*z^3 + 16*y^4 + 3*y^3*z + 56*y^2*z^2 + 22*y*z^3 + 20*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            45,
+            1,
+            22,
+            59,
+            16,
+            20,
+            44,
+            52,
+            3,
+            15,
+            10,
+            56,
+            39,
+            22,
+            20
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p71_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              8,
+              96,
+              1011,
+              6816,
+              40328,
+              357911
+            ]
+          },
+          "p": 71
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^4 + 2*x^3*y + 43*x^3*z + 41*x^2*y^2 + 30*x^2*y*z + 57*x^2*z^2 + 62*x*y^3 + 23*x*y^2*z + 20*x*y*z^2 + 30*x*z^3 + 23*y^4 + 41*y^3*z + 46*y^2*z^2 + 32*y*z^3 + 49*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            3,
+            2,
+            41,
+            62,
+            23,
+            43,
+            30,
+            23,
+            41,
+            57,
+            20,
+            46,
+            30,
+            32,
+            49
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p71_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              102,
+              -418,
+              7242,
+              -15123,
+              357911
+            ]
+          },
+          "p": 71
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "41*x^4 + 20*x^3*y + 12*x^3*z + 21*x^2*y^2 + 68*x^2*y*z + 70*x^2*z^2 + 28*x*y^3 + 11*x*y^2*z + 49*x*y*z^2 + 56*x*z^3 + 44*y^4 + 32*y^3*z + 27*y^2*z^2 + 55*y*z^3 + 24*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            41,
+            20,
+            21,
+            28,
+            44,
+            12,
+            68,
+            11,
+            32,
+            70,
+            49,
+            27,
+            56,
+            55,
+            24
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p71_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              46,
+              746,
+              3266,
+              5041,
+              357911
+            ]
+          },
+          "p": 71
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "63*x^4 + 60*x^3*y + 32*x^3*z + 39*x^2*y^2 + 41*x^2*y*z + 72*x^2*z^2 + 24*x*y^3 + 9*x*y^2*z + 36*x*y*z^2 + 43*x*z^3 + 33*y^4 + 33*y^3*z + 54*y^2*z^2 + 32*y*z^3 + 46*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            63,
+            60,
+            39,
+            24,
+            33,
+            32,
+            41,
+            9,
+            33,
+            72,
+            36,
+            54,
+            43,
+            32,
+            46
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p73_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -7,
+              107,
+              -350,
+              7811,
+              -37303,
+              389017
+            ]
+          },
+          "p": 73
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "31*x^4 + 18*x^3*y + 29*x^3*z + 59*x^2*y^2 + 55*x^2*y*z + 43*x^2*z^2 + 44*x*y^3 + 39*x*y^2*z + 3*x*y*z^2 + 22*x*z^3 + 45*y^4 + 14*y^3*z + 49*y^2*z^2 + 25*y*z^3 + 71*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            31,
+            18,
+            59,
+            44,
+            45,
+            29,
+            55,
+            39,
+            14,
+            43,
+            3,
+            49,
+            22,
+            25,
+            71
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p73_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              15,
+              166,
+              1752,
+              12118,
+              79935,
+              389017
+            ]
+          },
+          "p": 73
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "45*x^4 + 15*x^3*y + 57*x^3*z + 18*x^2*y^2 + 9*x^2*y*z + 31*x^2*z^2 + 15*x*y^3 + 6*x*y^2*z + 2*x*y*z^2 + 69*x*z^3 + 37*y^4 + y^3*z + 60*y^2*z^2 + 68*y*z^3 + 51*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            45,
+            15,
+            18,
+            15,
+            37,
+            57,
+            9,
+            6,
+            1,
+            31,
+            2,
+            60,
+            69,
+            68,
+            51
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p73_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -9,
+              59,
+              -886,
+              4307,
+              -47961,
+              389017
+            ]
+          },
+          "p": 73
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "54*x^4 + 44*x^3*y + 73*x^3*z + 42*x^2*y^2 + 55*x^2*y*z + 20*x^2*z^2 + 34*x*y^3 + 59*x*y^2*z + 77*x*y*z^2 + 53*x*z^3 + 4*y^4 + 76*y^3*z + 12*y^2*z^2 + 42*y*z^3 + 55*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            54,
+            44,
+            42,
+            34,
+            4,
+            73,
+            55,
+            59,
+            76,
+            20,
+            77,
+            12,
+            53,
+            42,
+            55
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p79_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -13,
+              265,
+              -2040,
+              20935,
+              -81133,
+              493039
+            ]
+          },
+          "p": 79
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "55*x^4 + 30*x^3*y + 39*x^3*z + 47*x^2*y^2 + 51*x^2*y*z + 44*x^2*z^2 + 53*x*y^3 + 54*x*y^2*z + 23*x*y*z^2 + 57*x*z^3 + 30*y^4 + 50*y^3*z + 21*y^2*z^2 + 77*y*z^3 + 68*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            55,
+            30,
+            47,
+            53,
+            30,
+            39,
+            51,
+            54,
+            50,
+            44,
+            23,
+            21,
+            57,
+            77,
+            68
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p79_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              17,
+              228,
+              1958,
+              18012,
+              106097,
+              493039
+            ]
+          },
+          "p": 79
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "75*x^4 + 22*x^3*y + 48*x^3*z + 3*x^2*y^2 + 73*x^2*y*z + 48*x^2*z^2 + 17*x*y^3 + 72*x*y^2*z + 22*x*y*z^2 + 37*x*z^3 + 53*y^4 + 20*y^3*z + 69*y^2*z^2 + 22*y*z^3 + 22*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            75,
+            22,
+            3,
+            17,
+            53,
+            48,
+            73,
+            72,
+            20,
+            48,
+            22,
+            69,
+            37,
+            22,
+            22
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p79_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -9,
+              149,
+              -1073,
+              11771,
+              -56169,
+              493039
+            ]
+          },
+          "p": 79
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "6*x^4 + 56*x^3*y + 82*x^3*z + 22*x^2*y^2 + 35*x^2*y*z + 22*x^2*z^2 + 50*x*y^3 + 71*x*y^2*z + 55*x*y*z^2 + 59*x*z^3 + 30*y^4 + 10*y^3*z + 29*y^2*z^2 + 36*y*z^3 + 46*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            6,
+            56,
+            22,
+            50,
+            30,
+            82,
+            35,
+            71,
+            10,
+            22,
+            55,
+            29,
+            59,
+            36,
+            46
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p83_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -17,
+              196,
+              -1877,
+              16268,
+              -117113,
+              571787
+            ]
+          },
+          "p": 83
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "44*x^4 + 5*x^3*y + 73*x^3*z + 49*x^2*y^2 + 38*x^2*y*z + 9*x^2*z^2 + 20*x*y^3 + 41*x*y^2*z + 57*x*y*z^2 + 25*x*z^3 + 13*y^4 + 15*y^3*z + 33*y^2*z^2 + 58*y*z^3 + 8*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            44,
+            5,
+            49,
+            20,
+            13,
+            73,
+            38,
+            41,
+            15,
+            9,
+            57,
+            33,
+            25,
+            58,
+            8
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p83_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -25,
+              390,
+              -4149,
+              32370,
+              -172225,
+              571787
+            ]
+          },
+          "p": 83
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "26*x^4 + 7*x^3*y + 32*x^3*z + 18*x^2*y^2 + 63*x^2*y*z + 81*x^2*z^2 + 9*x*y^3 + 41*x*y^2*z + 5*x*y*z^2 + 69*x*z^3 + 32*y^4 + 25*y^3*z + 77*y^2*z^2 + 72*y*z^3 + 75*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            26,
+            7,
+            18,
+            9,
+            32,
+            32,
+            63,
+            41,
+            25,
+            81,
+            5,
+            77,
+            69,
+            72,
+            75
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p83_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -8,
+              61,
+              -669,
+              5063,
+              -55112,
+              571787
+            ]
+          },
+          "p": 83
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "66*x^4 + 42*x^3*y + 6*x^3*z + x^2*y^2 + 15*x^2*y*z + 55*x^2*z^2 + 17*x*y^3 + 84*x*y^2*z + 33*x*y*z^2 + 27*x*z^3 + 62*y^4 + 12*y^3*z + 19*y^2*z^2 + 69*y*z^3 + 48*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            66,
+            42,
+            1,
+            17,
+            62,
+            6,
+            15,
+            84,
+            12,
+            55,
+            33,
+            19,
+            27,
+            69,
+            48
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p89_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -9,
+              -30,
+              1086,
+              -2670,
+              -71289,
+              704969
+            ]
+          },
+          "p": 89
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "45*x^4 + 80*x^3*y + 70*x^3*z + 12*x^2*y^2 + 82*x^2*y*z + 7*x^2*z^2 + 45*x*y^3 + 73*x*y^2*z + 9*x*y*z^2 + 25*x*z^3 + 8*y^4 + 80*y^3*z + 7*y^2*z^2 + 29*y*z^3 + 14*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            45,
+            80,
+            12,
+            45,
+            8,
+            70,
+            82,
+            73,
+            80,
+            7,
+            9,
+            7,
+            25,
+            29,
+            14
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p89_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -8,
+              85,
+              -924,
+              7565,
+              -63368,
+              704969
+            ]
+          },
+          "p": 89
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "83*x^4 + 25*x^3*y + 75*x^3*z + 75*x^2*y^2 + 26*x^2*y*z + 50*x^2*z^2 + 15*x*y^3 + 50*x*y^2*z + 85*x*y*z^2 + 41*x*z^3 + 24*y^4 + 12*y^3*z + 19*y^2*z^2 + 12*y*z^3 + 21*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            83,
+            25,
+            75,
+            15,
+            24,
+            75,
+            26,
+            50,
+            12,
+            50,
+            85,
+            19,
+            41,
+            12,
+            21
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p89_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              13,
+              39,
+              -278,
+              3471,
+              102973,
+              704969
+            ]
+          },
+          "p": 89
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "54*x^4 + 92*x^3*y + 24*x^3*z + 65*x^2*y^2 + 91*x^2*y*z + 51*x^2*z^2 + 26*x*y^3 + 79*x*y^2*z + 18*x*y*z^2 + 74*x*z^3 + 15*y^4 + 17*y^3*z + 11*y^2*z^2 + 18*y*z^3 + 70*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            54,
+            92,
+            65,
+            26,
+            15,
+            24,
+            91,
+            79,
+            17,
+            51,
+            18,
+            11,
+            74,
+            18,
+            70
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p97_plane_q4_dense_001",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -10,
+              184,
+              -1592,
+              17848,
+              -94090,
+              912673
+            ]
+          },
+          "p": 97
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "95*x^4 + 14*x^3*y + 32*x^3*z + 47*x^2*y^2 + 85*x^2*y*z + 64*x^2*z^2 + 58*x*y^3 + 82*x*y^2*z + 69*x*y*z^2 + 52*x*z^3 + 42*y^4 + 34*y^3*z + y^2*z^2 + 59*y*z^3 + 37*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            95,
+            14,
+            47,
+            58,
+            42,
+            32,
+            85,
+            82,
+            34,
+            64,
+            69,
+            1,
+            52,
+            59,
+            37
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p97_plane_q4_dense_002",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -7,
+              245,
+              -1267,
+              23765,
+              -65863,
+              912673
+            ]
+          },
+          "p": 97
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 3,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "14*x^4 + 11*x^3*y + 76*x^3*z + 56*x^2*y^2 + 58*x^2*y*z + 24*x^2*z^2 + 6*x*y^3 + 24*x*y^2*z + 39*x*y*z^2 + 67*x*z^3 + 22*y^4 + 49*y^3*z + 12*y^2*z^2 + 44*y*z^3 + 4*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              0,
+              0
+            ],
+            [
+              3,
+              1,
+              0
+            ],
+            [
+              2,
+              2,
+              0
+            ],
+            [
+              1,
+              3,
+              0
+            ],
+            [
+              0,
+              4,
+              0
+            ],
+            [
+              3,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            14,
+            11,
+            56,
+            6,
+            22,
+            76,
+            58,
+            24,
+            49,
+            24,
+            39,
+            12,
+            67,
+            44,
+            4
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p97_plane_q4_dense_003",
+      "notes": "generated via DeRham.jl",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -8,
+              61,
+              219,
+              5917,
+              -75272,
+              912673
+            ]
+          },
+          "p": 97
+        }
+      ]
+    }
+  ]
+}

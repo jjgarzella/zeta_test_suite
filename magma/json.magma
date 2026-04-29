@@ -1,0 +1,241 @@
+// json.magma — minimal recursive-descent JSON parser + encoder for v3 test cases.
+//
+// Exports:
+//   ParseJSON(s)             -> parsed value (assoc array / sequence / string / int)
+//   ReadJSONFile(path)       -> parsed value
+//   EncodeJSON(v)            -> compact JSON string
+//   WriteJSONFile(path, v)   -> pretty-printed JSON (2-space indent)
+
+// ----------------------------------------------------------------------
+// Tokenizer / parser state (mutable via ref)
+// ----------------------------------------------------------------------
+
+function _skip_ws(s, i)
+    while i le #s and s[i] in {" ", "\t", "\n", "\r"} do
+        i +:= 1;
+    end while;
+    return i;
+end function;
+
+function _parse_string(s, i)
+    // Assumes s[i] = '"'; returns (value, i_after_closing_quote)
+    assert s[i] eq "\"";
+    i +:= 1;
+    out := "";
+    while i le #s and s[i] ne "\"" do
+        c := s[i];
+        if c eq "\\" then
+            assert i lt #s;
+            nxt := s[i+1];
+            case nxt:
+                when "n": out cat:= "\n";
+                when "t": out cat:= "\t";
+                when "r": out cat:= "\r";
+                when "\"": out cat:= "\"";
+                when "\\": out cat:= "\\";
+                when "/": out cat:= "/";
+                else error "unsupported escape \\" cat nxt;
+            end case;
+            i +:= 2;
+        else
+            out cat:= c;
+            i +:= 1;
+        end if;
+    end while;
+    assert i le #s;
+    return out, i + 1;
+end function;
+
+function _parse_number(s, i)
+    j := i;
+    if j le #s and s[j] eq "-" then j +:= 1; end if;
+    while j le #s and s[j] in {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"} do
+        j +:= 1;
+    end while;
+    // v3 schema allows integer-valued strings for large ints but numeric form is int.
+    return StringToInteger(s[i..j-1]), j;
+end function;
+
+// forward-declared via a package of mutually recursive functions
+forward _parse_value;
+
+function _parse_array(s, i)
+    assert s[i] eq "[";
+    i +:= 1;
+    out := [* *];
+    i := _skip_ws(s, i);
+    if i le #s and s[i] eq "]" then return out, i + 1; end if;
+    while true do
+        val, i := _parse_value(s, i);
+        Append(~out, val);
+        i := _skip_ws(s, i);
+        if i le #s and s[i] eq "," then
+            i +:= 1;
+            i := _skip_ws(s, i);
+        elif i le #s and s[i] eq "]" then
+            return out, i + 1;
+        else
+            error "expected ',' or ']' at position " cat IntegerToString(i);
+        end if;
+    end while;
+end function;
+
+function _parse_object(s, i)
+    assert s[i] eq "{";
+    i +:= 1;
+    out := AssociativeArray();
+    i := _skip_ws(s, i);
+    if i le #s and s[i] eq "}" then return out, i + 1; end if;
+    while true do
+        i := _skip_ws(s, i);
+        key, i := _parse_string(s, i);
+        i := _skip_ws(s, i);
+        assert s[i] eq ":";
+        i := _skip_ws(s, i + 1);
+        val, i := _parse_value(s, i);
+        out[key] := val;
+        i := _skip_ws(s, i);
+        if i le #s and s[i] eq "," then
+            i +:= 1;
+        elif i le #s and s[i] eq "}" then
+            return out, i + 1;
+        else
+            error "expected ',' or '}' at position " cat IntegerToString(i);
+        end if;
+    end while;
+end function;
+
+function _parse_value(s, i)
+    i := _skip_ws(s, i);
+    assert i le #s;
+    c := s[i];
+    if c eq "\"" then return _parse_string(s, i); end if;
+    if c eq "{" then return _parse_object(s, i); end if;
+    if c eq "[" then return _parse_array(s, i); end if;
+    if c eq "-" or (c ge "0" and c le "9") then return _parse_number(s, i); end if;
+    if c eq "t" then
+        assert s[i..i+3] eq "true";
+        return true, i + 4;
+    end if;
+    if c eq "f" then
+        assert s[i..i+4] eq "false";
+        return false, i + 5;
+    end if;
+    if c eq "n" then
+        assert s[i..i+3] eq "null";
+        return 0, i + 4;  // represent null as 0 (not used in v3 schema)
+    end if;
+    error "unexpected character " cat c cat " at position " cat IntegerToString(i);
+end function;
+
+ParseJSON := function(s)
+    val, _ := _parse_value(s, 1);
+    return val;
+end function;
+
+ReadJSONFile := function(path)
+    return ParseJSON(Read(path));
+end function;
+
+// ----------------------------------------------------------------------
+// Encoder
+// ----------------------------------------------------------------------
+
+function _escape_string(s)
+    out := "";
+    for c in Eltseq(s) do
+        case c:
+            when "\"": out cat:= "\\\"";
+            when "\\": out cat:= "\\\\";
+            when "\n": out cat:= "\\n";
+            when "\t": out cat:= "\\t";
+            when "\r": out cat:= "\\r";
+            else out cat:= c;
+        end case;
+    end for;
+    return out;
+end function;
+
+forward _encode;
+
+function _pad(n)
+    out := "";
+    for _ in [1..n] do out cat:= " "; end for;
+    return out;
+end function;
+
+function _encode_indent(v, indent, lvl)
+    pad_outer := _pad(lvl * indent);
+    pad_inner := _pad((lvl + 1) * indent);
+    if Type(v) eq Assoc then
+        ks := Sort([k : k in Keys(v)]);
+        if #ks eq 0 then return "{}"; end if;
+        out := "{\n";
+        for i in [1..#ks] do
+            k := ks[i];
+            sep := (i eq #ks) select "" else ",";
+            out cat:= pad_inner cat "\"" cat _escape_string(k) cat "\": ";
+            out cat:= _encode_indent(v[k], indent, lvl + 1) cat sep cat "\n";
+        end for;
+        out cat:= pad_outer cat "}";
+        return out;
+    elif Type(v) eq List or Type(v) eq SeqEnum then
+        if #v eq 0 then return "[]"; end if;
+        out := "[\n";
+        for i in [1..#v] do
+            sep := (i eq #v) select "" else ",";
+            out cat:= pad_inner cat _encode_indent(v[i], indent, lvl + 1) cat sep cat "\n";
+        end for;
+        out cat:= pad_outer cat "]";
+        return out;
+    else
+        return _encode(v);
+    end if;
+end function;
+
+function _encode(v)
+    if Type(v) eq RngIntElt then return IntegerToString(v); end if;
+    if Type(v) eq MonStgElt then return "\"" cat _escape_string(v) cat "\""; end if;
+    if Type(v) eq BoolElt then return v select "true" else "false"; end if;
+    if Type(v) eq Assoc then
+        ks := Sort([k : k in Keys(v)]);
+        out := "{";
+        for i in [1..#ks] do
+            sep := (i eq #ks) select "" else ",";
+            out cat:= "\"" cat _escape_string(ks[i]) cat "\":" cat _encode(v[ks[i]]) cat sep;
+        end for;
+        return out cat "}";
+    end if;
+    if Type(v) eq List or Type(v) eq SeqEnum then
+        out := "[";
+        for i in [1..#v] do
+            sep := (i eq #v) select "" else ",";
+            out cat:= _encode(v[i]) cat sep;
+        end for;
+        return out cat "]";
+    end if;
+    error "don't know how to encode value of type " cat Sprint(Type(v));
+end function;
+
+EncodeJSON := function(v)
+    return _encode(v);
+end function;
+
+EncodeJSONPretty := function(v)
+    return _encode_indent(v, 2, 0);
+end function;
+
+procedure WriteJSONFile(path, v)
+    // SetColumns(0) disables MAGMA's line-wrapping, which otherwise inserts
+    // a '\<newline>' continuation into long strings and breaks round-tripping
+    // through _parse_string.
+    prev_cols := GetColumns();
+    SetColumns(0);
+    try
+        Write(path, _encode_indent(v, 2, 0) : Overwrite := true);
+    catch e
+        SetColumns(prev_cols);
+        error e;
+    end try;
+    SetColumns(prev_cols);
+end procedure;

@@ -1,0 +1,6077 @@
+{
+  "schema_version": "3",
+  "cases": [
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 6*x*y*z^3 + y^5 + y^4*z + 5*y^3*z^2 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            1,
+            5,
+            6,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p7_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_7. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              11,
+              -14,
+              15,
+              17,
+              -38,
+              119,
+              735,
+              -4802,
+              26411,
+              -50421,
+              117649
+            ]
+          },
+          "p": 7
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "2*x^4*z + x^3*y*z + 3*x^2*y^3 + 4*x^2*z^3 + 4*x*y^4 + x*y^2*z^2 + 4*x*z^4 + 3*y^2*z^3 = 0",
+          "monomials": [
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            3,
+            4,
+            2,
+            1,
+            1,
+            4,
+            3,
+            4
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p7_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_7. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              12,
+              -2,
+              60,
+              -155,
+              188,
+              -1085,
+              2940,
+              -686,
+              28812,
+              16807,
+              117649
+            ]
+          },
+          "p": 7
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 2*x^4*z + 4*x^3*z^2 + x*y^3*z + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            2,
+            1,
+            4,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p7_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_7. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -2,
+              2,
+              8,
+              7,
+              91,
+              -184,
+              637,
+              343,
+              2744,
+              4802,
+              -33614,
+              117649
+            ]
+          },
+          "p": 7
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "8*x^4*y + x^3*z^2 + 3*x^2*y^3 + 2*x*y*z^3 + 7*x*z^4 + 7*y^5 + 2*y^3*z^2 + 7*z^5 = 0",
+          "monomials": [
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            8,
+            3,
+            7,
+            1,
+            2,
+            2,
+            7,
+            7
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p11_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_11. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              7,
+              -21,
+              3,
+              268,
+              1436,
+              2948,
+              363,
+              -27951,
+              102487,
+              161051,
+              1771561
+            ]
+          },
+          "p": 11
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 3*x^4*z + 5*x*y^2*z^2 + y^5 + 9*y*z^4 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            3,
+            5,
+            9,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p11_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_11. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              5,
+              38,
+              132,
+              561,
+              1605,
+              5908,
+              17655,
+              67881,
+              175692,
+              556358,
+              805255,
+              1771561
+            ]
+          },
+          "p": 11
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "4*x^5 + 4*x^4*z + 3*x^3*z^2 + x^2*y*z^2 + 9*x*z^4 + 3*y^5 + 5*y^4*z + 7*y^2*z^3 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            4,
+            3,
+            4,
+            5,
+            3,
+            1,
+            7,
+            9
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p11_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_11. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -4,
+              5,
+              11,
+              36,
+              34,
+              -272,
+              374,
+              4356,
+              14641,
+              73205,
+              -644204,
+              1771561
+            ]
+          },
+          "p": 11
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 5*x^3*y^2 + 11*x^2*y*z^2 + 7*x*z^4 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            5,
+            1,
+            11,
+            7,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p13_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_13. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              6,
+              22,
+              37,
+              -1,
+              -518,
+              -2632,
+              -6734,
+              -169,
+              81289,
+              628342,
+              2227758,
+              4826809
+            ]
+          },
+          "p": 13
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "6*x^4*z + 12*x^2*z^3 + 5*x*y^4 + 7*x*y^3*z + 4*x*y*z^3 + 4*x*z^4 + 6*y*z^4 + 10*z^5 = 0",
+          "monomials": [
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            5,
+            6,
+            7,
+            12,
+            4,
+            4,
+            6,
+            10
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p13_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_13. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              22,
+              -3,
+              160,
+              -740,
+              994,
+              -9620,
+              27040,
+              -6591,
+              628342,
+              371293,
+              4826809
+            ]
+          },
+          "p": 13
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 10*x^3*y*z + 4*x^2*y^2*z + 12*x*y*z^3 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            10,
+            4,
+            12,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p13_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_13. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              5,
+              24,
+              72,
+              346,
+              908,
+              4436,
+              11804,
+              58474,
+              158184,
+              685464,
+              1856465,
+              4826809
+            ]
+          },
+          "p": 13
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^5 + 13*x^4*z + x*y^4 + 11*x*y^3*z + 2*x*y*z^3 + 12*y^4*z + 8*y^2*z^3 + 4*z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            3,
+            1,
+            13,
+            11,
+            12,
+            2,
+            8,
+            4
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p17_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_17. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -1,
+              -4,
+              39,
+              -17,
+              -411,
+              4312,
+              -6987,
+              -4913,
+              191607,
+              -334084,
+              -1419857,
+              24137569
+            ]
+          },
+          "p": 17
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 14*x^2*y^2*z + 4*x*z^4 + y^5 + 7*y^2*z^3 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            14,
+            7,
+            4,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p17_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_17. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -7,
+              13,
+              13,
+              -157,
+              795,
+              -2722,
+              13515,
+              -45373,
+              63869,
+              1085773,
+              -9938999,
+              24137569
+            ]
+          },
+          "p": 17
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "8*x^5 + 10*x^3*y*z + 8*x*y^3*z + 9*x*z^4 + 13*y^5 + 13*y^4*z + 7*y^3*z^2 + 10*z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            8,
+            13,
+            10,
+            8,
+            13,
+            7,
+            9,
+            10
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p17_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_17. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -5,
+              -1,
+              40,
+              -100,
+              -76,
+              1818,
+              -1292,
+              -28900,
+              196520,
+              -83521,
+              -7099285,
+              24137569
+            ]
+          },
+          "p": 17
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 16*x^3*y^2 + 15*x^2*z^3 + 18*x*y^2*z^2 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            16,
+            1,
+            18,
+            15,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p19_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_19. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              20,
+              -15,
+              -95,
+              1671,
+              -6623,
+              31749,
+              -34295,
+              -102885,
+              2606420,
+              -7428297,
+              47045881
+            ]
+          },
+          "p": 19
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^4*y + 18*x^3*y^2 + 9*x^3*z^2 + 11*x^2*y^2*z + 6*x^2*z^3 + 11*x*y^4 + 18*x*z^4 + 7*y^4*z = 0",
+          "monomials": [
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            3,
+            18,
+            11,
+            11,
+            7,
+            9,
+            6,
+            18
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p19_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_19. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              20,
+              -17,
+              61,
+              237,
+              347,
+              4503,
+              22021,
+              -116603,
+              2606420,
+              2476099,
+              47045881
+            ]
+          },
+          "p": 19
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 12*x*y*z^3 + 18*x*z^4 + y^5 + 14*y^3*z^2 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            14,
+            12,
+            18,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p19_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_19. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              37,
+              -84,
+              755,
+              -3300,
+              15084,
+              -62700,
+              272555,
+              -576156,
+              4821877,
+              2476099,
+              47045881
+            ]
+          },
+          "p": 19
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "18*x^5 + 16*x^4*y + 18*x^4*z + 16*x^2*z^3 + 2*y^5 + 12*y^3*z^2 + 12*y^2*z^3 + 8*z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            18,
+            16,
+            2,
+            18,
+            12,
+            16,
+            12,
+            8
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p23_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_23. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              4,
+              51,
+              163,
+              1463,
+              4362,
+              34930,
+              100326,
+              773927,
+              1983221,
+              14271891,
+              25745372,
+              148035889
+            ]
+          },
+          "p": 23
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 9*x^2*y^3 + 11*x*y^2*z^2 + y^5 + 7*y^2*z^3 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            9,
+            1,
+            11,
+            7,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p23_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_23. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              7,
+              34,
+              113,
+              321,
+              -244,
+              -3648,
+              -5612,
+              169809,
+              1374871,
+              9514594,
+              45054401,
+              148035889
+            ]
+          },
+          "p": 23
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "3*x^4*z + 5*x^3*y*z + 18*x^2*y^3 + 4*x^2*y^2*z + 7*x*y^4 + 11*x*y^2*z^2 + 5*x*z^4 + 14*z^5 = 0",
+          "monomials": [
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            18,
+            7,
+            3,
+            5,
+            4,
+            11,
+            5,
+            14
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p23_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_23. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -5,
+              26,
+              -99,
+              476,
+              -4793,
+              23582,
+              -110239,
+              251804,
+              -1204533,
+              7275866,
+              -32181715,
+              148035889
+            ]
+          },
+          "p": 23
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 23*x^3*y*z + 7*x*y^2*z^2 + 15*x*y*z^3 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            23,
+            7,
+            15,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p29_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_29. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              5,
+              20,
+              153,
+              608,
+              3377,
+              33026,
+              97933,
+              511328,
+              3731517,
+              14145620,
+              102555745,
+              594823321
+            ]
+          },
+          "p": 29
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "20*x^5 + 13*x^3*y^2 + 26*x^2*y*z^2 + x*y^4 + 10*x*y^3*z + 3*x*z^4 + 17*y^2*z^3 + 3*y*z^4 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          "coeffs": [
+            20,
+            13,
+            1,
+            10,
+            26,
+            17,
+            3,
+            3
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p29_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_29. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -6,
+              30,
+              -195,
+              2004,
+              -9066,
+              42556,
+              -262914,
+              1685364,
+              -4755855,
+              21218430,
+              -123066894,
+              594823321
+            ]
+          },
+          "p": 29
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 19*x^3*y*z + 15*x*y^4 + y^5 + 2*y*z^4 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            15,
+            1,
+            19,
+            2,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p29_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_29. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              2,
+              -23,
+              -57,
+              1109,
+              1477,
+              -27898,
+              42833,
+              932669,
+              -1390173,
+              -16267463,
+              41022298,
+              594823321
+            ]
+          },
+          "p": 29
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "4*x^4*z + 16*x^3*y^2 + 24*x^3*z^2 + 13*x^2*y*z^2 + 20*x*y^4 + 14*x*y*z^3 + 17*y^5 + 18*y*z^4 = 0",
+          "monomials": [
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          "coeffs": [
+            16,
+            20,
+            17,
+            4,
+            24,
+            13,
+            14,
+            18
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p31_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_31. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              0,
+              44,
+              96,
+              775,
+              -20096,
+              24025,
+              92256,
+              1310804,
+              0,
+              -85887453,
+              887503681
+            ]
+          },
+          "p": 31
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 15*x^4*y + 15*x^3*y^2 + 15*x^2*y^2*z + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            15,
+            15,
+            1,
+            15,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p31_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_31. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              9,
+              -163,
+              162,
+              -1475,
+              21412,
+              -45725,
+              155682,
+              -4855933,
+              8311689,
+              28629151,
+              887503681
+            ]
+          },
+          "p": 31
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "30*x^4*y + 20*x^3*y^2 + 7*x^2*y*z^2 + 21*x^2*z^3 + 30*x*z^4 + 26*y^5 + 17*y^2*z^3 + 2*z^5 = 0",
+          "monomials": [
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            30,
+            20,
+            26,
+            7,
+            21,
+            17,
+            30,
+            2
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p31_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_31. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              13,
+              95,
+              320,
+              -755,
+              -19320,
+              -140742,
+              -598920,
+              -725555,
+              9533120,
+              87734495,
+              372178963,
+              887503681
+            ]
+          },
+          "p": 31
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 15*x^3*y^2 + 30*x*y^2*z^2 + y^5 + 19*y^2*z^3 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            15,
+            1,
+            30,
+            19,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p37_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_37. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              4,
+              62,
+              101,
+              559,
+              -10408,
+              -38314,
+              -385096,
+              765271,
+              5115953,
+              116197982,
+              277375828,
+              2565726409
+            ]
+          },
+          "p": 37
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "2*x^5 + 10*x^3*y^2 + 21*x^3*y*z + 34*x^2*y^3 + 23*y^5 + 18*y^4*z + 4*y^3*z^2 + 10*z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            2,
+            10,
+            34,
+            23,
+            21,
+            18,
+            4,
+            10
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p37_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_37. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              2,
+              34,
+              -47,
+              -115,
+              -2583,
+              -2614,
+              -95571,
+              -157435,
+              -2380691,
+              63721474,
+              138687914,
+              2565726409
+            ]
+          },
+          "p": 37
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 16*x^3*z^2 + 3*x^2*y^2*z + 11*x^2*y*z^2 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            3,
+            16,
+            11,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p37_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_37. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              2,
+              5,
+              -5,
+              -68,
+              3610,
+              26426,
+              133570,
+              -93092,
+              -253265,
+              9370805,
+              138687914,
+              2565726409
+            ]
+          },
+          "p": 37
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "4*x^5 + 14*x^2*y^2*z + 35*x^2*y*z^2 + 16*x*y^3*z + 24*x*y^2*z^2 + 38*x*z^4 + 26*y^5 + 13*y*z^4 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          "coeffs": [
+            4,
+            26,
+            14,
+            16,
+            35,
+            24,
+            38,
+            13
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p41_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_41. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              3,
+              33,
+              326,
+              2736,
+              14153,
+              145436,
+              580273,
+              4599216,
+              22468246,
+              93250113,
+              347568603,
+              4750104241
+            ]
+          },
+          "p": 41
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 38*x^3*y*z + 15*x^2*y^2*z + x*y^2*z^2 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            38,
+            15,
+            1,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p41_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_41. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              4,
+              -37,
+              -86,
+              379,
+              2436,
+              38982,
+              99876,
+              637099,
+              -5927206,
+              -104553157,
+              463424804,
+              4750104241
+            ]
+          },
+          "p": 41
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "36*x^5 + 23*x^3*y^2 + 16*x^3*y*z + 25*x*y^2*z^2 + 11*y^5 + 23*y^3*z^2 + 21*y*z^4 + 16*z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            36,
+            23,
+            11,
+            16,
+            25,
+            23,
+            21,
+            16
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p41_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_41. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -5,
+              33,
+              -131,
+              1996,
+              -4195,
+              6072,
+              -171995,
+              3355276,
+              -9028651,
+              93250113,
+              -579281005,
+              4750104241
+            ]
+          },
+          "p": 41
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 18*x^3*y^2 + x^2*y*z^2 + 16*x*y^2*z^2 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            18,
+            1,
+            1,
+            16,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p43_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_43. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              2,
+              81,
+              269,
+              4655,
+              16313,
+              203684,
+              701459,
+              8607095,
+              21387383,
+              276922881,
+              294016886,
+              6321363049
+            ]
+          },
+          "p": 43
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "2*x^5 + 3*x^3*y*z + 10*x^2*z^3 + 33*x*y^3*z + 35*x*y^2*z^2 + 33*y^5 + 15*y^3*z^2 + 13*z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            2,
+            33,
+            3,
+            33,
+            35,
+            15,
+            10,
+            13
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p43_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_43. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              3,
+              -33,
+              -475,
+              20,
+              9029,
+              96436,
+              388247,
+              36980,
+              -37765825,
+              -112820433,
+              441025329,
+              6321363049
+            ]
+          },
+          "p": 43
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 31*x^4*y + 25*x^4*z + 13*x*y*z^3 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            31,
+            1,
+            25,
+            13,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p43_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_43. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -10,
+              30,
+              63,
+              -772,
+              13997,
+              -127310,
+              601871,
+              -1427428,
+              5008941,
+              102564030,
+              -1470084430,
+              6321363049
+            ]
+          },
+          "p": 43
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "45*x^4*z + 4*x^3*y^2 + 32*x*y^2*z^2 + 26*x*y*z^3 + 17*x*z^4 + 35*y^4*z + 27*y^3*z^2 + 44*y^2*z^3 = 0",
+          "monomials": [
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            4,
+            45,
+            35,
+            32,
+            27,
+            26,
+            44,
+            17
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p47_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_47. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              8,
+              88,
+              512,
+              4422,
+              26086,
+              195458,
+              1226042,
+              9768198,
+              53157376,
+              429411928,
+              1834760056,
+              10779215329
+            ]
+          },
+          "p": 47
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 11*x^4*y + 5*x^3*z^2 + 16*x*y*z^3 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            11,
+            1,
+            5,
+            16,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p47_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_47. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              42,
+              28,
+              346,
+              4495,
+              -40514,
+              211265,
+              764314,
+              2907044,
+              204946602,
+              0,
+              10779215329
+            ]
+          },
+          "p": 47
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "39*x^5 + 22*x^4*z + 35*x^3*y^2 + 38*x^3*z^2 + 38*x^2*z^3 + 27*x*y^4 + 27*y^2*z^3 + 28*z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            39,
+            35,
+            27,
+            22,
+            38,
+            38,
+            27,
+            28
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p47_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_47. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              11,
+              158,
+              1220,
+              10696,
+              60245,
+              504802,
+              2831515,
+              23627464,
+              126664060,
+              770989598,
+              2522795077,
+              10779215329
+            ]
+          },
+          "p": 47
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 6*x^4*z + 10*x*z^4 + y^5 + 13*y*z^4 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            6,
+            10,
+            13,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p53_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_53. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              28,
+              424,
+              4338,
+              33459,
+              213674,
+              1408688,
+              11324722,
+              93986331,
+              645828426,
+              3345563944,
+              11709473804,
+              22164361129
+            ]
+          },
+          "p": 53
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "46*x^5 + 40*x^4*y + 17*x^2*y^3 + 35*x^2*y^2*z + 40*x*y^4 + 4*x*y^2*z^2 + 42*x*z^4 + 51*y^2*z^3 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            46,
+            40,
+            17,
+            40,
+            35,
+            4,
+            51,
+            42
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p53_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_53. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              9,
+              57,
+              584,
+              3723,
+              35796,
+              377640,
+              1897188,
+              10457907,
+              86944168,
+              449757417,
+              3763759437,
+              22164361129
+            ]
+          },
+          "p": 53
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 16*x^3*y^2 + 11*x^3*y*z + 28*x*y^3*z + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            16,
+            1,
+            11,
+            28,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p53_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_53. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -10,
+              171,
+              -1849,
+              17891,
+              -153749,
+              1203222,
+              -8148697,
+              50255819,
+              -275273573,
+              1349272251,
+              -4181954930,
+              22164361129
+            ]
+          },
+          "p": 53
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "8*x^5 + 13*x^4*z + 30*x^2*y^3 + 42*x^2*z^3 + 50*x*y^3*z + 25*x*z^4 + 40*y^4*z + 13*y^2*z^3 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            8,
+            30,
+            13,
+            50,
+            40,
+            42,
+            13,
+            25
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p59_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_59. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              0,
+              106,
+              251,
+              7007,
+              16438,
+              423423,
+              969842,
+              24391367,
+              51550129,
+              1284440266,
+              0,
+              42180533641
+            ]
+          },
+          "p": 59
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 30*x^2*y^3 + 15*x*y*z^3 + y^5 + 38*y^2*z^3 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            30,
+            1,
+            15,
+            38,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p59_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_59. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              -3,
+              267,
+              1717,
+              19865,
+              43598,
+              1172035,
+              5976877,
+              54836193,
+              -36352083,
+              714924299,
+              42180533641
+            ]
+          },
+          "p": 59
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "46*x^4*y + 42*x^3*y^2 + 26*x^3*z^2 + 44*x^2*y*z^2 + 26*x^2*z^3 + 49*x*y^4 + 25*y^5 + 9*y*z^4 = 0",
+          "monomials": [
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          "coeffs": [
+            46,
+            42,
+            49,
+            25,
+            26,
+            44,
+            26,
+            9
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p59_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_59. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              -13,
+              -43,
+              1266,
+              -6935,
+              -32485,
+              -409165,
+              4406946,
+              -8831297,
+              -157525693,
+              714924299,
+              42180533641
+            ]
+          },
+          "p": 59
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 17*x^3*z^2 + 46*x^2*y*z^2 + 25*x*y^4 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            25,
+            1,
+            17,
+            46,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p61_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_61. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -7,
+              50,
+              -112,
+              -104,
+              17330,
+              -283740,
+              1057130,
+              -386984,
+              -25421872,
+              692292050,
+              -5912174107,
+              51520374361
+            ]
+          },
+          "p": 61
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "46*x^4*y + 9*x^3*y^2 + 17*x^2*z^3 + 5*x*y^3*z + 51*x*z^4 + 60*y^5 + 37*y^2*z^3 + 18*z^5 = 0",
+          "monomials": [
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            46,
+            9,
+            60,
+            5,
+            17,
+            37,
+            51,
+            18
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p61_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_61. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              4,
+              -4,
+              -279,
+              -1114,
+              -1266,
+              169680,
+              -77226,
+              -4145194,
+              -63327699,
+              -55383364,
+              3378385204,
+              51520374361
+            ]
+          },
+          "p": 61
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 54*x*y^3*z + 41*x*z^4 + y^5 + 48*y^3*z^2 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            54,
+            48,
+            41,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p61_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_61. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              7,
+              83,
+              211,
+              2240,
+              7832,
+              73196,
+              477752,
+              8335040,
+              47892991,
+              1149204803,
+              5912174107,
+              51520374361
+            ]
+          },
+          "p": 61
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "4*x^5 + 39*x^4*y + 3*x^4*z + 52*x^2*y^2*z + 64*x*y^4 + 9*x*y^2*z^2 + 33*y^2*z^3 + 35*z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            4,
+            39,
+            64,
+            3,
+            52,
+            9,
+            33,
+            35
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p67_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_67. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              67,
+              -358,
+              2636,
+              -37717,
+              144586,
+              -2527039,
+              11833004,
+              -107673154,
+              1350125107,
+              1350125107,
+              90458382169
+            ]
+          },
+          "p": 67
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 5*x^4*y + 2*x^3*y^2 + 16*x^2*z^3 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            5,
+            2,
+            1,
+            16,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p67_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_67. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -3,
+              -9,
+              560,
+              -1782,
+              -14499,
+              409128,
+              -971433,
+              -7999398,
+              168427280,
+              -181360089,
+              -4050375321,
+              90458382169
+            ]
+          },
+          "p": 67
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "16*x^5 + 66*x^3*y^2 + 9*x*y^3*z + 19*x*y*z^3 + 57*x*z^4 + 13*y^5 + 31*y^4*z + 48*y*z^4 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          "coeffs": [
+            16,
+            66,
+            13,
+            9,
+            31,
+            19,
+            57,
+            48
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p67_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_67. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              15,
+              152,
+              1154,
+              8902,
+              46700,
+              255637,
+              3128900,
+              39961078,
+              347080502,
+              3062970392,
+              20251876605,
+              90458382169
+            ]
+          },
+          "p": 67
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 22*x^2*y*z^2 + 17*x*y*z^3 + y^5 + 23*y^2*z^3 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            22,
+            17,
+            23,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p71_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_71. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              13,
+              65,
+              242,
+              1870,
+              58872,
+              792796,
+              4179912,
+              9426670,
+              86614462,
+              1651759265,
+              23454981563,
+              128100283921
+            ]
+          },
+          "p": 71
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "55*x^5 + 46*x^4*y + 8*x^2*y^3 + 25*x^2*y*z^2 + x*y^3*z + 24*x*z^4 + 68*y^5 + 5*y^4*z = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            55,
+            46,
+            8,
+            68,
+            1,
+            5,
+            25,
+            24
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p71_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_71. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -12,
+              27,
+              528,
+              -4150,
+              -11302,
+              291214,
+              -802442,
+              -20920150,
+              188977008,
+              686115387,
+              -21650752212,
+              128100283921
+            ]
+          },
+          "p": 71
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 50*x^4*y + 29*x^2*y^3 + 2*x*z^4 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            50,
+            29,
+            1,
+            2,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p71_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_71. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              10,
+              144,
+              1024,
+              9441,
+              28125,
+              400753,
+              1996875,
+              47592081,
+              366500864,
+              3659282064,
+              18042293510,
+              128100283921
+            ]
+          },
+          "p": 71
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "23*x^5 + 22*x^4*z + 32*x^2*y^2*z + 62*x^2*y*z^2 + 35*x*y^4 + 57*x*z^4 + 8*y^4*z + 71*y*z^4 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          "coeffs": [
+            23,
+            35,
+            22,
+            32,
+            8,
+            62,
+            57,
+            71
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p73_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_73. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              7,
+              13,
+              23,
+              1009,
+              43931,
+              556964,
+              3206963,
+              5376961,
+              8947391,
+              369177133,
+              14511501151,
+              151334226289
+            ]
+          },
+          "p": 73
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 40*x^3*y^2 + 20*x*y^4 + 45*x*z^4 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            40,
+            20,
+            1,
+            45,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p73_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_73. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -7,
+              122,
+              -468,
+              2875,
+              34422,
+              -204959,
+              2512806,
+              15320875,
+              -182059956,
+              3464585402,
+              -14511501151,
+              151334226289
+            ]
+          },
+          "p": 73
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "32*x^4*y + x^2*y^3 + 2*x^2*y*z^2 + 41*x*y^4 + 33*x*y^2*z^2 + 36*x*z^4 + 44*y^4*z + 25*z^5 = 0",
+          "monomials": [
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            32,
+            1,
+            41,
+            44,
+            2,
+            33,
+            36,
+            25
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p73_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_73. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              85,
+              619,
+              2496,
+              51185,
+              144442,
+              3736505,
+              13301184,
+              240801523,
+              2413850485,
+              2073071593,
+              151334226289
+            ]
+          },
+          "p": 73
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 2*x^2*y^2*z + 65*x*y^4 + y^5 + 3*y^4*z + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            65,
+            1,
+            2,
+            3,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p79_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_79. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -9,
+              103,
+              35,
+              4969,
+              -39046,
+              1004466,
+              -3084634,
+              31011529,
+              17256365,
+              4011858343,
+              -27693507591,
+              243087455521
+            ]
+          },
+          "p": 79
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "64*x^4*y + 14*x^4*z + 69*x^3*y*z + 29*x^2*y^3 + 62*x^2*z^3 + 9*x*z^4 + 11*y^5 + 34*z^5 = 0",
+          "monomials": [
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              2,
+              3,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            64,
+            29,
+            11,
+            14,
+            69,
+            62,
+            9,
+            34
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p79_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_79. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              -66,
+              -183,
+              5924,
+              -15044,
+              -545618,
+              -1188476,
+              36971684,
+              -90226137,
+              -2570705346,
+              3077056399,
+              243087455521
+            ]
+          },
+          "p": 79
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 52*x^3*y*z + y^5 + 62*y^4*z + 67*y*z^4 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            52,
+            62,
+            67,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p79_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_79. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              3,
+              12,
+              31,
+              2056,
+              -1952,
+              368974,
+              -154208,
+              12831496,
+              15284209,
+              467400972,
+              9231169197,
+              243087455521
+            ]
+          },
+          "p": 79
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "54*x^4*y + 78*x*y^4 + 70*x*y^3*z + 58*x*y^2*z^2 + 22*x*z^4 + 8*y^3*z^2 + 60*y*z^4 + 48*z^5 = 0",
+          "monomials": [
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              1,
+              2,
+              2
+            ],
+            [
+              0,
+              3,
+              2
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            54,
+            78,
+            70,
+            58,
+            8,
+            22,
+            60,
+            48
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p83_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_83. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -12,
+              116,
+              -1011,
+              9697,
+              -103824,
+              1177902,
+              -8617392,
+              66802633,
+              -578076657,
+              5505165236,
+              -47268487716,
+              326940373369
+            ]
+          },
+          "p": 83
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 32*x^3*z^2 + 37*x^2*y*z^2 + 41*x*z^4 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            32,
+            37,
+            41,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p83_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_83. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              3,
+              5,
+              130,
+              3402,
+              18311,
+              -204618,
+              1519813,
+              23436378,
+              74332310,
+              237291605,
+              11817121929,
+              326940373369
+            ]
+          },
+          "p": 83
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "7*x^4*z + 61*x^3*y^2 + 22*x^2*z^3 + 10*x*y^3*z + 14*x*z^4 + 63*y^4*z + 45*y^2*z^3 + 33*y*z^4 = 0",
+          "monomials": [
+            [
+              3,
+              2,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          "coeffs": [
+            61,
+            7,
+            10,
+            63,
+            22,
+            45,
+            14,
+            33
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p83_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_83. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -6,
+              106,
+              -609,
+              10011,
+              -64470,
+              638376,
+              -5351010,
+              68965779,
+              -348218283,
+              5030582026,
+              -23634243858,
+              326940373369
+            ]
+          },
+          "p": 83
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 45*x^3*y*z + 48*x^2*z^3 + 3*x*y^3*z + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              3,
+              1,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            45,
+            3,
+            48,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p89_plane_q5_sparse_fk_001",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_89. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -13,
+              102,
+              -630,
+              10095,
+              -82462,
+              900061,
+              -7339118,
+              79962495,
+              -444130470,
+              6399708582,
+              -72592772837,
+              496981290961
+            ]
+          },
+          "p": 89
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "38*x^4*z + 38*x^2*z^3 + 42*x*y^3*z + 66*x*z^4 + 65*y^5 + 26*y^4*z + 35*y^2*z^3 + 15*z^5 = 0",
+          "monomials": [
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              1,
+              3,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            65,
+            38,
+            42,
+            26,
+            38,
+            35,
+            66,
+            15
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p89_plane_q5_sparse_as_002",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_89. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              6,
+              -16,
+              -484,
+              877,
+              366,
+              -60232,
+              32574,
+              6946717,
+              -341204996,
+              -1003875856,
+              33504356694,
+              496981290961
+            ]
+          },
+          "p": 89
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 79*x^2*y*z^2 + 76*x^2*z^3 + y^5 + 57*y*z^4 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              1,
+              4
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            79,
+            76,
+            57,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p89_plane_q5_sparse_fk_003",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_89. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              1,
+              66,
+              -162,
+              6535,
+              -22158,
+              508203,
+              -1972062,
+              51763735,
+              -114204978,
+              4140987906,
+              5584059449,
+              496981290961
+            ]
+          },
+          "p": 89
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "62*x^5 + 59*x^4*y + 84*x^4*z + 71*x*y^4 + 5*x*z^4 + 56*y^5 + 29*y^4*z + 45*y*z^4 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              1,
+              0,
+              4
+            ],
+            [
+              0,
+              1,
+              4
+            ]
+          ],
+          "coeffs": [
+            62,
+            59,
+            71,
+            56,
+            84,
+            29,
+            5,
+            45
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p97_plane_q5_sparse_as_001",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_97. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -13,
+              110,
+              -1127,
+              9496,
+              -61356,
+              867030,
+              -5951532,
+              89347864,
+              -1028582471,
+              9738220910,
+              -111635423341,
+              832972004929
+            ]
+          },
+          "p": 97
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "x^5 + 65*x^4*z + 21*x^2*z^3 + 69*x*y*z^3 + y^5 + z^5 = 0",
+          "monomials": [
+            [
+              5,
+              0,
+              0
+            ],
+            [
+              0,
+              5,
+              0
+            ],
+            [
+              4,
+              0,
+              1
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              1,
+              1,
+              3
+            ],
+            [
+              0,
+              0,
+              5
+            ]
+          ],
+          "coeffs": [
+            1,
+            1,
+            65,
+            21,
+            69,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p97_plane_q5_sparse_fk_002",
+      "notes": "Random sparse_fk smooth plane curve of degree 5 (genus 6) over F_97. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -1,
+              79,
+              276,
+              9493,
+              28140,
+              1338868,
+              2729580,
+              89319637,
+              251897748,
+              6993813199,
+              -8587340257,
+              832972004929
+            ]
+          },
+          "p": 97
+        }
+      ]
+    },
+    {
+      "variety": {
+        "coeff_domain": {
+          "kind": "integer"
+        },
+        "non_middle_factors": {
+          "kind": "projective_lefschetz",
+          "middle_factor_content": "full"
+        },
+        "genus": 6,
+        "model": {
+          "kind": "plane_curve",
+          "pretty": "73*x^4*y + x^3*z^2 + 32*x^2*y^2*z + 75*x^2*z^3 + 6*x*y^4 + x*z^4 + 69*y^4*z + 4*y^2*z^3 = 0",
+          "monomials": [
+            [
+              4,
+              1,
+              0
+            ],
+            [
+              1,
+              4,
+              0
+            ],
+            [
+              2,
+              2,
+              1
+            ],
+            [
+              0,
+              4,
+              1
+            ],
+            [
+              3,
+              0,
+              2
+            ],
+            [
+              2,
+              0,
+              3
+            ],
+            [
+              0,
+              2,
+              3
+            ],
+            [
+              1,
+              0,
+              4
+            ]
+          ],
+          "coeffs": [
+            73,
+            6,
+            32,
+            69,
+            1,
+            75,
+            4,
+            1
+          ],
+          "vars": [
+            "x",
+            "y",
+            "z"
+          ]
+        },
+        "dim": 1
+      },
+      "id": "p97_plane_q5_sparse_as_003",
+      "notes": "Random sparse_as smooth plane curve of degree 5 (genus 6) over F_97. DeRham.jl Lpoly.",
+      "results": [
+        {
+          "Lpoly": {
+            "coeffs_asc": [
+              1,
+              -4,
+              60,
+              9,
+              9891,
+              -39912,
+              849801,
+              -3871464,
+              93064419,
+              8214057,
+              5311756860,
+              -34349361028,
+              832972004929
+            ]
+          },
+          "p": 97
+        }
+      ]
+    }
+  ]
+}

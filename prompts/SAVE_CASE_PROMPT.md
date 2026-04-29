@@ -6,6 +6,12 @@ The v3 format stores one shared **variety** together with a `results` array of
 prime/L-polynomial pairs. Each file declares its format with a top-level
 `"schema_version": "3"` field.
 
+## Reference implementations
+
+Three working ports live in the repo — `sage/saver.sage` (Sage, all six model
+kinds), `oscar/saver.jl` (Julia/Oscar, three kinds), and `magma/saver.magma`
+(MAGMA, two kinds). Adapt the closest one rather than starting from scratch.
+
 ## Goal
 
 Implement helpers equivalent to:
@@ -21,7 +27,8 @@ save_grouped_case(case, filename)
 
 1. Accept one variety description and one result.
    - The variety may be a native object specific to the language
-     (e.g. a Sage `HyperellipticCurve`) or a plain dictionary already in v3
+     (e.g. a Sage `HyperellipticCurve` or an Oscar polynomial; see the
+     reference implementations) or a plain dictionary already in v3
      `variety` shape — the implementer's choice.
    - The result may be either an iterable of integer-like coefficients
      (interpreted as the Lpoly shorthand) or a dictionary keyed by

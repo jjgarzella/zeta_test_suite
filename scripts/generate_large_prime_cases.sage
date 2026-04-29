@@ -22,7 +22,7 @@ def lpoly_coeffs(C):
     return [int(c) for c in reversed(poly.list())]
 
 
-FILENAME = "cases/random_p100_to_10000.json"
+FILENAME = "cases/hyperelliptic/random_p100_to_10000.json"
 N = 100
 DEGREES = list(range(3, 11))  # d = 3..10, genus 1..4
 
